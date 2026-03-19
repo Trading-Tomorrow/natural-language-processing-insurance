@@ -4776,5 +4776,2848 @@
                 "text": "Physical inspection confirms a massive sidewall blowout on the front left tire, not caused by impact but a structural failure/debris. Severe frontal and lateral damage consistent with a high-speed barrier strike. Valid comprehensive own-damage claim."
             }
         ]
+    },
+    {
+        "claim_id": "PT-POR-2026-201",
+        "location": "Avenida da Boavista, Porto, Portugal",
+        "incident_type": "Rear-end at red light",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was completely stopped at a red traffic light. I had been sitting there for at least ten seconds. A delivery van just slammed into the back of my car without even braking."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "I dropped my delivery manifest on the passenger floor. I reached down to grab it, thinking the light was still green. When I looked up, the Golf was right there. I hit him at about 40 km/h."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to severe distraction and failing to stop at a red light. Rear of the VW Golf is heavily damaged. 100% liability on the van."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALM-2026-202",
+        "location": "Almada Forum Parking, Almada, Portugal",
+        "incident_type": "Parking scrape",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was pulling into a parking spot. The car next to me was parked over the white line. I thought I could squeeze in, but my rear right door scraped against their front left bumper."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I might have parked a bit close to the line, but I was stationary and the engine was off. I came back to find a scrape on my bumper and a note from the driver."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "A moving vehicle is liable for hitting a stationary object, even if that object is parked poorly. Insured driver misjudged the gap. Liability accepted for cosmetic repairs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-203",
+        "location": "Belém, Lisbon, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "unverifiable high-value items",
+            "inconsistent physics"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW X5",
+                "text": "I was stopped at a crosswalk. The guy behind me bumped my car. The bumper is fine, but I had a $6,000 professional camera lens sitting on the back seat. The impact threw it to the floor and shattered the glass. I need it replaced."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat 500",
+                "text": "I was rolling in first gear and tapped his bumper. I was going maybe 2 km/h. There is no damage to either car. He immediately started yelling about his camera equipment."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Physical inspection shows zero deformation or paint damage on the bumper. A 2 km/h tap transfers virtually no kinetic energy into the cabin. It is physically impossible for this impact to throw a heavy lens off a seat. The lens was likely dropped previously. Property damage claim denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-204",
+        "location": "Rotunda das Olaias, Lisbon, Portugal",
+        "incident_type": "Roundabout failure to yield",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "I was already circulating inside the roundabout. A Mercedes approached from an entrance, didn't slow down at the yield sign, and crashed right into my passenger door."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes C220",
+                "text": "I looked left and thought the roundabout was clear. The Peugeot was in my blind spot behind the A-pillar. I entered the roundabout and hit their side."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles circulating inside the roundabout have priority. Third-party driver admits failing to yield right-of-way. Extensive damage to the Peugeot's right side. 100% liability on the third party."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALE-2026-205",
+        "location": "N2, Almodôvar, Portugal",
+        "incident_type": "Animal collision (Fox)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Yaris",
+                "text": "I was driving at 70 km/h at night. A fox ran out from the bushes right across the road. I couldn't swerve in time and hit it with my front left bumper. The fog light is smashed and the bumper is cracked."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage is consistent with a small/medium animal strike at the reported speed. Animal hair verified in the cracked bumper housing. Approved under comprehensive coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-206",
+        "location": "Cais do Sodré, Lisbon, Portugal",
+        "incident_type": "Dooring a cyclist",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Rio",
+                "text": "I parked on the street. I was distracted talking to my passenger. I opened my driver's door to get out, and a cyclist riding in the bike lane crashed straight into it."
+            },
+            {
+                "role": "third_party_cyclist",
+                "vehicle": "Bicycle",
+                "text": "I was riding in the red bike lane. The driver threw the door open a split second before I passed. I hit the edge of the door, fell onto the road, and sprained my wrist."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "The insured is strictly liable for failing to check mirrors before opening a door into an active bike lane. Claim processed for the cyclist's medical bills and bicycle repair."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LEI-2026-207",
+        "location": "A8 Highway, Leiria, Portugal",
+        "incident_type": "Hydroplaning",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "It was pouring rain. I was driving at 100 km/h in the left lane. I hit a massive pool of water, the steering wheel went completely light, the car spun 180 degrees, and I slammed the rear into the concrete barrier."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Weather reports confirm extreme rainfall. Telemetry data shows rapid loss of traction consistent with hydroplaning. Heavy rear structural damage aligns with a spin-out. Valid own-damage claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-208",
+        "location": "Rua de Santa Catarina, Porto, Portugal",
+        "incident_type": "Reversing into pole",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Micra",
+                "text": "I was trying to parallel park in a very tight spot. I was looking over my left shoulder and completely missed the grey metal signpost on my right. I backed straight into it, smashing my right taillight."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Single vehicle accident. Paint transfer and damage profile match a vertical stationary pole. Approved for taillight and bumper repair under comprehensive cover."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-MAI-2026-209",
+        "location": "Zona Industrial da Maia, Portugal",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "connected parties",
+            "pre-existing salvage damage",
+            "lack of skid marks"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes E350",
+                "text": "I was driving through the industrial park at 2 AM. At an intersection, I didn't see the yield sign, and I T-boned a Range Rover at 60 km/h. Both our cars are completely destroyed."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Range Rover Sport",
+                "text": "I had the right of way. The Mercedes ran the yield sign and crushed my side. The car is definitely totaled."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. No police were called. There are zero skid marks or debris at the intersection. A social media sweep revealed the two drivers are brothers-in-law. VIN checks show both vehicles were bought at a salvage auction a month ago with this exact damage. Staged 'paper collision' to launder salvage vehicles. Denied and reported."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-210",
+        "location": "VCI Highway, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai Tucson",
+                "text": "I was moving from the left lane to the middle lane. I checked my rearview mirror, but a black Audi was cruising exactly in my blind spot. I scraped his entire left side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A6",
+                "text": "I was driving at 90 km/h in the middle lane. The Hyundai just merged right into me without looking. He scraped my doors and broke my side mirror."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles perfectly align with a lateral sideswipe at highway speeds. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-211",
+        "location": "IC20, Costa da Caparica, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Opel Corsa",
+                "text": "Traffic stopped suddenly heading to the beach. I stopped safely. Then I was rear-ended hard and pushed forward."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Renault Megane",
+                "text": "I stopped safely behind the Opel. Then a heavy SUV hit me from behind and sandwiched my car into the Opel."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Volvo XC90",
+                "text": "I was distracted adjusting the AC. When I looked up, traffic was halted. I slammed the brakes but rear-ended the Renault, pushing it into the Opel."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Classic 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Volvo driver for all damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-212",
+        "location": "A1 Toll Plaza, Carvalhos, Portugal",
+        "incident_type": "Toll barrier strike",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I drove through the Via Verde lane at 50 km/h. The light turned green, but the barrier arm malfunctioned and came down just as my car was passing under it. It shattered my windshield and dented the roof."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Toll operator (Brisa) provided video footage confirming a mechanical failure of the barrier arm, which descended onto a legally passing vehicle. The highway operator's liability insurance will cover the damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CAS-2026-213",
+        "location": "Avenida Marginal, Cascais, Portugal",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent paint transfer"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Punto",
+                "text": "A white van squeezed past me while I was parked and scraped my entire left side. It scratched the front door, deeply gouged the rear door, and ripped off my rear bumper completely."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Master (Van)",
+                "text": "I admit I got too close and my mirror scratched his front door. But his rear door was already rusted, and his bumper was literally held on with duct tape before I even got there."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Inspection confirms fresh white paint transfer only on the front door. The rear door gouge has deep rust (months old), and the rear bumper brackets show old dried mud and duct tape residue. Insured is bundling old damage into a minor mirror scrape. Only the front door repair is approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-214",
+        "location": "A2 Highway, Palmela, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model 3",
+                "text": "I was driving at 120 km/h behind a pickup truck. A large wooden pallet flew out of the bed of the truck, hit the asphalt, and bounced directly into my front bumper and hood."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Intercepted the truck 5 km down the highway. The driver was unaware he lost part of his cargo. The wood matches the pallets still in the truck. Driver cited for unsecured load."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Clear evidence of an unsecured load causing a collision. Liability rests entirely with the third-party truck's policy. Extensive front-end damage to the Tesla approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-215",
+        "location": "Bairro Alto, Lisbon, Portugal",
+        "incident_type": "Slipping on cobblestones",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForFour",
+                "text": "It was drizzling. I was turning a tight corner on the wet cobblestones (paralelepípedos) at 15 km/h. The tires just completely washed out. The car slid sideways and the wheels hit the high stone curb, snapping the front axle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Wet cobblestones significantly reduce traction. Insured lost control due to environmental factors. Damage profile matches a heavy lateral curb strike. Valid comprehensive claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-216",
+        "location": "N109, Figueira da Foz, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was driving at 60 km/h in the rain. There was a massive pothole filled with water, so it looked like normal road. I hit it extremely hard. It blew out my front right tire and cracked the alloy rim."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Measured an unmarked pothole 50cm wide and 12cm deep. Documented the hazard and notified Infraestruturas de Portugal. Three other cars were pulled over with blown tires."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Police report confirms the road defect. Severe tire and rim damage is consistent with the impact. Claim paid under own-damage coverage; subrogation will be pursued against the road authority."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-217",
+        "location": "Avenida dos Aliados, Porto, Portugal",
+        "incident_type": "Pedestrian crosswalk collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroen C4",
+                "text": "It was raining. A pedestrian stepped onto the zebra crossing while looking at his phone. I slammed the brakes, but the car skidded on the wet road and I bumped him. He fell over."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was on the marked crossing. The car was going too fast for the rain and slid into my legs. I fell and sprained my ankle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Pedestrians have strict right of way on marked crossings. The driver is liable for failing to approach the crossing at a safe speed for the weather conditions. Processing bodily injury claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-218",
+        "location": "Alfama, Lisbon, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "The street is extremely narrow. I was driving very slowly. An Uber came down the opposite way. The street was too tight, and our side mirrors smacked together and both shattered."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308 (Uber)",
+                "text": "Two cars barely fit on this street. We squeezed past each other, but it was too close. The mirrors hit. Nobody's fault really, just the reality of old Lisbon."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-219",
+        "location": "Montenegro, Faro, Portugal",
+        "incident_type": "Intersection collision (Right-hand rule)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Ceed",
+                "text": "At an unmarked cross-street, a car came from my right and I T-boned them. I assumed I had the right of way because I was on the wider road."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I approached from the right. There are no yield signs, so I had priority. The Kia blew through the intersection and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "In the absence of traffic signs, yielding to traffic approaching from the right is mandatory, regardless of road width. Insured failed to yield. Liability accepted. Heavy damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-220",
+        "location": "N125, Tavira, Portugal",
+        "incident_type": "Tractor collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "I was driving at 80 km/h. A tractor pulling a wide trailer pulled out of a dirt road directly across my lane. I slammed the brakes but hit the heavy iron trailer."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Massey Ferguson Tractor",
+                "text": "I was crossing the road to get to my field. I thought the car was further away. Tractors are slow, and I didn't make it across in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering a public road from a private path must yield to all traffic. Third-party tractor driver accepts full liability. Severe front-end damage to the Opel."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-221",
+        "location": "Rotunda do Almegue, Coimbra, Portugal",
+        "incident_type": "Roundabout collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Megane",
+                "text": "I was in the middle lane of the roundabout and signaled to exit. As I moved to the right lane, a small car that was going all the way around the roundabout in the outside lane crashed into my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat 500",
+                "text": "I was in the right lane taking the third exit. The Renault cut across my lane from the inside to take the second exit and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "According to Portuguese roundabout rules, the insured driver must be in the rightmost lane before their exit. Cutting across from an inner lane makes the insured 100% liable. Claim approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-222",
+        "location": "IC19, Amadora, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Leon",
+                "text": "Traffic on the IC19 suddenly came to a halt. I braked hard and stopped in time. A second later, a delivery van rear-ended me, smashing my trunk."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Citroen Berlingo",
+                "text": "I checked my side mirror for a second to see if I could change lanes. When I looked forward, the Seat was stopped dead. I couldn't brake in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third party admits distraction and failure to maintain a safe distance. Full liability accepted for the rear-end collision."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-223",
+        "location": "ArrabidaShopping, Vila Nova de Gaia, Portugal",
+        "incident_type": "Parking lot bump",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "mechanical claim from cosmetic impact"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "A woman backing out of her spot bumped my front bumper. It cracked the plastic, but worse, it completely ruined my steering rack and now the car pulls violently to the left. I need the whole steering system replaced."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I literally tapped his bumper at 1 km/h. There's barely a scratch on the paint. He got out and started complaining that his steering was broken."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Physical inspection shows a superficial 2cm scratch on the plastic bumper. A 1 km/h tap transfers no kinetic energy to the steering column or suspension. The steering issue is due to severely worn tie rods and a lack of maintenance. Insured is exaggerating to fix pre-existing mechanical issues. Denied mechanical claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALE-2026-224",
+        "location": "N122, Mértola, Portugal",
+        "incident_type": "Animal collision (Fox)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Hilux",
+                "text": "Driving at 80 km/h at night. A fox ran out of the bushes directly into my path. I hit it with my front left bumper, shattering the fog light and cracking the lower grille."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage profile is highly consistent with a small animal strike. Animal hair verified in the cracked bumper housing. Approved under comprehensive coverage for animal hazards."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-225",
+        "location": "Rua de Júlio Dinis, Porto, Portugal",
+        "incident_type": "Dooring a cyclist",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I parked my car and immediately opened the door to step out. I didn't check my mirror. A cyclist riding past crashed straight into the inside of my door."
+            },
+            {
+                "role": "third_party_cyclist",
+                "vehicle": "Bicycle",
+                "text": "I was riding next to the parked cars. The driver flung the door open right in front of me. I hit the door edge and flipped over the handlebars. I dislocated my shoulder."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "The insured is strictly liable for failing to ensure the road was clear before opening the door into traffic. Processing medical claims for the dislocated shoulder and bicycle repairs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SNT-2026-226",
+        "location": "A16 Highway, Sintra, Portugal",
+        "incident_type": "Aquaplaning",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A3",
+                "text": "It was raining very heavily. I was driving at 90 km/h when the car hit a large pool of standing water. The steering went completely numb, the car spun out, and the rear end smashed into the concrete divider."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Meteorological data confirms heavy rain. EDR telemetry confirms sudden loss of traction (hydroplaning). Heavy rear structural damage aligns with a spin-out. Valid own-damage claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CAS-2026-227",
+        "location": "A5 Highway, Cascais, Portugal",
+        "incident_type": "Swoop and Squat",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "staged accident",
+            "telematics mismatch",
+            "phantom vehicle",
+            "connected parties"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volvo XC40",
+                "text": "I was driving at 100 km/h. A black BMW overtook me, pulled aggressively into my lane, and slammed on its brakes for absolutely no reason. The highway was empty ahead. I rear-ended him, and all four people inside jumped out claiming severe neck injuries."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "BMW 320d",
+                "text": "A white van cut me off, so I had to do an emergency stop! The Volvo was tailgating me and smashed into my car. My passengers and I are severely injured."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. Dashcam footage from the insured shows no 'white van'. The BMW intentionally performed a swoop-and-squat brake check. Database check reveals the BMW passengers are related and have filed three similar bodily injury claims in the past two years. Claim denied, referred to criminal authorities."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-228",
+        "location": "Ponte do Freixo, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I was moving from the middle lane to the right lane. I checked my mirrors, but a small Smart car was completely hidden in my blind spot. I sideswiped him."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Smart ForTwo",
+                "text": "I was driving steadily in the right lane. The Hyundai just merged right into my driver-side doors without looking. I swerved slightly but couldn't avoid the hit."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles (lateral scraping) align with statements. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-229",
+        "location": "Continente Parking, Faro, Portugal",
+        "incident_type": "Reversing into pole",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 3008",
+                "text": "I was backing out of a parking spot and completely missed the low yellow concrete bollard protecting a shopping cart bay. I backed right into it, severely denting my tailgate."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Single-vehicle collision. Yellow concrete transfer on the crushed rear tailgate matches the bollards in the specified parking lot. Valid claim under comprehensive coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-230",
+        "location": "A2 Highway, Seixal, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Kia Ceed",
+                "text": "Traffic stopped abruptly. I braked hard and managed to stop safely. Then I was rear-ended very hard and pushed forward."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Ford Focus",
+                "text": "I stopped safely behind the Kia. Suddenly, a large van hit me from behind and sandwiched my car into the Kia."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Mercedes Sprinter (Van)",
+                "text": "I was distracted adjusting the GPS. When I looked up, traffic had halted. My van was fully loaded and I couldn't stop in time. I hit the Ford, which pushed it into the Kia."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Standard 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Sprinter van driver for all damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LEI-2026-231",
+        "location": "A8 Toll Plaza, Leiria, Portugal",
+        "incident_type": "Toll barrier strike",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "I drove through the Via Verde lane at 60 km/h. The tag beeped and the light turned green, but the barrier arm malfunctioned and came down early, hitting my windshield and roof."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Toll operator provided video footage confirming a mechanical failure of the barrier arm. The highway operator's liability insurance will cover the damages to the Dacia."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-232",
+        "location": "Avenida da República, Lisbon, Portugal",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent paint transfer"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Punto",
+                "text": "A delivery van squeezed past me while I was parked and scraped my entire left side. It scratched the front door, deeply gouged the rear door, and ripped off my rear bumper."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Iveco Daily",
+                "text": "I got too close and my mirror scratched his front door. But his rear door was already rusted, and his rear bumper was literally held on with zip ties before I even got there."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Inspection confirms fresh white paint transfer only on the front door. The rear door gouge has deep rust, and the rear bumper brackets show old zip ties. Insured is bundling old damage. Only the front door repair is approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-233",
+        "location": "A25 Highway, Aveiro, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model Y",
+                "text": "I was driving at 110 km/h behind a pickup truck. A wooden pallet flew out of the bed, hit the asphalt, and bounced directly into my front bumper and shattered my right headlight."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Intercepted the truck down the highway. Driver cited for unsecured load. The wood found at the scene matches the pallets in the truck."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Clear evidence of an unsecured load. Liability rests entirely with the third-party truck's commercial policy. Front-end damage to the Tesla approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-GMR-2026-234",
+        "location": "Centro Histórico, Guimarães, Portugal",
+        "incident_type": "Slipping on cobblestones",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForFour",
+                "text": "It was raining. I was turning a tight corner on the wet cobblestones at 15 km/h. The tires lost grip, the car slid sideways, and the wheels hit the high stone curb, snapping the front axle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Wet cobblestones significantly reduce traction. Damage profile matches a heavy lateral curb strike. Valid comprehensive claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-235",
+        "location": "N109, Figueira da Foz, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 320d",
+                "text": "I was driving at 70 km/h at night. I hit a massive unmarked pothole. It blew out my front right tire and cracked the alloy rim completely."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Measured a pothole 60cm wide and 15cm deep. Documented the hazard and notified the road authority. Several cars were damaged here tonight."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Police report confirms the road defect. Severe tire and rim damage is consistent. Claim paid under own-damage coverage; subrogation will be pursued against the road authority."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-236",
+        "location": "Avenida da Liberdade, Braga, Portugal",
+        "incident_type": "Pedestrian crosswalk collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "It was raining and dark. A pedestrian stepped onto the zebra crossing very suddenly. I slammed the brakes, but the car skidded on the wet road and I bumped his leg. He fell over."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was on the marked crossing. The car was going too fast for the rain and slid into my legs. I fell and sprained my ankle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Pedestrians have strict right of way on marked crossings. The driver is liable for failing to approach safely in wet conditions. Processing bodily injury claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-237",
+        "location": "Alfama, Lisbon, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "The street is extremely narrow. An Uber came down the opposite way. The street was too tight, and our side mirrors smacked together and both shattered."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308 (Uber)",
+                "text": "Two cars barely fit on this street. We squeezed past each other, but it was too close. The mirrors hit. Nobody's fault really, just the reality of old Lisbon streets."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-238",
+        "location": "Montenegro, Faro, Portugal",
+        "incident_type": "Intersection collision (Right-hand rule)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Ceed",
+                "text": "At an unmarked cross-street, a car came from my right and I T-boned them. I assumed I had the right of way because I was on the wider road."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I approached from the right. There are no yield signs, so I had priority. The Kia blew through the intersection and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "In the absence of traffic signs, yielding to traffic approaching from the right is mandatory. Insured failed to yield. Liability accepted. Heavy damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BEJ-2026-239",
+        "location": "N121, Beja, Portugal",
+        "incident_type": "Tractor collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Polo",
+                "text": "I was driving at 80 km/h. A tractor pulling a wide trailer pulled out of a dirt road directly across my lane. I slammed the brakes but hit the heavy iron trailer."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "John Deere Tractor",
+                "text": "I was crossing the road to get to my field. I thought the car was further away. Tractors are slow to accelerate, and I didn't make it across in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering a public road from a private path must yield to all traffic. Third-party tractor driver accepts full liability. Severe front-end damage to the VW."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-240",
+        "location": "Avenida 24 de Julho, Lisbon, Portugal",
+        "incident_type": "E-scooter mirror clip",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Yaris",
+                "text": "I was stopped at a red light in heavy traffic. A guy on a Bolt electric scooter was illegally weaving between the cars. He lost his balance slightly and his shoulder completely smashed off my left side mirror."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Bolt E-Scooter",
+                "text": "I was filtering through traffic. A car door opened slightly ahead, I swerved to avoid it, and accidentally clipped the mirror of the Toyota next to me. I stopped and gave my details."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Scooter rider admits fault for colliding with a stationary vehicle while attempting an unsafe maneuver. Liability accepted. Mirror replacement authorized."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VRL-2026-241",
+        "location": "IP4, Vila Real, Portugal",
+        "incident_type": "Black ice spin-out",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Leon",
+                "text": "It was 6:30 AM and freezing cold. I was driving at 70 km/h on the IP4. The road looked dry, but I hit a patch of black ice on a shaded curve. The car completely lost traction, spun twice, and slammed the rear passenger side into the guardrail."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Attended the scene. Verified the presence of invisible black ice on the roadway. Sand truck was requested. Several other minor incidents occurred in the same 1 km stretch this morning."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Environmental hazard confirmed by police. Single-vehicle loss of control due to black ice. Severe damage to the rear axle and right quarter panel. Valid claim under comprehensive."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-242",
+        "location": "Amoreiras, Lisbon, Portugal",
+        "incident_type": "Reversing into garbage bin",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mini Cooper",
+                "text": "I was parallel parking in the dark. I checked my mirrors, but a dark green municipal garbage bin was placed right on the edge of the street, completely in my blind spot. I backed into it and cracked my taillight and bumper."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Single-vehicle collision with a stationary object. Green plastic transfer visible on the cracked taillight housing. Approved for repair under comprehensive coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-243",
+        "location": "Rua de Cedofeita, Porto, Portugal",
+        "incident_type": "Pedestrian dooring",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Juke",
+                "text": "I parked on the street. I didn't see anyone, so I pushed my door open. A man who was jogging on the sidewalk right next to the parked cars ran straight into the edge of my door."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was running my morning route. The driver flung his door wide open across the sidewalk right as I approached. I hit my face on the window frame and got a bad cut on my forehead."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Driver is fully liable for ensuring it is safe to open a door, even if the person hit is a pedestrian on the sidewalk edge. Medical expenses for the laceration approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-244",
+        "location": "N125, Almancil, Portugal",
+        "incident_type": "Phantom vehicle / Run off road",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "phantom vehicle",
+            "telematics mismatch",
+            "lack of physical evidence",
+            "financial distress"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 420d",
+                "text": "I was driving at 60 km/h late at night. A white van coming the opposite way crossed the center line entirely. To avoid a head-on collision, I swerved hard into the ditch. My suspension is ruined. The van sped away."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. The vehicle's Event Data Recorder (EDR) shows the car was traveling at 130 km/h, not 60 km/h. Furthermore, the steering angle data shows no sudden evasive maneuver; the car simply drifted off the road smoothly while accelerating, indicating the driver likely fell asleep or was distracted while speeding. A background check shows the insured is trying to sell the car to pay off debts. Claim denied for misrepresentation and fraud."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-245",
+        "location": "Rotunda da Casa do Sal, Coimbra, Portugal",
+        "incident_type": "Roundabout exit cut-off",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "I was circulating in the outer right lane of the roundabout. A taxi that was in the inner lane suddenly turned right to exit, cutting completely across my hood. I braked but T-boned his side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes E-Class (Taxi)",
+                "text": "I needed to exit. The Peugeot was in my blind spot in the outer lane. I thought I had cleared him when I turned to exit. It was my fault for not changing to the outer lane earlier."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third party admits fault for executing an illegal exit from an inner lane, violating roundabout circulation rules. Liability is 100% on the taxi. Claim approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-246",
+        "location": "IC19, Cacém, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "unverifiable high-value items",
+            "inconsistent physical damage"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "I stopped for traffic. The guy behind me bumped my car. The bumper is barely scratched, but the jolt made my $800 Prada sunglasses fall off my head and they got crushed between the seat tracks when I moved my seat."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Clio",
+                "text": "I literally rolled into him at maybe 1 or 2 km/h. I apologized, but there is no damage to the cars. He started saying his designer glasses were broken because he got 'whiplashed'."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicle inspection shows zero structural deformation. A 2 km/h impact does not generate sufficient kinetic force to cause a person's head to snap forward ('whiplash') violently enough to throw sunglasses off their face. Insured is attempting to claim a previously broken item. Fraudulent property claim denied. Bumper polish approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-247",
+        "location": "A2 Highway, Seixal, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Fiat Tipo",
+                "text": "Traffic halted suddenly. I hit the brakes and stopped successfully. Then I was rear-ended very hard and pushed forward about two meters."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Opel Astra",
+                "text": "I managed to stop safely behind the Fiat. While I was stopped, a large SUV hit me from behind and sandwiched my car into the Fiat."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Volvo XC60",
+                "text": "I was distracted by a billboard. When I looked back at the road, traffic had stopped. My SUV is heavy and I couldn't stop in time. I hit the Opel, pushing it into the Fiat."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Standard 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Volvo driver for all damages to Car A and Car B."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-248",
+        "location": "Rua Rei Ramiro, Vila Nova de Gaia, Portugal",
+        "incident_type": "Pulling out of parking space",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I was pulling out of a parallel parking spot. I looked in my mirror, saw a car coming but thought I had enough time. I pulled out too slowly, and the passing car clipped my front left wing."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I was driving at 40 km/h. The Hyundai just pulled out from the curb right in front of me. I swerved but hit his front left side with my passenger side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering the flow of traffic from a parking space must yield. Insured driver misjudged the distance and speed of approaching traffic. Liability is 100% on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BEJ-2026-249",
+        "location": "N121, Ferreira do Alentejo, Portugal",
+        "incident_type": "Animal collision (Sheep)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was driving at 70 km/h. A flock of sheep suddenly crossed the road. The shepherd was trying to stop them, but one jumped right in front of my car. I braked but hit it, cracking my front bumper."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage is consistent with an animal strike. Wool and biological material found in the cracked bumper. Contacted the shepherd's agricultural liability insurance for subrogation, but processing the insured's vehicle under their comprehensive policy first."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-250",
+        "location": "Praça Marquês de Pombal, Lisbon, Portugal",
+        "incident_type": "Scooter hitting stationary vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was stopped at a red light in the roundabout. A tourist on a rental e-scooter was trying to weave between cars, lost his balance, and slammed his handlebar into my trunk, denting it."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Bolt E-Scooter",
+                "text": "Traffic was stopped. I tried to squeeze past the Seat, but the gap was too tight. I wobbled and my scooter hit his trunk. It's my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Scooter rider admits fault for failing to safely filter through stationary traffic. Liability is 100% on the third party. Trunk repair authorized."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-251",
+        "location": "Ponte da Arrábida, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volvo V60",
+                "text": "I was moving from the middle lane to the left lane on the bridge. I checked my mirrors, but a black Audi was cruising exactly in my blind spot. As I moved over, I scraped his entire right side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A4",
+                "text": "I was driving at 80 km/h in the left lane. The Volvo just merged right into my lane without indicating or checking. He scraped my doors and broke my side mirror."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles (continuous lateral scraping) align with statements. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SNT-2026-252",
+        "location": "Rua Visconde de Monserrate, Sintra, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Captur",
+                "text": "The street is very narrow with stone walls. I was driving slowly. A delivery van came down the opposite way. We tried to pass each other, but the street was too tight, and our side mirrors smacked together."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "It was a tight squeeze. We both kept moving, and our mirrors hit. Neither of us stopped to give way. It's a mutual fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CAS-2026-253",
+        "location": "CascaiShopping Parking, Portugal",
+        "incident_type": "Mutual reversing collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Sportage",
+                "text": "I checked my mirrors and started reversing out of my space. I heard a loud crunch. The car parked directly opposite me in the other row was backing out at the exact same time."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 208",
+                "text": "I was reversing slowly. I didn't see the other car until we hit center-bumper to center-bumper. We clearly just backed into each other simultaneously."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Classic mutual reversing incident. Both drivers failed to maintain situational awareness. Damages are symmetrical on both rear bumpers. Assigned 50/50 liability split."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LEI-2026-254",
+        "location": "N109, Leiria, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent physical wear"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes C220",
+                "text": "I hit a massive pothole in the rain. It blew out my front right tire and bent the rim. The impact was so hard it also bent my rear right rim and caused severe scraping on all my hubcaps."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Inspection confirms front right tire and rim damage from a pothole impact. However, the rear right rim is perfectly round, and the 'scraping' on the hubcaps is deep, oxidized curb rash from months of poor parking. Insured is attempting to claim a full set of new rims for pre-existing cosmetic damage. Approving only the front right wheel repair."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-255",
+        "location": "A25 Toll Plaza, Aveiro, Portugal",
+        "incident_type": "Toll barrier strike",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "I was entering the Via Verde lane at 50 km/h. The tag reader beeped and the light turned green, but the plastic barrier arm dropped prematurely and smashed my windshield."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Highway operator (Ascendi) provided logs confirming a sensor malfunction dropped the barrier on a legally passing vehicle. The operator's liability insurance will cover the windshield replacement."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-256",
+        "location": "Avenida Fontes Pereira de Melo, Lisbon, Portugal",
+        "incident_type": "Red light running",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroen C3",
+                "text": "I had a green light and proceeded into the intersection. Suddenly a van blew through their red light from the cross street and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Iveco Daily",
+                "text": "I was distracted by my GPS and completely missed the red light. I entered the intersection and crashed into the side of the Citroen. Entirely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to running a red light due to distraction. Insured driver had the right of way. 100% liability on the van. Heavy damage to the Citroen approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-257",
+        "location": "N125, Faro, Portugal",
+        "incident_type": "Rear-end (Sun glare)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "I was driving west just as the sun was setting. The glare was blinding. I didn't see the traffic light had turned red or the car stopped in front of me until it was too late. I rear-ended them at 30 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Focus",
+                "text": "I was stopped at the red light. The car behind me just plowed into my rear bumper without braking. The driver apologized, saying the sun blinded him."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Sun glare is a hazard, but drivers must adjust their speed to maintain stopping distance. The insured is fully liable for rear-ending a stationary vehicle. Claim approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-258",
+        "location": "Rua Sá da Bandeira, Porto, Portugal",
+        "incident_type": "Reversing into pedestrian",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 520d",
+                "text": "I was parallel parking, reversing very slowly. The parking sensors didn't pick up a pedestrian crossing the street behind my car. I tapped his leg at 2 km/h. He fell and bruised his knee."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was crossing the street between parked cars. The BMW reversed without looking and bumped my leg. I fell on the cobblestones and hurt my knee."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Driver is fully liable for failing to ensure the path was clear while reversing. Minor bodily injury. Medical evaluation and treatment costs approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-259",
+        "location": "Avenida da Liberdade, Braga, Portugal",
+        "incident_type": "Side-swipe from parked position",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Megane",
+                "text": "I was pulling out of a parallel parking spot. I looked in my mirror, saw a car coming but thought I had enough time. I pulled out too slowly, and the passing car clipped my front left wing."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Seat Leon",
+                "text": "I was driving at 40 km/h. The Renault just pulled out from the curb right in front of me. I swerved but hit his front left side with my passenger side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering the flow of traffic from a parking space must yield. Insured driver misjudged the distance and speed of approaching traffic. Liability is 100% on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VCI-2026-260",
+        "location": "VCI Highway, Porto, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "I was driving at 90 km/h behind a dump truck. A large rock bounced out of its open bed, hit the asphalt, and flew directly into my windshield, creating a massive spiderweb crack."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Intercepted the truck down the highway. Driver cited for unsecured load/failing to cover cargo. The rock type matches the gravel in the truck's bed."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Clear evidence of an unsecured load causing damage. Liability rests entirely with the third-party truck's commercial policy. Windshield replacement approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-261",
+        "location": "Avenida da República, Lisbon, Portugal",
+        "incident_type": "Reverse Squat at Traffic Light",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "staged accident",
+            "inconsistent physics",
+            "dashcam contradiction",
+            "aggressive behavior"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was stopped at a red light. The car in front of me suddenly put it in reverse and slammed the gas, backing right into my front bumper. Two huge guys got out, started screaming at me that I rear-ended them, and demanded cash on the spot to not call the police."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "BMW 320d",
+                "text": "I was waiting at the red light. The driver behind me wasn't paying attention and rear-ended me very hard. My neck hurts and my rear bumper is destroyed. I want his insurance to pay for everything."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. Classic 'reverse squat' extortion attempt. The insured driver's dashcam clearly shows the third-party BMW's reverse lights illuminating before accelerating backward into the stationary Renault. Fraudulent claim denied, and footage has been handed over to the PSP (police) for attempted extortion."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VRL-2026-262",
+        "location": "Vila Real, Portugal",
+        "incident_type": "Hailstorm damage",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent physical wear"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "There was a massive hailstorm yesterday. The hail completely ruined the roof and hood of my car. There are dozens of deep dents everywhere. I need a full body repair."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Meteorological records confirm a brief, mild hailstorm. However, inspection of the vehicle reveals that the dents on the roof and hood contain deep micro-scratches and significant rust inside the depressions. This is consistent with the car being parked under a chestnut or oak tree for months, receiving damage from falling nuts over a long period. Insured is attempting to use a recent minor weather event to claim long-term pre-existing damage. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-263",
+        "location": "NorteShopping Parking, Matosinhos, Portugal",
+        "incident_type": "Parking lot bump",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "emotional language",
+            "inconsistent injuries",
+            "minor impact"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "A woman backed into my car while I was parked. It barely made a sound and left a microscopic scratch on my plastic bumper. I told her not to worry about it, but suddenly she claimed she had severe whiplash and PTSD from the 'brutal impact'."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Smart ForTwo",
+                "text": "I was reversing and hit the Fiat. The impact was incredibly violent. My spine snapped back. I am in excruciating pain, I cannot sleep, and I have severe trauma preventing me from driving. I need massive compensation."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Biomechanically impossible claim. The impact occurred at less than 2 km/h. There is zero structural deformation to either vehicle. A collision of this magnitude generates less force than sitting down heavily in a chair. The third party is grossly exaggerating to fabricate a bodily injury claim. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-264",
+        "location": "EN125, Vilamoura, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was stopped at a crosswalk to let a family pass. The driver behind me didn't notice I had stopped and crashed into my trunk at about 30 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "I dropped my sunglasses and looked down for a second. When I looked up, the Golf was stationary. I slammed the brakes but hit him hard. Completely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third party admits full liability for distraction and failing to maintain a safe braking distance. Substantial damage to the rear of the VW Golf approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-265",
+        "location": "Rotunda da Praça da República, Coimbra, Portugal",
+        "incident_type": "Roundabout failure to yield",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was already circulating inside the roundabout. A delivery van approached the entrance, ignored the yield sign, and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Trafic",
+                "text": "I looked left and thought I had enough time to enter the roundabout. I misjudged the speed of the Seat and clipped their side. My mistake."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles inside the roundabout have the right of way. Third-party driver misjudged the gap and failed to yield. 100% liability on the van. Repair claim processed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SNT-2026-266",
+        "location": "IC19 Highway, Sintra, Portugal",
+        "incident_type": "Merging collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was entering the IC19 from an acceleration lane. I tried to merge, but there was a heavy truck in the right lane. I ran out of ramp, panicked, and forced my way in, scraping against the truck's wheels."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volvo FH16 (Truck)",
+                "text": "I was driving at 80 km/h in the right lane. The car trying to merge ran out of space. Instead of stopping, he forced his car against my trailer. Trucks cannot swerve or brake suddenly."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering from an on-ramp must yield to highway traffic. Insured driver admits to forcing the merge when it wasn't safe. 100% liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-267",
+        "location": "N109, Aveiro, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model Y",
+                "text": "I was driving at 90 km/h. A large piece of blown-out tire tread from a truck ahead flew up into the air and smashed my right headlight and dented the hood."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Dashcam footage provided by the insured confirms a large piece of road debris striking the vehicle. The truck it came from could not be identified. Valid claim under comprehensive own-damage coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-268",
+        "location": "Avenida 24 de Julho, Lisbon, Portugal",
+        "incident_type": "Dooring a cyclist",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Corolla",
+                "text": "I parallel parked on the street. I was distracted checking my phone, opened my door to step out, and a cyclist crashed straight into the inside of my door."
+            },
+            {
+                "role": "third_party_cyclist",
+                "vehicle": "Bicycle",
+                "text": "I was riding in the bike lane at 25 km/h. The driver flung the door open violently right into my path. I hit the edge of the door, fell over, and broke my collarbone."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "The insured is strictly liable for failing to ensure the road was clear before opening a door into traffic. Processing medical claims for the broken collarbone and bicycle repairs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-269",
+        "location": "Ponte da Arrábida, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I was moving from the middle lane to the left lane. I checked my mirror, but a black Audi was cruising exactly in my blind spot. As I moved over, I scraped his entire right side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A4",
+                "text": "I was driving at 80 km/h in the left lane. The Nissan just merged right into my lane without indicating. He scraped my doors and broke my side mirror."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles perfectly align with a lateral sideswipe at highway speeds. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-270",
+        "location": "A2 Highway, Palmela, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Kia Ceed",
+                "text": "Traffic stopped abruptly. I braked hard and managed to stop safely. Then I was rear-ended very hard and pushed forward."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Ford Focus",
+                "text": "I stopped safely behind the Kia. Suddenly, a large van hit me from behind and sandwiched my car into the Kia."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Mercedes Sprinter (Van)",
+                "text": "I was distracted adjusting the GPS. When I looked up, traffic had halted. My van was fully loaded and I couldn't stop in time. I hit the Ford, which pushed it into the Kia."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Standard 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Sprinter van driver for all damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BEJ-2026-271",
+        "location": "N121, Beja, Portugal",
+        "incident_type": "Tractor collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Polo",
+                "text": "I was driving at 80 km/h. A tractor pulling a wide trailer pulled out of a dirt road directly across my lane. I slammed the brakes but hit the heavy iron trailer."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "John Deere Tractor",
+                "text": "I was crossing the road to get to my field. I thought the car was further away. Tractors are slow to accelerate, and I didn't make it across in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering a public road from a private path must yield to all traffic. Third-party tractor driver accepts full liability. Severe front-end damage to the VW."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-272",
+        "location": "GaiaShopping Parking, Vila Nova de Gaia, Portugal",
+        "incident_type": "Mutual reversing collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I checked my mirrors and started reversing out of my space. I heard a loud crunch. The car parked directly opposite me in the other row was backing out at the exact same time."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Megane",
+                "text": "I was reversing out slowly. I didn't see the other car until we hit center-bumper to center-bumper. We clearly just backed into each other simultaneously."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Classic mutual reversing incident. Both drivers failed to maintain situational awareness. Damages are symmetrical on both rear bumpers. Assigned 50/50 liability split."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-273",
+        "location": "Alfama, Lisbon, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "The street is extremely narrow. An Uber came down the opposite way. The street was too tight, and our side mirrors smacked together and both shattered."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308 (Uber)",
+                "text": "Two cars barely fit on this street. We squeezed past each other, but it was too close. The mirrors hit. Nobody's fault really, just the reality of old Lisbon streets."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-274",
+        "location": "N109, Figueira da Foz, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was driving at 70 km/h at night. I hit a massive unmarked pothole. It blew out my front right tire and cracked the alloy rim completely."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Measured a pothole 60cm wide and 15cm deep. Documented the hazard and notified the road authority. Several cars were damaged here tonight."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Police report confirms the road defect. Severe tire and rim damage is consistent. Claim paid under own-damage coverage; subrogation will be pursued against the road authority."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-275",
+        "location": "Avenida da Liberdade, Braga, Portugal",
+        "incident_type": "Pedestrian crosswalk collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "It was raining and dark. A pedestrian stepped onto the zebra crossing very suddenly. I slammed the brakes, but the car skidded on the wet road and I bumped his leg. He fell over."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was on the marked crossing. The car was going too fast for the rain and slid into my legs. I fell and sprained my ankle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Pedestrians have strict right of way on marked crossings. The driver is liable for failing to approach safely in wet conditions. Processing bodily injury claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-276",
+        "location": "Montenegro, Faro, Portugal",
+        "incident_type": "Intersection collision (Right-hand rule)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Ceed",
+                "text": "At an unmarked cross-street, a car came from my right and I T-boned them. I assumed I had the right of way because I was on the wider road."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I approached from the right. There are no yield signs, so I had priority. The Kia blew through the intersection and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "In the absence of traffic signs, yielding to traffic approaching from the right is mandatory. Insured failed to yield. Liability accepted. Heavy damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-GMR-2026-277",
+        "location": "Centro Histórico, Guimarães, Portugal",
+        "incident_type": "Slipping on cobblestones",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForFour",
+                "text": "It was raining. I was turning a tight corner on the wet cobblestones at 15 km/h. The tires lost grip, the car slid sideways, and the wheels hit the high stone curb, snapping the front axle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Wet cobblestones significantly reduce traction. Damage profile matches a heavy lateral curb strike. Valid comprehensive claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALE-2026-278",
+        "location": "N122, Mértola, Portugal",
+        "incident_type": "Animal collision (Wild Boar)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Hilux",
+                "text": "Driving at 80 km/h at night. A huge wild boar ran out of the bushes directly into my path. I hit it with my front bumper, shattering the grille and deploying the airbags."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage profile is highly consistent with a heavy animal strike. Animal hair verified in the cracked bumper housing. Approved under comprehensive coverage for animal hazards."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-279",
+        "location": "Avenida Fontes Pereira de Melo, Lisbon, Portugal",
+        "incident_type": "Red light running",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroen C3",
+                "text": "I had a green light and proceeded into the intersection. Suddenly a van blew through their red light from the cross street and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Iveco Daily",
+                "text": "I was distracted by my GPS and completely missed the red light. I entered the intersection and crashed into the side of the Citroen. Entirely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to running a red light due to distraction. Insured driver had the right of way. 100% liability on the van. Heavy damage to the Citroen approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-280",
+        "location": "Avenida da Boavista, Porto, Portugal",
+        "incident_type": "Rear-end at red light",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was completely stopped at a red traffic light. A delivery van just slammed into the back of my car without even braking."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "I dropped my delivery manifest on the passenger floor. I reached down to grab it. When I looked up, the Golf was right there. I hit him at about 40 km/h."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to severe distraction and failing to stop at a red light. Rear of the VW Golf is heavily damaged. 100% liability on the van."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-261",
+        "location": "Avenida da República, Lisbon, Portugal",
+        "incident_type": "Reverse Squat at Traffic Light",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "staged accident",
+            "inconsistent physics",
+            "dashcam contradiction",
+            "aggressive behavior"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was stopped at a red light. The car in front of me suddenly put it in reverse and slammed the gas, backing right into my front bumper. Two huge guys got out, started screaming at me that I rear-ended them, and demanded cash on the spot to not call the police."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "BMW 320d",
+                "text": "I was waiting at the red light. The driver behind me wasn't paying attention and rear-ended me very hard. My neck hurts and my rear bumper is destroyed. I want his insurance to pay for everything."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. Classic 'reverse squat' extortion attempt. The insured driver's dashcam clearly shows the third-party BMW's reverse lights illuminating before accelerating backward into the stationary Renault. Fraudulent claim denied, and footage has been handed over to the PSP (police) for attempted extortion."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VRL-2026-262",
+        "location": "Vila Real, Portugal",
+        "incident_type": "Hailstorm damage",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent physical wear"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "There was a massive hailstorm yesterday. The hail completely ruined the roof and hood of my car. There are dozens of deep dents everywhere. I need a full body repair."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Meteorological records confirm a brief, mild hailstorm. However, inspection of the vehicle reveals that the dents on the roof and hood contain deep micro-scratches and significant rust inside the depressions. This is consistent with the car being parked under a chestnut or oak tree for months, receiving damage from falling nuts over a long period. Insured is attempting to use a recent minor weather event to claim long-term pre-existing damage. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-263",
+        "location": "NorteShopping Parking, Matosinhos, Portugal",
+        "incident_type": "Parking lot bump",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "emotional language",
+            "inconsistent injuries",
+            "minor impact"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "A woman backed into my car while I was parked. It barely made a sound and left a microscopic scratch on my plastic bumper. I told her not to worry about it, but suddenly she claimed she had severe whiplash and PTSD from the 'brutal impact'."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Smart ForTwo",
+                "text": "I was reversing and hit the Fiat. The impact was incredibly violent. My spine snapped back. I am in excruciating pain, I cannot sleep, and I have severe trauma preventing me from driving. I need massive compensation."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Biomechanically impossible claim. The impact occurred at less than 2 km/h. There is zero structural deformation to either vehicle. A collision of this magnitude generates less force than sitting down heavily in a chair. The third party is grossly exaggerating to fabricate a bodily injury claim. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-264",
+        "location": "EN125, Vilamoura, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was stopped at a crosswalk to let a family pass. The driver behind me didn't notice I had stopped and crashed into my trunk at about 30 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "I dropped my sunglasses and looked down for a second. When I looked up, the Golf was stationary. I slammed the brakes but hit him hard. Completely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third party admits full liability for distraction and failing to maintain a safe braking distance. Substantial damage to the rear of the VW Golf approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-265",
+        "location": "Rotunda da Praça da República, Coimbra, Portugal",
+        "incident_type": "Roundabout failure to yield",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was already circulating inside the roundabout. A delivery van approached the entrance, ignored the yield sign, and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Trafic",
+                "text": "I looked left and thought I had enough time to enter the roundabout. I misjudged the speed of the Seat and clipped their side. My mistake."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles inside the roundabout have the right of way. Third-party driver misjudged the gap and failed to yield. 100% liability on the van. Repair claim processed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SNT-2026-266",
+        "location": "IC19 Highway, Sintra, Portugal",
+        "incident_type": "Merging collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was entering the IC19 from an acceleration lane. I tried to merge, but there was a heavy truck in the right lane. I ran out of ramp, panicked, and forced my way in, scraping against the truck's wheels."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volvo FH16 (Truck)",
+                "text": "I was driving at 80 km/h in the right lane. The car trying to merge ran out of space. Instead of stopping, he forced his car against my trailer. Trucks cannot swerve or brake suddenly."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering from an on-ramp must yield to highway traffic. Insured driver admits to forcing the merge when it wasn't safe. 100% liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-267",
+        "location": "N109, Aveiro, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model Y",
+                "text": "I was driving at 90 km/h. A large piece of blown-out tire tread from a truck ahead flew up into the air and smashed my right headlight and dented the hood."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Dashcam footage provided by the insured confirms a large piece of road debris striking the vehicle. The truck it came from could not be identified. Valid claim under comprehensive own-damage coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-268",
+        "location": "Avenida 24 de Julho, Lisbon, Portugal",
+        "incident_type": "Dooring a cyclist",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Corolla",
+                "text": "I parallel parked on the street. I was distracted checking my phone, opened my door to step out, and a cyclist crashed straight into the inside of my door."
+            },
+            {
+                "role": "third_party_cyclist",
+                "vehicle": "Bicycle",
+                "text": "I was riding in the bike lane at 25 km/h. The driver flung the door open violently right into my path. I hit the edge of the door, fell over, and broke my collarbone."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "The insured is strictly liable for failing to ensure the road was clear before opening a door into traffic. Processing medical claims for the broken collarbone and bicycle repairs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-269",
+        "location": "Ponte da Arrábida, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I was moving from the middle lane to the left lane. I checked my mirror, but a black Audi was cruising exactly in my blind spot. As I moved over, I scraped his entire right side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A4",
+                "text": "I was driving at 80 km/h in the left lane. The Nissan just merged right into my lane without indicating. He scraped my doors and broke my side mirror."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles perfectly align with a lateral sideswipe at highway speeds. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-270",
+        "location": "A2 Highway, Palmela, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Kia Ceed",
+                "text": "Traffic stopped abruptly. I braked hard and managed to stop safely. Then I was rear-ended very hard and pushed forward."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Ford Focus",
+                "text": "I stopped safely behind the Kia. Suddenly, a large van hit me from behind and sandwiched my car into the Kia."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Mercedes Sprinter (Van)",
+                "text": "I was distracted adjusting the GPS. When I looked up, traffic had halted. My van was fully loaded and I couldn't stop in time. I hit the Ford, which pushed it into the Kia."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Standard 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Sprinter van driver for all damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BEJ-2026-271",
+        "location": "N121, Beja, Portugal",
+        "incident_type": "Tractor collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Polo",
+                "text": "I was driving at 80 km/h. A tractor pulling a wide trailer pulled out of a dirt road directly across my lane. I slammed the brakes but hit the heavy iron trailer."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "John Deere Tractor",
+                "text": "I was crossing the road to get to my field. I thought the car was further away. Tractors are slow to accelerate, and I didn't make it across in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering a public road from a private path must yield to all traffic. Third-party tractor driver accepts full liability. Severe front-end damage to the VW."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-272",
+        "location": "GaiaShopping Parking, Vila Nova de Gaia, Portugal",
+        "incident_type": "Mutual reversing collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I checked my mirrors and started reversing out of my space. I heard a loud crunch. The car parked directly opposite me in the other row was backing out at the exact same time."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Megane",
+                "text": "I was reversing out slowly. I didn't see the other car until we hit center-bumper to center-bumper. We clearly just backed into each other simultaneously."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Classic mutual reversing incident. Both drivers failed to maintain situational awareness. Damages are symmetrical on both rear bumpers. Assigned 50/50 liability split."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-273",
+        "location": "Alfama, Lisbon, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "The street is extremely narrow. An Uber came down the opposite way. The street was too tight, and our side mirrors smacked together and both shattered."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308 (Uber)",
+                "text": "Two cars barely fit on this street. We squeezed past each other, but it was too close. The mirrors hit. Nobody's fault really, just the reality of old Lisbon streets."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-274",
+        "location": "N109, Figueira da Foz, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was driving at 70 km/h at night. I hit a massive unmarked pothole. It blew out my front right tire and cracked the alloy rim completely."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Measured a pothole 60cm wide and 15cm deep. Documented the hazard and notified the road authority. Several cars were damaged here tonight."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Police report confirms the road defect. Severe tire and rim damage is consistent. Claim paid under own-damage coverage; subrogation will be pursued against the road authority."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-275",
+        "location": "Avenida da Liberdade, Braga, Portugal",
+        "incident_type": "Pedestrian crosswalk collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "It was raining and dark. A pedestrian stepped onto the zebra crossing very suddenly. I slammed the brakes, but the car skidded on the wet road and I bumped his leg. He fell over."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was on the marked crossing. The car was going too fast for the rain and slid into my legs. I fell and sprained my ankle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Pedestrians have strict right of way on marked crossings. The driver is liable for failing to approach safely in wet conditions. Processing bodily injury claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-276",
+        "location": "Montenegro, Faro, Portugal",
+        "incident_type": "Intersection collision (Right-hand rule)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Ceed",
+                "text": "At an unmarked cross-street, a car came from my right and I T-boned them. I assumed I had the right of way because I was on the wider road."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I approached from the right. There are no yield signs, so I had priority. The Kia blew through the intersection and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "In the absence of traffic signs, yielding to traffic approaching from the right is mandatory. Insured failed to yield. Liability accepted. Heavy damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-GMR-2026-277",
+        "location": "Centro Histórico, Guimarães, Portugal",
+        "incident_type": "Slipping on cobblestones",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForFour",
+                "text": "It was raining. I was turning a tight corner on the wet cobblestones at 15 km/h. The tires lost grip, the car slid sideways, and the wheels hit the high stone curb, snapping the front axle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Wet cobblestones significantly reduce traction. Damage profile matches a heavy lateral curb strike. Valid comprehensive claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALE-2026-278",
+        "location": "N122, Mértola, Portugal",
+        "incident_type": "Animal collision (Wild Boar)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Hilux",
+                "text": "Driving at 80 km/h at night. A huge wild boar ran out of the bushes directly into my path. I hit it with my front bumper, shattering the grille and deploying the airbags."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage profile is highly consistent with a heavy animal strike. Animal hair verified in the cracked bumper housing. Approved under comprehensive coverage for animal hazards."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-279",
+        "location": "Avenida Fontes Pereira de Melo, Lisbon, Portugal",
+        "incident_type": "Red light running",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroen C3",
+                "text": "I had a green light and proceeded into the intersection. Suddenly a van blew through their red light from the cross street and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Iveco Daily",
+                "text": "I was distracted by my GPS and completely missed the red light. I entered the intersection and crashed into the side of the Citroen. Entirely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to running a red light due to distraction. Insured driver had the right of way. 100% liability on the van. Heavy damage to the Citroen approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-280",
+        "location": "Avenida da Boavista, Porto, Portugal",
+        "incident_type": "Rear-end at red light",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was completely stopped at a red traffic light. A delivery van just slammed into the back of my car without even braking."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "I dropped my delivery manifest on the passenger floor. I reached down to grab it. When I looked up, the Golf was right there. I hit him at about 40 km/h."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to severe distraction and failing to stop at a red light. Rear of the VW Golf is heavily damaged. 100% liability on the van."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-261",
+        "location": "Avenida da República, Lisbon, Portugal",
+        "incident_type": "Reverse Squat at Traffic Light",
+        "ground_truth_label": "hard_fraud_staged",
+        "fraud_indicators": [
+            "staged accident",
+            "inconsistent physics",
+            "dashcam contradiction",
+            "aggressive behavior"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was stopped at a red light. The car in front of me suddenly put it in reverse and slammed the gas, backing right into my front bumper. Two huge guys got out, started screaming at me that I rear-ended them, and demanded cash on the spot to not call the police."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "BMW 320d",
+                "text": "I was waiting at the red light. The driver behind me wasn't paying attention and rear-ended me very hard. My neck hurts and my rear bumper is destroyed. I want his insurance to pay for everything."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "SIU Investigation. Classic 'reverse squat' extortion attempt. The insured driver's dashcam clearly shows the third-party BMW's reverse lights illuminating before accelerating backward into the stationary Renault. Fraudulent claim denied, and footage has been handed over to the PSP (police) for attempted extortion."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VRL-2026-262",
+        "location": "Vila Real, Portugal",
+        "incident_type": "Hailstorm damage",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "pre-existing damage",
+            "inconsistent physical wear"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "There was a massive hailstorm yesterday. The hail completely ruined the roof and hood of my car. There are dozens of deep dents everywhere. I need a full body repair."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Meteorological records confirm a brief, mild hailstorm. However, inspection of the vehicle reveals that the dents on the roof and hood contain deep micro-scratches and significant rust inside the depressions. This is consistent with the car being parked under a chestnut or oak tree for months, receiving damage from falling nuts over a long period. Insured is attempting to use a recent minor weather event to claim long-term pre-existing damage. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-263",
+        "location": "NorteShopping Parking, Matosinhos, Portugal",
+        "incident_type": "Parking lot bump",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "fraud_indicators": [
+            "emotional language",
+            "inconsistent injuries",
+            "minor impact"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "A woman backed into my car while I was parked. It barely made a sound and left a microscopic scratch on my plastic bumper. I told her not to worry about it, but suddenly she claimed she had severe whiplash and PTSD from the 'brutal impact'."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Smart ForTwo",
+                "text": "I was reversing and hit the Fiat. The impact was incredibly violent. My spine snapped back. I am in excruciating pain, I cannot sleep, and I have severe trauma preventing me from driving. I need massive compensation."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Biomechanically impossible claim. The impact occurred at less than 2 km/h. There is zero structural deformation to either vehicle. A collision of this magnitude generates less force than sitting down heavily in a chair. The third party is grossly exaggerating to fabricate a bodily injury claim. Denied."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-264",
+        "location": "EN125, Vilamoura, Portugal",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was stopped at a crosswalk to let a family pass. The driver behind me didn't notice I had stopped and crashed into my trunk at about 30 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "I dropped my sunglasses and looked down for a second. When I looked up, the Golf was stationary. I slammed the brakes but hit him hard. Completely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third party admits full liability for distraction and failing to maintain a safe braking distance. Substantial damage to the rear of the VW Golf approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-265",
+        "location": "Rotunda da Praça da República, Coimbra, Portugal",
+        "incident_type": "Roundabout failure to yield",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was already circulating inside the roundabout. A delivery van approached the entrance, ignored the yield sign, and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Trafic",
+                "text": "I looked left and thought I had enough time to enter the roundabout. I misjudged the speed of the Seat and clipped their side. My mistake."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles inside the roundabout have the right of way. Third-party driver misjudged the gap and failed to yield. 100% liability on the van. Repair claim processed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SNT-2026-266",
+        "location": "IC19 Highway, Sintra, Portugal",
+        "incident_type": "Merging collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was entering the IC19 from an acceleration lane. I tried to merge, but there was a heavy truck in the right lane. I ran out of ramp, panicked, and forced my way in, scraping against the truck's wheels."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volvo FH16 (Truck)",
+                "text": "I was driving at 80 km/h in the right lane. The car trying to merge ran out of space. Instead of stopping, he forced his car against my trailer. Trucks cannot swerve or brake suddenly."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering from an on-ramp must yield to highway traffic. Insured driver admits to forcing the merge when it wasn't safe. 100% liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-267",
+        "location": "N109, Aveiro, Portugal",
+        "incident_type": "Debris striking vehicle",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model Y",
+                "text": "I was driving at 90 km/h. A large piece of blown-out tire tread from a truck ahead flew up into the air and smashed my right headlight and dented the hood."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Dashcam footage provided by the insured confirms a large piece of road debris striking the vehicle. The truck it came from could not be identified. Valid claim under comprehensive own-damage coverage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-268",
+        "location": "Avenida 24 de Julho, Lisbon, Portugal",
+        "incident_type": "Dooring a cyclist",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Corolla",
+                "text": "I parallel parked on the street. I was distracted checking my phone, opened my door to step out, and a cyclist crashed straight into the inside of my door."
+            },
+            {
+                "role": "third_party_cyclist",
+                "vehicle": "Bicycle",
+                "text": "I was riding in the bike lane at 25 km/h. The driver flung the door open violently right into my path. I hit the edge of the door, fell over, and broke my collarbone."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "The insured is strictly liable for failing to ensure the road was clear before opening a door into traffic. Processing medical claims for the broken collarbone and bicycle repairs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-269",
+        "location": "Ponte da Arrábida, Porto, Portugal",
+        "incident_type": "Blind spot lane change",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I was moving from the middle lane to the left lane. I checked my mirror, but a black Audi was cruising exactly in my blind spot. As I moved over, I scraped his entire right side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A4",
+                "text": "I was driving at 80 km/h in the left lane. The Nissan just merged right into my lane without indicating. He scraped my doors and broke my side mirror."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Insured initiated a lane change without ensuring a clear path. Damage profiles perfectly align with a lateral sideswipe at highway speeds. Full liability on the insured."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-270",
+        "location": "A2 Highway, Palmela, Portugal",
+        "incident_type": "Chain collision (3 cars)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "driver_car_a",
+                "vehicle": "Kia Ceed",
+                "text": "Traffic stopped abruptly. I braked hard and managed to stop safely. Then I was rear-ended very hard and pushed forward."
+            },
+            {
+                "role": "driver_car_b",
+                "vehicle": "Ford Focus",
+                "text": "I stopped safely behind the Kia. Suddenly, a large van hit me from behind and sandwiched my car into the Kia."
+            },
+            {
+                "role": "third_party_driver_c",
+                "vehicle": "Mercedes Sprinter (Van)",
+                "text": "I was distracted adjusting the GPS. When I looked up, traffic had halted. My van was fully loaded and I couldn't stop in time. I hit the Ford, which pushed it into the Kia."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Standard 3-vehicle chain collision. Driver C admits distraction and failure to stop. 100% liability lies with the Sprinter van driver for all damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BEJ-2026-271",
+        "location": "N121, Beja, Portugal",
+        "incident_type": "Tractor collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Polo",
+                "text": "I was driving at 80 km/h. A tractor pulling a wide trailer pulled out of a dirt road directly across my lane. I slammed the brakes but hit the heavy iron trailer."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "John Deere Tractor",
+                "text": "I was crossing the road to get to my field. I thought the car was further away. Tractors are slow to accelerate, and I didn't make it across in time."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Vehicles entering a public road from a private path must yield to all traffic. Third-party tractor driver accepts full liability. Severe front-end damage to the VW."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VNG-2026-272",
+        "location": "GaiaShopping Parking, Vila Nova de Gaia, Portugal",
+        "incident_type": "Mutual reversing collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I checked my mirrors and started reversing out of my space. I heard a loud crunch. The car parked directly opposite me in the other row was backing out at the exact same time."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Megane",
+                "text": "I was reversing out slowly. I didn't see the other car until we hit center-bumper to center-bumper. We clearly just backed into each other simultaneously."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Classic mutual reversing incident. Both drivers failed to maintain situational awareness. Damages are symmetrical on both rear bumpers. Assigned 50/50 liability split."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-273",
+        "location": "Alfama, Lisbon, Portugal",
+        "incident_type": "Mirror collision on narrow street",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "The street is extremely narrow. An Uber came down the opposite way. The street was too tight, and our side mirrors smacked together and both shattered."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308 (Uber)",
+                "text": "Two cars barely fit on this street. We squeezed past each other, but it was too close. The mirrors hit. Nobody's fault really, just the reality of old Lisbon streets."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Mutual fault mirror collision on a narrow historical street. Both drivers share 50% of the liability. Claim settled for mirror replacement costs."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-274",
+        "location": "N109, Figueira da Foz, Portugal",
+        "incident_type": "Pothole damage",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 116d",
+                "text": "I was driving at 70 km/h at night. I hit a massive unmarked pothole. It blew out my front right tire and cracked the alloy rim completely."
+            },
+            {
+                "role": "police_officer",
+                "vehicle": "none",
+                "text": "Measured a pothole 60cm wide and 15cm deep. Documented the hazard and notified the road authority. Several cars were damaged here tonight."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Police report confirms the road defect. Severe tire and rim damage is consistent. Claim paid under own-damage coverage; subrogation will be pursued against the road authority."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-275",
+        "location": "Avenida da Liberdade, Braga, Portugal",
+        "incident_type": "Pedestrian crosswalk collision",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "It was raining and dark. A pedestrian stepped onto the zebra crossing very suddenly. I slammed the brakes, but the car skidded on the wet road and I bumped his leg. He fell over."
+            },
+            {
+                "role": "third_party_pedestrian",
+                "vehicle": "none",
+                "text": "I was on the marked crossing. The car was going too fast for the rain and slid into my legs. I fell and sprained my ankle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Pedestrians have strict right of way on marked crossings. The driver is liable for failing to approach safely in wet conditions. Processing bodily injury claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-276",
+        "location": "Montenegro, Faro, Portugal",
+        "incident_type": "Intersection collision (Right-hand rule)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Kia Ceed",
+                "text": "At an unmarked cross-street, a car came from my right and I T-boned them. I assumed I had the right of way because I was on the wider road."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I approached from the right. There are no yield signs, so I had priority. The Kia blew through the intersection and hit my driver-side door."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "In the absence of traffic signs, yielding to traffic approaching from the right is mandatory. Insured failed to yield. Liability accepted. Heavy damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-GMR-2026-277",
+        "location": "Centro Histórico, Guimarães, Portugal",
+        "incident_type": "Slipping on cobblestones",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForFour",
+                "text": "It was raining. I was turning a tight corner on the wet cobblestones at 15 km/h. The tires lost grip, the car slid sideways, and the wheels hit the high stone curb, snapping the front axle."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Wet cobblestones significantly reduce traction. Damage profile matches a heavy lateral curb strike. Valid comprehensive claim."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ALE-2026-278",
+        "location": "N122, Mértola, Portugal",
+        "incident_type": "Animal collision (Wild Boar)",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Toyota Hilux",
+                "text": "Driving at 80 km/h at night. A huge wild boar ran out of the bushes directly into my path. I hit it with my front bumper, shattering the grille and deploying the airbags."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Damage profile is highly consistent with a heavy animal strike. Animal hair verified in the cracked bumper housing. Approved under comprehensive coverage for animal hazards."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-279",
+        "location": "Avenida Fontes Pereira de Melo, Lisbon, Portugal",
+        "incident_type": "Red light running",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroen C3",
+                "text": "I had a green light and proceeded into the intersection. Suddenly a van blew through their red light from the cross street and T-boned my passenger side."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Iveco Daily",
+                "text": "I was distracted by my GPS and completely missed the red light. I entered the intersection and crashed into the side of the Citroen. Entirely my fault."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to running a red light due to distraction. Insured driver had the right of way. 100% liability on the van. Heavy damage to the Citroen approved."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-280",
+        "location": "Avenida da Boavista, Porto, Portugal",
+        "incident_type": "Rear-end at red light",
+        "ground_truth_label": "genuine_accident",
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was completely stopped at a red traffic light. A delivery van just slammed into the back of my car without even braking."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "I dropped my delivery manifest on the passenger floor. I reached down to grab it. When I looked up, the Golf was right there. I hit him at about 40 km/h."
+            },
+            {
+                "role": "insurance_adjuster",
+                "vehicle": "none",
+                "text": "Third-party driver admits to severe distraction and failing to stop at a red light. Rear of the VW Golf is heavily damaged. 100% liability on the van."
+            }
+        ]
     }
 ]
