@@ -1,0 +1,59 @@
+Passo 1: Pré-processamento e Estruturação de Dados
+
+Modelos de Deep Learning requerem dados estruturados em tensores. O teu dataset original estava num formato hierárquico (JSON). O que foi feito:
+
+Extração de Features (X): O script iterou sobre as statements de cada sinistro e concatenou os textos numa única string.
+
+Codificação de Labels (Y): A variável alvo (ground_truth_label) era categórica. Foi aplicada uma binarização onde a classe maioritária ou de interesse (fraude) foi mapeada para 1 e acidentes genuínos para 0.
+
+Output: Um formato tabular (CSV) pronto para ser processado matricialmente.
+
+Passo 2: Tokenização e Normalização de Sequências (Padding)
+
+Redes neuronais operam exclusivamente com operações matemáticas sobre números flutuantes. Não processam strings.
+
+Tokenização: O algoritmo analisou o teu corpus de texto (os 300 casos) e construiu um vocabulário. Foi atribuído um número inteiro (ID) único a cada palavra (ex: "carro" = 12, "colisão" = 45).
+
+O ficheiro tokenizer.pkl: Este ficheiro guarda o mapeamento exato (o dicionário) construído nesta fase.
+
+Padding: A arquitetura da rede exige que todos os vetores de entrada tenham o mesmo comprimento. Foi definido o maxlen=400. Frases com menos de 400 palavras sofreram post-padding (preenchimento com zeros à direita). Frases maiores sofreram truncating (corte). O resultado final (X_pad) foi uma matriz NumPy de dimensões (300, 400).
+
+Passo 3: Definição da Arquitetura (1D CNN + MLP)
+
+O modelo foi construído utilizando uma topologia sequencial para extração de características espaciais unidimensionais (texto):
+
+Camada de Embedding: Transforma os inteiros esparsos em vetores densos de dimensionalidade fixa (50 dimensões). Isto permite que a rede aprenda relações semânticas (vetores de palavras com significados semelhantes ficam próximos no espaço vetorial).
+
+Camada Conv1D: Aplica 64 filtros convolucionais com uma janela deslizante (kernel) de tamanho 3. Esta operação matemática calcula o produto interno entre o filtro e os embeddings das palavras, permitindo extrair características locais (n-grams) e detetar padrões de palavras independentemente da sua posição no texto.
+
+Global Max Pooling 1D: Realiza um downsampling extremo. Dos vários mapas de características gerados pela convolução, extrai apenas o valor máximo, retendo o "sinal" mais forte da presença de um padrão indicativo de fraude.
+
+MLP (Dense + Dropout): Uma rede feedforward padrão. A camada Dense (32 neurónios) processa as características extraídas. A camada Dropout (0.6) atua como um regularizador estocástico, definindo aleatoriamente 60% das ativações para zero durante o treino, o que força a rede a distribuir o peso das decisões e mitiga o overfitting agudo que ocorreria num dataset de 300 amostras.
+
+Output Layer: Um neurónio com ativação Sigmoid, que esmaga o valor de saída para um intervalo contínuo [0,1], representando a probabilidade da classe positiva (Fraude).
+
+Passo 4: Treino e Validação (Otimização)
+
+Train/Test Split: Os dados foram divididos (80% treino / 20% validação) para avaliar a capacidade de generalização do modelo em dados não observados.
+
+Early Stopping: Durante as épocas de treino (epochs), o modelo atualizou os seus pesos usando o otimizador Adam para minimizar a Binary Crossentropy (a função de perda). O Early Stopping monitorizou a perda nos dados de validação (val_loss). Quando a rede começou a memorizar os dados de treino em vez de generalizar (overfitting), o treino foi interrompido e os pesos reverteram para a época com a melhor performance.
+
+O ficheiro modelo_fraude_final.keras: Respondendo à tua pergunta, sim, este ficheiro é a serialização completa do modelo. Ele guarda a arquitetura, os pesos otimizados (os tais 261.777 parâmetros) e o estado do otimizador. É desenhado especificamente para ser carregado em ambiente de produção sem necessidade de qualquer retreino.
+
+Passo 5: Inferência (Previsão em Dados Novos)
+
+Este passo demonstra o uso do modelo em produção, respondendo às tuas dúvidas sobre o exemplo de teste:
+
+O exemplo teste também é transformado em tokens? Ele tenta reconhecer palavras?
+
+Sim, obrigatoriamente. A inferência exige que os dados de entrada passem exatamente pelo mesmo pipeline de transformação dos dados de treino:
+
+O script carrega o tokenizer.pkl.
+
+Quando submetes a string do novo sinistro, a função texts_to_sequences() mapeia as palavras para os IDs inteiros com base no vocabulário aprendido no treino.
+
+Palavras desconhecidas (Out-of-Vocabulary): Se o novo texto contiver uma palavra que não existia nos teus 300 casos iniciais, o Tokenizer irá simplesmente ignorá-la e removê-la da sequência.
+
+É aplicado o padding para forçar a dimensão de 400 elementos.
+
+O vetor (1, 400) é injetado no modelo_fraude_final.keras através da função predict(), que propaga os dados pela rede e calcula a probabilidade matemática final.
