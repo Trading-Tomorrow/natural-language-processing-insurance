@@ -1,0 +1,3 @@
+-> Decidi qual modelo usar para tokenization BPE Byte-Pair Encoding (BPE) tokenizer 
+-> Converti o dataset e Criei as tags para ajudar no treino
+-> Tive que normalziar o texto para que o tokenizer conseguisse entender melhor o dataset (por exemplo km/h)
