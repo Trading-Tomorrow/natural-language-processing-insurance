@@ -3,7 +3,7 @@ import json
 import os
 import time
 
-genai.configure(api_key="AIzaSyBeBQhA8JTyaV224AfJax6sQNLKBj16EF0")
+genai.configure(api_key="") #ir a google studio buscar uma key
 
 # 2. Configurar o Modelo
 # Recomendado o uso do gemini-2.5-flash para tarefas rápidas de geração de dados
