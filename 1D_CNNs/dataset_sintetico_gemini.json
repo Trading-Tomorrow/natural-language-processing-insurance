@@ -1,0 +1,2300 @@
+[
+    {
+        "claim_id": "PT-001-2026-001",
+        "location": "Avenida da Liberdade, Lisbon",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just driving along Avenida da Liberdade, you know, heading towards Marquês de Pombal, when the guy in front just slammed on his brakes. I totally tried to stop, but, like, I couldn't avoid it. My front bumper got a dent and there's a big scratch on the right side. It's so confusing, dude, I've never done this before. Hope it's not too expensive, pá."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "I was stopped at a red light on Avenida da Liberdade. The vehicle behind me, a Renault Clio, failed to stop in time and impacted my rear bumper. There's a slight dent and some paint transfer. The driver seemed quite distressed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-002-2026-002",
+        "location": "Rua de Santa Catarina, Porto",
+        "incident_type": "Parking lot minor collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'lamp broken' but it is missing from detected_damages."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "Yeah, I was just backing out of a spot near Majestic Café, you know? Someone just appeared. It was a really light bump. But look, my rear bumper has this scratch, and honestly, the tail lamp, I think it's broken too. Definitely wasn't like that before. I need this sorted ASAP, I'm busy."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-003-2026-003",
+        "location": "Estrada Nacional 10, Coimbra outskirts",
+        "incident_type": "Rear-end collision (staged)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed 'crack' on bumper but it is missing from detected_damages. Overly technical and defensive statement regarding a low-impact collision."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes-Benz C-Class",
+                "text": "I was proceeding north on EN10, maintaining a speed of approximately 60 km/h, well within the legal limit. A vehicle, a white Opel Corsa, suddenly cut in front of me from the right-hand lane without indicating and then performed an emergency stop for no discernible reason. My reaction time was optimal, yet due to the sudden maneuver, a low-speed impact occurred. My front bumper sustained a noticeable dent and a crack near the right headlight. I can confirm I had not consumed any alcohol prior to driving."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "Yes, I was driving, and I had to brake suddenly because a dog ran onto the road. The car behind me, a black Mercedes, hit my rear. It was an accident. My car has a small dent."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-004-2026-004",
+        "location": "Rua do Ouro, Faro",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was approaching the intersection of Rua do Ouro and Rua de Santo António, proceeding straight. The traffic light was green for my direction of travel. A vehicle, identified as a grey Fiat Punto, entered the intersection from my left, failing to yield to the right of way. I initiated evasive braking but collision was unavoidable. Impact occurred to my front-left fender, resulting in a dent and a broken headlight assembly. Vehicle speed at impact was approximately 20 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat Punto",
+                "text": "I admit I misjudged the light, thought I could make it. I pulled out and hit the BMW. My front bumper has a scratch, but his car, the BMW, definitely has a big dent on the side and the light is busted. My fault entirely."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-005-2026-005",
+        "location": "Parque das Nações, Lisbon",
+        "incident_type": "Alleged hit and run (phantom vehicle)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'glass shatter' but it is missing from detected_damages. Vague details about the incident location and timing, focusing heavily on getting vehicle repaired."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "Someone just hit my car, it was probably yesterday evening, near the Vasco da Gama shopping centre, I think. I don't really remember the exact time, it was dark. They just drove off. My passenger side door has a big dent and a scratch, and also, I'm pretty sure my side mirror glass is shattered. This needs to be fixed. What's the next step for payout?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-006-2026-006",
+        "location": "Avenida dos Aliados, Porto",
+        "incident_type": "Low-speed parking scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed 'glass shatter' (windshield) but it is missing from detected_damages. Aggressive language pushing for quick resolution without proper investigation."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "I WAS TRYING TO PARK ON AVENIDA DOS ALIADOS AND A TAXI JUST SCRAPED MY SIDE! IT'S CLEARLY HIS FAULT! MY CAR HAS A HUGE SCRATCH AND A DENT ON THE REAR DOOR! AND NOW I NOTICE THE WINDSHIELD HAS A CRACK TOO, IT MUST HAVE HAPPENED FROM THE IMPACT. THIS IS ABSURD! I WANT THIS PAID IMMEDIATELY! I WILL CALL MY LAWYER AND THE LIVRO DE RECLAMAÇÕES IF YOU DON'T SORT THIS OUT TODAY!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-007-2026-007",
+        "location": "Praça do Comércio, Lisbon",
+        "incident_type": "Fender bender at traffic light",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "crack"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Focus",
+                "text": "Oh dear, it was such a lovely sunny day, perfect for visiting my grandson, little Miguel, who lives near São Jorge Castle. I was just at the traffic light, waiting patiently you know, at Praça do Comércio, thinking about what to make for dinner, maybe bacalhau à brás, when suddenly, bump! The young man behind me, he just didn't stop. He was probably on his phone, all these young people. My rear bumper got quite a dent, and a nasty scratch, and actually, there’s a small crack near the license plate. My husband, Luís, always told me this car was too old. Oh well, these things happen, I suppose."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was distracted for a moment, honestly, glanced at my phone. The car in front, a blue Ford, stopped for the light and I didn't react quickly enough. I hit her at maybe 5 km/h. My front bumper has a minor scratch, but her car definitely has a dent, a visible scratch, and I saw a small crack on the plastic bumper."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-008-2026-008",
+        "location": "Rotunda da Boavista, Porto",
+        "incident_type": "Side-swipe collision (wave-in)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'lamp broken' (side indicator) but it is missing from detected_damages. The detailed and self-justifying nature of the statement, describing a 'wave-in' scenario."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volkswagen Polo",
+                "text": "I was attempting to merge into the inner lane on Rotunda da Boavista. The driver in the adjacent lane, a dark grey Skoda Fabia, clearly signaled with a hand gesture, specifically a 'wave-in' motion, indicating it was safe for me to proceed. Relying on this explicit instruction, I commenced my lane change. However, they then accelerated, resulting in a side-swipe contact. My vehicle sustained a long scratch along the passenger side and the side indicator lamp is definitely broken. I acted in good faith, following their clear signal. There was no alcohol involved, and I was driving below the posted limit."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Skoda Fabia",
+                "text": "I was just driving around the rotunda. This Polo just swerved into my lane without looking. I didn't wave anyone in. My car is fine, just a tiny scratch, but his car has a big scrape."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-009-2026-009",
+        "location": "A2 motorway, near Alcácer do Sal",
+        "incident_type": "Swerving to avoid alleged phantom vehicle",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'lamp broken' (rear) but it is missing from detected_damages. Highly detailed yet unverified account of a phantom vehicle causing an incident."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volvo S60",
+                "text": "I was driving north on the A2, approximately 20 kilometers past Alcácer do Sal, maintaining a steady 120 km/h in the right lane. Suddenly, without warning, a dark-colored van, possibly a Mercedes Vito, veered sharply into my lane from the left, forcing me to take evasive action. To prevent a direct collision, I swerved hard to the right, impacting the roadside barrier. My rear-right fender has a significant dent and multiple scratches, and the rear tail lamp is completely shattered. It was an extremely dangerous situation, and I reacted appropriately to avoid a major pile-up."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-010-2026-010",
+        "location": "Rua Augusta, Lisbon",
+        "incident_type": "Minor contact while parking",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed 'crack' on bumper but it is missing from detected_damages."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Smart ForTwo",
+                "text": "Ugh, like, I was just trying to parallel park on Rua Augusta, which is, you know, super tight. I barely touched the car behind me, like, just a tiny tap, I swear. But now my front bumper has this, like, dent, and I think there's also a small crack forming right here, see? It's really stressful, and I just hope the insurance covers everything, pá. I don't have money for this."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Nissan Micra",
+                "text": "The Smart car tried to park and just nudged my front bumper. It was a very gentle contact, barely moved my car. My car has no damage. His Smart car has a small dent, but I didn't see any crack."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-001",
+        "location": "Avenida da Liberdade, Lisboa",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just driving along Avenida da Liberdade, you know, heading towards Rossio. And then, like, this other car just slammed into me from behind, totally out of nowhere! My neck hurts a bit, and the back bumper, like, it has a proper dent and a bunch of scratches now. I don't know what to do, this is my first accident, pá. Will my insurance cover this?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-002",
+        "location": "Rua de Santa Catarina, Porto",
+        "incident_type": "Parking lot scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed dent and lamp broken, but only scratch detected. Statement is vague and focuses on vehicle damage."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "Yeah, so, I was parking, or maybe leaving a spot, on Rua de Santa Catarina. And some… thing… scraped my car. I mean, it's pretty bad. There's a nasty scratch, definitely a dent, and I think the rear lamp is actually broken. I really need this fixed quickly, as soon as possible. What's the process?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-003",
+        "location": "Circular Externa de Coimbra (IC2)",
+        "incident_type": "Staged rear-end (Swoop and Squat)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claimed severe glass shatter and lamp broken inconsistent with minor impact. Suspiciously detailed and defensive statement regarding speed and conditions. Third-party driver's statement implies intentional braking."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I was proceeding northbound on the IC2, maintaining a consistent speed of approximately 80 km/h, well within the legal limit. The road conditions were optimal, and visibility was clear. Without any prior warning or indication, the vehicle in front of me, a dark-colored sedan, executed an immediate and violent brake application. My reaction time was instantaneous, but due to the sudden deceleration, a minor impact was unavoidable. I confirm there is a significant dent to my front bumper, extensive scratching, and what appears to be a major glass shatter on the windshield, along with a broken headlamp. I had not consumed any alcoholic beverages, nor was I distracted by any electronic devices."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat Tipo",
+                "text": "Sim, I was in front. I slowed down because I saw a dog on the side of the road, it was a sudden thing. He hit me. He was too close. My rear bumper has some scrapes, nothing major. I swear I saw the other driver looking in his mirror before he hit me."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-004",
+        "location": "Avenida de Roma, Lisboa",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes-Benz C-Class",
+                "text": "Incident occurred on Avenida de Roma at approximately 14:30. I was in the left lane, preparing to turn onto Rua João XXI. The vehicle in the adjacent right lane, a grey Peugeot 308, initiated a lane change without proper signalization or sufficient clearance. The right side mirror of my vehicle made contact with the left rear fender of the third-party vehicle. This resulted in a perceptible scratch and a minor dent on my front passenger side door panel. No reported injuries. Police attendance was not deemed necessary by both parties."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-005",
+        "location": "Rua Dr. Francisco Sá Carneiro, Faro",
+        "incident_type": "Minor fender bender",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter and lamp broken, but only dent detected. Driver is aggressive and attempts to rush the claims process."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Focus",
+                "text": "LISTEN, I WAS DRIVING SLOWLY ON RUA DR. FRANCISCO SÁ CARNEIRO, AND THIS IDIOT REVERSED INTO ME! IT'S A HUGE DENT ON MY FRONT BUMPER, THERE'S A CRACK ON MY WINDSHIELD AND THE HEADLAMP IS BROKEN! I DON'T HAVE TIME FOR THIS. I WANT MY CAR FIXED NOW. IF THIS ISN'T RESOLVED TODAY, I AM CALLING MY LAWYER AND THE LIVRO DE RECLAMAÇÕES! DON'T WASTE MY TIME!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-006",
+        "location": "EN125, Almancil",
+        "incident_type": "Single-vehicle accident (claimed to avoid phantom)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "crack"
+        ],
+        "fraud_indicators": [
+            "Claimed a phantom vehicle caused the accident, resulting in damage. Driver’s statement is overly technical and defensive, consistent with a pre-planned narrative. Claimed a lamp broken that is not detected."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "While operating my vehicle southbound on the EN125, within the vicinity of Almancil, an unidentified, dark-colored van unexpectedly swerved into my lane from the shoulder, approximately 50 meters ahead, creating an imminent collision risk. To avert a direct impact, I performed an evasive maneuver, steering sharply to the right. This action caused my vehicle to impact a guardrail. The front passenger side sustained significant deformation, specifically a dent on the fender and a crack across the headlight assembly. Furthermore, the front passenger lamp is now non-functional. The phantom vehicle did not stop and continued at high velocity. My driving record is impeccable, and I possess no prior traffic infractions."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-007",
+        "location": "Praça da Batalha, Porto",
+        "incident_type": "Intersection collision (minor)",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "Oh, my goodness, it was just terrible. I was going to meet my grand-niece, Sofia, for her birthday, she loves the pastries from Confeitaria Arcadia, you know? And I was just going through the Praça da Batalha, the lights were green, I always check three times, you know. And then this little red car, bless his heart, just came out of nowhere! My husband, Manuel, always told me to be careful in the city. Now my poor little Peugeot, it has a big scratch on the side, a dent, and the front light, it's all smashed. I hope it can be fixed quickly, Sofia will be so sad if I can't drive her to school."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-008",
+        "location": "Avenida 5 de Outubro, Setúbal",
+        "incident_type": "Parking bollard scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed dent and crack, but only scratch detected. Statement is vague about precise incident details, focusing on repairs."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Captur",
+                "text": "I had a minor incident. Somewhere on Avenida 5 de Outubro, probably when parking. My car just got scraped against something. It's got a scratch, maybe a dent, and I think there's a hairline crack on the bumper too. I didn't see it clearly at the time. I just need to get it sorted, it looks quite noticeable now. Can you tell me what happens next? I'm busy."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-009",
+        "location": "Rotunda do Relógio, Lisboa",
+        "incident_type": "Staged wave-in collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claimed third-party waved them in before impact, suggesting a staged incident. Claimed glass shatter and lamp broken, inconsistent with minor impact and not detected. Third-party driver denies waving."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i30",
+                "text": "I was attempting a left turn from the Rotunda do Relógio, proceeding into the designated lane. The driver of the opposing vehicle, a yellow taxi, clearly signaled me to proceed with a hand gesture. Interpreting this as an invitation, I commenced my maneuver. Unexpectedly, the taxi then accelerated, resulting in a side-impact collision to my vehicle's front passenger side. I sustained a dent and significant scratches, and I firmly believe my passenger window has a substantial glass shatter and my front right lamp is broken. I acted entirely on the other driver's explicit instruction."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes-Benz E-Class Taxi",
+                "text": "Eu não waved! I never waved him in! I was going straight, and he just cut in front of me from the roundabout. What is he talking about? There's a small dent and scratch on my taxi, but it's not from me waving. He's making this up."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-INS-2026-010",
+        "location": "Parque Natural da Arrábida, Setúbal",
+        "incident_type": "Reversing collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "Okay, so, like, I was trying to reverse out of this really tight spot, you know, near a viewpoint in Arrábida, it was super beautiful but the parking was awful, dude. And I just misjudged it, like, completely. And bumped into a low wall, I think? My rear bumper, it’s got this pretty bad dent now, and there are some deep scratches. I feel so stupid, man. Is this going to be super expensive to fix?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-001",
+        "location": "Avenida da República, Lisboa",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just driving, you know, near Saldanha, going, like, maybe 40 km/h? And the guy in front just, like, slammed the brakes out of nowhere. I really tried to stop, I swear, but I just clipped him. My front bumper's got a pretty big dent and some scratches, dude. I'm so worried about the repair costs, you know? This is, like, my first accident."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "I was at a complete stop at the traffic light on Avenida da República, near the Gulbenkian. My vehicle was stationary. The driver behind me failed to brake in time and impacted my rear bumper. There's a noticeable dent and some paint scratches on my car. No personal injuries, but the vehicle sustained damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-002",
+        "location": "Rua de Santa Catarina, Porto",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes C-Class",
+                "text": "At approximately 14:30, I was proceeding northbound on Rua de Santa Catarina, maintaining a speed of approximately 30 km/h. A Fiat 500, attempting to parallel park on the right side, initiated a maneuver without adequate signalization or clearance, resulting in a side-swipe impact with my passenger-side rear door. Observed damage includes lateral scratches and a minor dent. Photographic evidence of the scene and vehicles has been submitted."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat 500",
+                "text": "I was trying to park, you know, a tricky spot on Santa Catarina. I signalled, I'm sure of it. This Mercedes just came too close, too fast, and scraped my front bumper as I was reversing into the spot. My car has a scratch and a small dent there now. It wasn't my fault, I was clearly trying to park."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-003",
+        "location": "Parking lot, Forum Coimbra",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "Oh dear, it was such a lovely day, I was going to the Forum to buy some fabric for my granddaughter's dress, you see, she just turned seven. And as I was backing out of my parking spot, very slowly, mind you, only like 5 km/h, I just, well, I didn't see that little post on my left. My lovely Corsa, it got a dent and some horrible scratches on the back bumper. My husband, Manuel, he's going to be so upset, he loves this car. I'm not good with all this technology, but I think I filled out the form correctly, bless you."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was walking past, heading to the cinema, when I saw an older lady in an Opel Corsa slowly reversing out of a parking spot. She seemed to misjudge the distance and bumped directly into a concrete pillar. There was a clear scraping sound, and I saw a dent forming on her rear bumper, along with some paint scratches. She looked quite distressed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-004",
+        "location": "Rua da Prata, Braga",
+        "incident_type": "Minor fender bender",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claimed \"dent\" and \"lamp broken\" but only \"scratch\" was detected.",
+            "Driver statement is vague on precise location and time."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "Yeah, so, I was just driving, you know, sometime this morning, near the city centre. And this van just came too close and scraped my side. My car is totally messed up now. It's got a huge dent, the headlamp is broken, and a lot of scratches all along the side. I need this fixed ASAP, I use it for work every day. I expect full compensation for all the damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-005",
+        "location": "Rotunda da Boavista, Porto",
+        "incident_type": "Low-speed impact at roundabout",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver aggressively claimed \"glass shatter\" and \"lamp broken\" but only \"dent\" was detected. This severe damage is inconsistent with a low-speed impact.",
+            "Driver's tone is overtly aggressive and demanding."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "I WAS DRIVING CAREFULLY IN THE ROUNDABOUT ON BOAVISTA, AND THIS IDIOT IN A WHITE VAN JUST SWERVED INTO ME! MY CAR IS COMPLETELY DESTROYED! THE WINDSHIELD IS SHATTERED, THE HEADLAMP IS BROKEN, AND THERE'S A HUGE DENT ON THE FRONT FENDER! THIS IS UNACCEPTABLE! I WANT THIS HANDLED IMMEDIATELY OR I'M CALLING MY LAWYER AND GOING STRAIGHT TO THE 'LIVRO DE RECLAMAÇÕES'!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-006",
+        "location": "Estrada Nacional 1, Leiria",
+        "incident_type": "Sudden stop rear-end collision (Swoop & Squat)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Third-party driver statement is overly technical and defensive, typical of staged accident scripts, proactively denying common fraud red flags.",
+            "Third-party driver claimed \"lamp broken\" and \"crack\" on their vehicle, which are not consistent with the minor damage observed on the insured vehicle, implying class mismatch for the staged vehicle or exaggeration."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was on the EN1, following a dark grey Audi at a safe distance, about 50 km/h. Suddenly, the Audi cut sharply in front of me from the right lane, then slammed on its brakes for no apparent reason. I had absolutely no time to react and hit their rear bumper. My front bumper has a dent and scratches. I swear, it was so fast, I didn't even see brake lights until it was too late, man. It felt really weird, you know?"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "At 10:15 AM, while navigating the EN1 near Marrazes, I executed a standard lane change manoeuvre, indicating appropriately. Upon re-establishing my position, an unexpected object (a plastic bag) entered my lane, necessitating an immediate and controlled emergency braking procedure. The vehicle behind, a Seat Ibiza, failed to maintain an adequate safety distance and initiated a rear-end impact. My rear bumper sustained significant impact, including a broken lamp and a visible crack. I confirm I was not operating under the influence of alcohol or any illicit substances, and my vehicle's braking system was fully functional."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-007",
+        "location": "Travessa da Conceição, Faro",
+        "incident_type": "Intersection collision (Wave-in)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Insured driver statement is vague about the specific timing of the 'wave-in' gesture and subsequent events, focusing heavily on right-of-way.",
+            "Insured driver claimed 'lamp broken' and a 'crack' which were not detected, indicating exaggeration or pre-existing damage being claimed."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was at the intersection, you know, going straight. The other guy, the one coming from the opposite direction, he clearly waved me through to turn left. So I started my turn, like anyone would. But then he just went for it, and we hit. My front left fender has a nasty dent and some scratches, and my indicator lamp is broken. I even think there's a crack near the wheel arch. It's totally his fault, he waved me on!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Skoda Octavia",
+                "text": "I was waiting to turn left at the intersection. The BMW driver was facing me, indicating to turn left as well. I did *not* wave him through. I simply made eye contact. He then proceeded to turn left directly into my path, causing the collision. My front bumper is dented and scratched."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-008",
+        "location": "Estrada Monumental, Funchal, Madeira",
+        "incident_type": "Single-vehicle accident",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "lamp broken"
+        ],
+        "fraud_indicators": [
+            "Claim of phantom vehicle involvement without any corroborating evidence, witness, or physical trace.",
+            "Insured driver's statement is overly detailed and defensive about their actions and the non-existent phantom vehicle."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "I was proceeding along Estrada Monumental, adhering strictly to the 50 km/h speed limit. Without warning, an unidentified dark-colored vehicle, possibly a motorcycle, swerved abruptly into my lane from the right, directly in front of my vehicle. To prevent a catastrophic head-on collision, I executed an immediate evasive manoeuvre, steering sharply to the left. This caused my vehicle to impact a lamppost on the central reservation. My front right side sustained a significant dent, extensive scratches, and the headlamp is completely broken. I had not consumed any alcoholic beverages, nor was I distracted by my phone. The phantom vehicle fled the scene without stopping."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-009",
+        "location": "Rua do Carmo, Setúbal",
+        "incident_type": "Minor side scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Insured driver claimed 'dent' and a significant 'crack' on their vehicle, but only a 'scratch' was detected.",
+            "Exaggeration of damage compared to the minor nature of the incident."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Fiesta",
+                "text": "Ugh, like, I was just trying to park near the market, you know? And this other car, a really old one, like, scraped my side as it passed. It was barely moving, maybe 10 km/h, but it totally messed up my car! I have a big dent, a massive scratch all down the side, and I'm pretty sure there's a crack on the panel too, dude. This is going to cost a fortune, I'm so stressed out!"
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was walking by, just saw a very light contact between a Ford Fiesta trying to park and an old white van passing by. The van's mirror just brushed the Fiesta's side. I only saw a light scratch on the Fiesta, nothing more significant than that. It was a very minor incident."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-XXX-2026-010",
+        "location": "Praceta da Liberdade, Cascais",
+        "incident_type": "Parking lot bump",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Insured driver aggressively claimed 'glass shatter' and a 'crack' from a minor parking lot bump, which are physically inconsistent with the impact and not detected.",
+            "Demand for immediate payment and threats without proper investigation, suggesting an attempt to rush a fraudulent claim."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i20",
+                "text": "I WAS IN THE PARKING LOT, PRACTICALLY STOPPED, AND THIS OTHER CAR JUST BACKED INTO ME! IT WAS A HUGE IMPACT! MY WINDSHIELD IS SHATTERED, THERE'S A GIANT DENT ON MY DOOR, AND A CRACK ON THE SIDE PANEL! THIS IS CLEARLY PREMEDITATED! I DEMAND IMMEDIATE PAYMENT FOR ALL DAMAGES AND A RENTAL CAR AT YOUR EXPENSE! IF THIS IS NOT RESOLVED WITHIN 24 HOURS, MY LAWYERS WILL BE IN CONTACT, AND I WILL BE FILING A COMPLAINT WITH THE 'LIVRO DE RECLAMAÇÕES'!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I was reversing slowly out of my parking spot. I barely touched the Hyundai behind me, going less than 5 km/h. There was a very light bump. My vehicle has no damage. I checked the Hyundai and only saw a minor dent and a superficial scratch on their rear bumper. No glass damage or cracks whatsoever."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-001",
+        "location": "Rua de Santa Catarina, Porto",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Dude, it was like, totally not my fault, you know? I was just stopped at the traffic light on Rua de Santa Catarina, minding my own business, and then BAM! This guy just goes into my rear. My Clio, like, has a dent and a big scratch now. It's gonna be super expensive, right? I'm so worried."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "VW Golf",
+                "text": "At approximately 14:30 on November 12, 2026, my vehicle, a VW Golf, impacted the rear of a Renault Clio. The incident occurred due to a momentary lapse in attention on my part, causing a low-speed collision. Damage is observed on the front bumper of my vehicle and the rear bumper of the insured's vehicle, consisting primarily of a dent and associated superficial scratches."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-002",
+        "location": "Parking lot near Belém Tower, Lisbon",
+        "incident_type": "Minor parking scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'dent' but it is missing from detected_damages",
+            "Claimed 'lamp broken' but it is missing from detected_damages",
+            "Driver is vague about the exact timing and precise location of the incident, focusing on damage."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "Yeah, someone hit my car in the parking lot. It was, uh, sometime yesterday afternoon. I just came back and saw the damage. It's quite significant, not just a scratch, but a deep dent on the side, and I think the rear lamp is broken too. It's a real mess."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-003",
+        "location": "A2 Highway near Setúbal",
+        "incident_type": "Swoop and squat collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'glass shatter' but it is missing from detected_damages",
+            "Driver's statement is overly detailed and defensive, justifying actions before being asked and denying any wrongdoing."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I was proceeding southbound on the A2 highway, maintaining a constant speed of 100 km/h in the right lane. Suddenly, a dark grey Audi A3 abruptly cut in front of my Opel Corsa from the left lane, then braked sharply without warning. I had no opportunity to react, despite having ample following distance. My vehicle sustained impact to the front right, resulting in a dent, several scratches, and a clearly shattered headlight lens. I confirm I had not consumed any alcohol and was not distracted."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "I was driving my Audi A3, merging onto the A2 near Setúbal. I recall a vehicle behind me, but I didn't perceive any sudden braking or unsafe maneuver. I felt a slight bump and then saw the Opel Corsa behind me. I believe they may have been following too closely. My vehicle has no significant damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-004",
+        "location": "Avenida da Liberdade, Lisbon",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "The incident occurred on Avenida da Liberdade at approximately 10:15, November 15, 2026. My vehicle, a Peugeot 208, was proceeding northbound when a commercial van attempted an unsafe lane change from the right lane into my path. This resulted in a side-swipe contact along the passenger side of my vehicle, causing a prominent scratch and a minor dent to the rear passenger door."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Commercial Van",
+                "text": "Man, I'm so sorry, like, for real. I was just trying to get into the left lane, you know? And I swear I checked my mirrors, but I just didn't see the Peugeot. My van scraped against his door, and now he's got a scratch and a small dent. This is gonna be a nightmare with my boss, pá."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-005",
+        "location": "Near Estádio do Dragão, Porto",
+        "incident_type": "Minor fender bender",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed 'lamp broken' but it is missing from detected_damages",
+            "Claimed 'crack' but it is missing from detected_damages",
+            "Driver uses aggressive language and threats to pressure for a quick payout."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I WAS AT THE ROUNDABOUT NEAR ESTÁDIO DO DRAGÃO AND SOME IDIOT REAR-ENDED MY NISSAN QASHQAI! IT'S NOT JUST A DENT, IT'S A MAJOR IMPACT! THE TAILLIGHT IS BROKEN, AND THERE'S A HUGE CRACK ON THE BUMPER! THIS IS UNACCEPTABLE! I DEMAND IMMEDIATE PROCESSING AND FULL COMPENSATION! I WILL CONTACT MY LAWYER AND THE LIVRO DE RECLAMAÇÕES IF THIS IS NOT RESOLVED TODAY!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-006",
+        "location": "Rural road near Évora",
+        "incident_type": "Single vehicle accident (claimed, blaming phantom)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "crack"
+        ],
+        "fraud_indicators": [
+            "Vague details about the phantom vehicle and incident, specifically avoiding precise timing or location that could be verified.",
+            "Driver focuses heavily on existing vehicle damage rather than the dynamics of the alleged phantom collision."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Tipo",
+                "text": "I was driving late at night, on a country road outside Évora. A car, I couldn't really see the make or model, just came out of nowhere from a side road without stopping. I swerved to avoid it and hit... something. It was dark. My car, a Fiat Tipo, has significant damage now. A large dent on the front, multiple scratches, and a crack on the bumper. The other car just drove off, really fast."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-007",
+        "location": "Largo do Carmo, Lisbon",
+        "incident_type": "Intersection collision (minor)",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "Oh dear, it was such a lovely day, I was just driving my little Citroën C3, you know, heading to Largo do Carmo to meet my daughter Ana for a coffee. The traffic light was green, I swear it was, and then this young man just came from the side. He must have been rushing. My car has a dent on the passenger side door, and a scratch, like the one my grandson made when he was playing with his toy cars, bless him. So, so stressful, isn't it? My blood pressure went right up."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was sitting at the outdoor café on Largo do Carmo, facing the intersection. I observed a white Citroën C3 proceeding through what appeared to be a green light. Simultaneously, a dark grey van entered the intersection, failing to yield. A minor collision occurred. The Citroën sustained a dent and a scratch on the right side door. The impact was not severe."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-008",
+        "location": "Supermarket car park, Cascais",
+        "incident_type": "Wave-in collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed 'glass shatter' but it is missing from detected_damages",
+            "Driver's statement is overly detailed and defensive, describing the third party's actions as malicious to shift blame."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Fiesta",
+                "text": "I was attempting to exit a parking spot in the supermarket car park in Cascais, operating my Ford Fiesta. The driver of a grey Nissan Juke directly opposite me made eye contact and provided a clear 'wave-in' gesture, indicating I should proceed. As I cautiously reversed, the Nissan Juke driver then unexpectedly accelerated forward, striking my vehicle on the rear driver's side. The impact caused a significant dent, multiple scratches, and unfortunately, the rear window completely shattered. Their actions were clearly negligent."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Nissan Juke",
+                "text": "I was waiting for the Ford Fiesta to reverse out of its space. I might have made a gesture, but it was not an indication to proceed, merely a general acknowledgement. I then began to move forward slowly, and the Fiesta reversed directly into my path. My Nissan Juke sustained only minor cosmetic damage. I did not accelerate aggressively, and the claim of a shattered window on their vehicle seems excessive for the minimal impact."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-009",
+        "location": "Praça do Comércio underground parking, Lisbon",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "SEAT Ibiza",
+                "text": "Oh man, this is so awkward, like, I totally misjudged the pillar in the Praça do Comércio parking, you know? I was trying to park my SEAT Ibiza and just scraped the side. It's just a scratch, a really long one, but it's totally my fault. My dad's gonna kill me, pá."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "Well, I was just walking by, you see, going to get my tram ticket after seeing the Arcos da Rua Augusta. This young lad, he was in a white SEAT, seemed a bit flustered. He just scraped his car right against the concrete pillar while trying to park. Just a long scratch on the side door, nothing too serious, but he looked quite upset, poor thing."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-010",
+        "location": "Back street near São Bento Station, Porto",
+        "incident_type": "Minor collision with a street pole",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed 'lamp broken' but it is missing from detected_damages",
+            "Driver is vague about the exact timing and precise location of the incident, focusing on damage rather than accident dynamics."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Mégane",
+                "text": "My car, a Renault Mégane, got hit, uh, by a pole. It was a tight street, near São Bento, maybe late evening yesterday. It was a tricky turn. I wasn't really focusing on the time. The front bumper is definitely dented, and the headlight is completely broken. It's going to be costly."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LBN-2026-001",
+        "location": "Rua da Misericórdia, Lisboa",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Dude, it was like, totally my fault, you know? I was just trying to park my Clio at the shopping center in Colombo, and I misjudged the distance. I swear I was going super slow, like, 5 km/h max. Just a small bump, but now there's this dent and some scratches on the bumper. My dad is gonna kill me, man, this is so complicated, like, what do I even do now?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-PRT-2026-002",
+        "location": "Avenida da Boavista, Porto",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 320d",
+                "text": "At approximately 14:30 on October 24th, 2026, while proceeding eastbound on Avenida da Boavista, my vehicle, a BMW 320d, was struck from the rear. I was stationary at a red traffic light near the Rotunda da Boavista. The impact occurred at a low velocity, estimated at under 20 km/h. Visual assessment indicates a dent to the rear bumper and the fracture of the left taillight assembly. No personal injuries reported."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes C-Class",
+                "text": "Yes, I confirm the incident. I was distracted for a moment and failed to brake in time. My vehicle, a Mercedes C-Class, sustained minor front bumper damage. I apologize for the inconvenience."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FNC-2026-003",
+        "location": "Caminho do Monte, Funchal, Madeira",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent",
+            "crack"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "Oh, my dear, it was such a fright! I was just driving my little Citroën C3, you know, going to visit my sister in Monte to bring her some fresh poncha, and the road, my goodness, it's so narrow there, like a goat path. And this big delivery van, a huge thing, came around the corner too fast, I think. We brushed. I tried to hug the wall but it was too late. Now there's a long scratch and a dent on my side, and I think the mirror has a tiny crack. Poor thing. It wasn't raining much, just a bit cloudy, perfect for a drive really. My grandchildren always tell me to be careful, and look what happened. I'm just glad nobody got hurt."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AGR-2026-004",
+        "location": "Estrada Nacional 125, Almancil, Algarve",
+        "incident_type": "Minor parking lot reverse collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed lamp broken but it is missing from detected_damages",
+            "Claimed glass shatter but it is missing from detected_damages",
+            "Evasive about precise time and location of the incident."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi Q3",
+                "text": "Yeah, someone hit my car. It was in a parking lot, near a restaurant, around lunchtime, I guess. I came back and saw the damage. The front bumper, it's really messed up. A big dent, lots of scratches. And the headlight, it's completely broken, shattered even. And the side mirror glass, shattered too. It's really bad. I need this fixed quickly, please."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-STB-2026-005",
+        "location": "Estrada Nacional 10, Setúbal",
+        "incident_type": "Wave-in collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter but it is missing from detected_damages",
+            "Stated vehicle speed defensively without being asked",
+            "Claimed significant impact leading to glass shatter that is inconsistent with detected physical damage.",
+            "Overly precise and technical justification of innocence."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Focus",
+                "text": "I was proceeding southbound on EN10, approaching the intersection with Rua de São Francisco, at a constant speed of 45 km/h, well within the posted limit. I had not consumed any alcoholic beverages. The third-party vehicle, a white Opel Corsa, signaled for me to proceed, appearing to yield. Based on this visual cue, I initiated the maneuver. However, the Opel then accelerated, impacting the front passenger side of my vehicle, a Ford Focus. The impact resulted in a substantial dent and deep scratches to the door panel, and critically, the passenger side window completely shattered. My reaction time was optimal; this was an unavoidable collision after being waved through."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "He just came out. I didn't wave him, I don't know what he's talking about. I was trying to turn left. He hit me."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CBR-2026-006",
+        "location": "Rua Direita, Coimbra",
+        "incident_type": "Hit-and-run",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Vague details about incident time and location",
+            "Focus on damage and payment rather than incident dynamics",
+            "No credible third-party vehicle identified in the statement"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Mégane",
+                "text": "My car, a Renault Mégane, got hit last night. I parked it somewhere around downtown, maybe near Praça do Comércio, I don't remember the exact spot, it was late. When I came back this morning, it had a big dent and long scratches on the driver's side door. It must have been another car that scraped it and drove off. It needs a full repair, the door is really bad. I don't know who did it, it was dark."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-007",
+        "location": "Canal Central, Aveiro",
+        "incident_type": "Low-speed rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "Like, oh my god, I was just driving on that big avenue, you know, in Aveiro, going to meet my friends for lunch at the Forum. And traffic just stopped so fast, and I was just looking at my GPS for a second, man, and then, BUM! I totally just, like, tapped the car in front. It wasn't fast, maybe 10 km/h? Now my bumper has a dent and a scratch. This is so annoying, dude. I hope it's not too expensive to fix, you know? I'm so stressed about this."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAO-2026-008",
+        "location": "Rua do Bocage, Faro",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "lamp broken"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter (windshield) but it is missing from detected_damages",
+            "Aggressive tone and threats to rush settlement process",
+            "Exaggerated claimed damages inconsistent with detected damages and accident type."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes A-Class",
+                "text": "THIS WAS A HUGE ACCIDENT! I was driving my Mercedes A-Class on Rua do Bocage, and this idiot in a scooter just swerved into me, you know? It was NOT MY FAULT! There's a big DENT on my fender, and SCRATCHES all down the side, and the HEADLIGHT IS BROKEN! And the WINDSHIELD IS SHATTERED from the impact! You need to process this IMMEDIATELY! I'm calling my LAWYER and I'm going to the 'LIVRO DE RECLAMAÇÕES' if this isn't handled fast. This is unacceptable! I want my car fixed YESTERDAY!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LGZ-2026-009",
+        "location": "Estrada Nacional 125, Lagos, Algarve",
+        "incident_type": "Swoop and squat collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "lamp broken"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter (windshield) but it is missing from detected_damages",
+            "Detailed, technical language disproportionate to a simple accident",
+            "Justifies actions and innocence pre-emptively without prompt",
+            "Claimed severe impact leading to glass shatter inconsistent with minimal detected damages."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "I was operating my vehicle, a Peugeot 308, on EN125, maintaining a safe following distance and speed of 60 km/h. My brakes were functioning optimally, and I am a licensed driver with no prior infractions. A dark grey Seat Ibiza suddenly cut in front of my vehicle from the adjacent lane without signaling, then immediately engaged emergency braking without discernible cause. Despite my swift and appropriate defensive maneuvers, I was unable to prevent a front-end collision. The impact caused significant damage to my front bumper, a dent to the hood, a completely shattered front lamp, and notably, the windshield experienced a complete spider-web glass shatter. This was a deliberate and reckless action by the other party."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-EVR-2026-010",
+        "location": "Avenida Dr. Francisco Barahona, Évora",
+        "incident_type": "Hit-and-run",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Lack of credible third-party vehicle details",
+            "Overly precise and technical description of a non-existent event",
+            "Statement is too rehearsed for an unexpected hit-and-run"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "At approximately 03:15 hours on November 20th, 2026, while my vehicle, an Audi A4, was legally parked on Avenida Dr. Francisco Barahona, adjacent to number 15, an unknown vehicle collided with the rear driver's side. The impact caused a discernible dent and extensive scratches across the rear quarter panel and bumper. The offending party failed to leave any contact information and absconded from the scene. My vehicle was secure and stationary at the time of the incident. There were no witnesses present during the event, nor were there any functional surveillance cameras within the immediate vicinity. This constitutes a clear hit-and-run incident requiring full compensation for damages."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-001",
+        "location": "Avenida da Liberdade, Lisbon",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Polo",
+                "text": "Oh man, like, I was just driving home on Avenida da Liberdade, you know, and suddenly the car in front just totally slammed on their brakes, like, for no reason. I tried to stop, I swear, but I just clipped them. My front bumper's got a pretty big dent and a bunch of scratches. I'm so worried about the costs, pá. This is my first accident."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was proceeding normally when the vehicle behind me failed to maintain a safe distance and impacted my rear. My bumper has a dent and some scratches. The driver seemed quite nervous."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-002",
+        "location": "Parque da Cidade, Porto (parking lot)",
+        "incident_type": "Parking lot scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver claimed 'lamp broken' but it is missing from detected_damages",
+            "Driver focused on getting paid rather than accident details"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Juke",
+                "text": "Yeah, so I was parking in Parque da Cidade, you know, just trying to get into a spot, and I heard a scrape. Didn't see anyone, obviously. My front side got a scratch and a dent. Also, I think the front lamp is completely broken now. This needs to be fixed quickly."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was walking my dog and saw the lady's car hit the concrete pillar, not another car. It was just a minor scrape. I didn't see any lamps broken, just a small scratch and maybe a dent on the bumper."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-003",
+        "location": "N125, near Faro",
+        "incident_type": "Lane change collision (Swoop and Squat)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Insured driver provided an overly detailed and rehearsed alibi regarding speed and sobriety without being asked",
+            "Insured driver claimed 'glass shatter' but it is missing from detected_damages",
+            "Incident dynamics are inconsistent with minor damage classes claimed by insured, suggesting exaggeration."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "I was proceeding northbound on the N125 at a consistent speed of 80 km/h, well within the legal limit. I had not consumed any alcoholic beverages. Suddenly, a vehicle, a black Renault Clio, aggressively cut into my lane directly in front of me, decelerating sharply. Despite my immediate and appropriate braking action, contact was unavoidable. My front right received a dent and a scratch, and I believe the side mirror glass shattered on impact due to the severity."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Clio",
+                "text": "I was merging onto the N125 and indicating left. The Audi behind me seemed to speed up rather than slow down to let me in. He hit my rear-left quarter. There's a dent and some paint scratches on my car. He's trying to blame me."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was in the car behind and saw the black Clio try to merge. The Audi seemed to close the gap on purpose, then braked hard. It looked like a minor bump. I only saw a dent and a scratch on the Audi's front, definitely no broken glass from the side mirror."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-004",
+        "location": "Praça da República, Coimbra (intersection)",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "glass shatter",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes C-Class",
+                "text": "At approximately 14:30, I was traversing Praça da República in Coimbra, approaching the intersection from Rua da Sofia. My traffic signal was green. Vehicle B, a Ford Focus, failed to yield from Rua Ferreira Borges, proceeding into the intersection. Impact occurred to my vehicle's front right quarter. Damage includes significant denting, paint abrasions, and the shattering of the passenger side headlight assembly glass. Airbag deployment was not initiated."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Focus",
+                "text": "I misjudged the light at Praça da República. I thought I had time to cross. The Mercedes hit my front left. My bumper is dented and scraped, and my headlight is broken. It was my fault, I admit."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-005",
+        "location": "Rua da República, Aveiro (traffic light)",
+        "incident_type": "Minor fender bender",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver claimed 'lamp broken' and 'glass shatter' but they are missing from detected_damages",
+            "Driver used aggressive language and threats to rush the claim process"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Leon",
+                "text": "I WAS AT THE TRAFFIC LIGHT ON RUA DA REPÚBLICA. THE CAR BEHIND ME JUST SLAMMED INTO MY BUMPER! IT WASN'T HARD, BUT LOOK AT THE DAMAGE! THERE'S A HUGE DENT, AND I'M PRETTY SURE THE TAIL LIGHT IS BROKEN AND THE REAR WINDOW HAS A CRACK NOW! THIS IS RIDICULOUS! I DEMAND THIS IS PROCESSED IMMEDIATELY, OR I WILL CALL MY LAWYER AND THE LIVRO DE RECLAMAÇÕES!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I was distracted for a second and just lightly nudged the car in front. It was barely a tap, maybe 5 km/h. There's a small dent on their bumper, that's all. No lights were broken, and definitely no window damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-006",
+        "location": "A28, near Braga",
+        "incident_type": "Single vehicle accident (allegedly caused by phantom vehicle)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "crack",
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver provided an overly detailed and rehearsed account of a non-existent third-party vehicle incident",
+            "Driver claimed 'lamp broken' but it is missing from detected_damages",
+            "No physical evidence or witness for the alleged phantom vehicle"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was proceeding southbound on the A28 at a speed of 100 km/h when, without warning, a dark blue van swerved abruptly into my lane from the right, forcing me to take evasive action. To avoid a direct collision, I steered sharply to the left. The van continued at high speed and did not stop. My vehicle impacted the guardrail on the median. The front bumper has a significant dent and multiple scratches, there's a crack in the headlight assembly, and the left front lamp is clearly broken. This was entirely due to the actions of the phantom vehicle."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was driving a few cars behind and didn't see any blue van. The BMW just seemed to lose control for a moment and veered into the guardrail on its own. It looked like a pretty hard hit, there was a dent, some scratches, and a crack. I couldn't see if any lamps were broken."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-007",
+        "location": "Praça de Santiago, Guimarães (parking)",
+        "incident_type": "Parking pole collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "Oh, it was terrible, you know, I was just trying to park my little Dacia in Praça de Santiago, after having lunch with my grandkids, God bless them, they wanted to see the castle, and it was a lovely sunny day really. I just didn't see that pole, it just jumped out at me, I swear. My poor car, it has a big dent on the side, and lots of scratches from the scraping, and the tail light, the one on the left, it's completely smashed now. My wife is going to kill me, she loves this car. I always say these new cars are too big for parking spaces."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-008",
+        "location": "Avenida Luísa Todi, Setúbal",
+        "incident_type": "Minor side-swipe (wave-in)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver provided vague details regarding the exact time and precise location, avoiding potential camera evidence",
+            "Driver claimed 'glass shatter' and 'lamp broken' but they are missing from detected_damages",
+            "Driver focused heavily on vehicle damage and compensation rather than the incident mechanics"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "So I was driving on Avenida Luísa Todi, you know, just a normal day. This other car, a small one, like a Corsa or something, was pulling out from a parking spot. The driver waved me to go, so I went, and then they just hit my side. My whole side mirror shattered, and the passenger window is cracked. Plus, the side panel is all scratched up, and the indicator lamp is broken. It's really bad, I need this fixed ASAP."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I was pulling out, slowly, and I signaled to the Fiat that she could pass. She just drove right into my side mirror, it was a minor scrape, maybe 10 km/h. There's only a scratch on her door, nothing else. She's claiming a lot more damage than what happened."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was sitting at a café nearby. I saw the Fiat driver get waved through. It was a very light side-swipe. I only saw a scratch on the Fiat's door, maybe an inch long. No glass broke, no lamps were damaged. The Fiat driver seemed very upset and was looking at her car very intensely."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-009",
+        "location": "Estrada Nacional 114, near Évora",
+        "incident_type": "Animal collision (wild boar)",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "crack",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Dude, I was just driving on the N114 outside Évora, heading to visit my grandparents, you know, and suddenly this HUGE wild boar just ran out into the road from the fields! I didn't even have time to brake properly, pá. I hit it, like, hard. My front bumper is totally dented, and the headlight glass has a big crack. The fog lamp is definitely broken too. I'm so shaken up, I hope it's not too expensive to fix, man."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was driving behind the Clio. A very large wild boar ran across the road. The Clio hit it. The car's front seemed pretty damaged, I could see a dent and what looked like a crack in a light. It was a serious impact with the animal."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-001-2026-010",
+        "location": "Via Rápida (VR1), Funchal, Madeira",
+        "incident_type": "Single vehicle impact (allegedly avoiding phantom vehicle)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver is overly aggressive, threatening legal action and demanding immediate settlement without proper investigation",
+            "Driver claimed 'glass shatter' and 'lamp broken' but they are missing from detected_damages",
+            "Lack of evidence for the alleged phantom vehicle"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "I WAS DRIVING ON THE VIA RÁPIDA IN FUNCHAL. SOME IDIOT IN A WHITE VAN JUST SWERVED IN FRONT OF ME FOR NO REASON! I HAD TO SWERVE TO AVOID THEM AND HIT THE BARRIER! NOW MY FRONT BUMPER IS DENTED, SCRATCHED, THE HEADLIGHT IS BROKEN AND THE WINDSCREEN HAS A MASSIVE CRACK! THIS IS UNACCEPTABLE! I WANT THIS CLAIM SETTLED BY END OF DAY, OR I WILL BE FILING A COMPLAINT WITH MY LAWYER AND EVERY REGULATORY BODY IMAGINABLE! DO NOT DARE QUESTION MY ACCOUNT!"
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was a few cars behind on the VR1. I didn't see any white van swerve. The Golf just seemed to lose control slightly and brushed against the concrete barrier. It looked like a minor impact, causing a dent and some scratches on the side. There was no broken glass or headlights from what I could see."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-001",
+        "location": "Avenida da Liberdade, Lisbon",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just driving, you know, totally normal, maybe 40 km/h? And the car in front just, like, slammed on their brakes for no reason! I tried to stop, I really did, but I couldn't. I just bumped them. Now my car has a dent and a scratch, and I'm so worried about the insurance, dude. This is going to be expensive, right?"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "VW Golf",
+                "text": "Vehicle A, a Renault Clio, impacted the rear of my VW Golf at approximately 15:35 on Avenida da Liberdade. I was decelerating to yield to a pedestrian at a crossing point when the impact occurred. Damage observed on my vehicle includes a noticeable dent to the rear bumper and some associated paint scratches. The driver of Vehicle A seemed visibly distressed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-POR-2026-002",
+        "location": "Shopping Cidade do Porto Parking Lot, Porto",
+        "incident_type": "Parking lot scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed dent and lamp broken but only scratch detected (Class Mismatch)",
+            "Vague description of incident time and exact location within the parking lot"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "Some idiot hit my car in the parking lot. I parked it, went inside, came back, and BOOM, damage. It's ridiculous. My front right bumper has a huge dent, and the headlamp is definitely broken, too. There's a scratch there, of course. I just want this sorted out. It must have happened between, like, 14:00 and 16:00. These things happen all the time, right?"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-003",
+        "location": "Rua Larga, Coimbra",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "At approximately 10:10, while proceeding north on Rua Larga at a speed of 25 km/h, a Fiat Punto (Vehicle B) attempted to merge from the right lane without adequate clearance. My vehicle sustained a scratch along the passenger side rear door and a minor dent to the wheel arch. I immediately applied the brakes to prevent further contact. No injuries were sustained."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat Punto",
+                "text": "Yeah, like, I was trying to change lanes, you know? The traffic was heavy, and I thought I had space, but this Audi just, like, appeared really fast. My bad, I guess. I heard a scraping sound. I think my side mirror got scratched, and I saw a scratch and a small dent on their car, man. It's a mess, I hope it's not too bad for my premiums."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-004",
+        "location": "N125 near Faro Airport, Faro",
+        "incident_type": "Staged Rear-end (Swoop and Squat)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver claims severe neck pain inconsistent with minor vehicle damage (Physics Mismatch)",
+            "Third-party statement is overly technical and defensive, mirroring insured driver",
+            "Statements are too similar and detailed for a spontaneous accident, suggesting pre-planning"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was operating my vehicle, a BMW 3 Series, on the N125 at a controlled speed of 70 km/h. Suddenly, a dark-coloured Opel Corsa (Vehicle B) swerved sharply in front of me and braked aggressively. Despite my immediate and full application of braking force, I was unable to prevent a low-speed impact. My vehicle suffered a minor dent to the front bumper. I also experienced immediate and significant neck pain due to the sudden deceleration. I can confirm I had not consumed any alcohol prior to the incident."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "My vehicle, an Opel Corsa, was proceeding southbound on N125. An unforeseen traffic obstruction ahead required immediate and safe deceleration. Vehicle A, a BMW, was following too closely and failed to maintain an adequate stopping distance, resulting in a minor rear-end collision. The impact was minimal, resulting in a small dent on my rear bumper. I verify that my braking was justified and my vehicle's brake lights were fully functional. I also confirm I was not speeding, maintaining a constant 70 km/h."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-005",
+        "location": "Praça da República, Braga",
+        "incident_type": "Fender bender",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter and lamp broken but only dent detected (Class Mismatch)",
+            "Aggressive tone trying to rush the process, inconsistent with minor damage"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes-Benz C-Class",
+                "text": "SOME IDIOT HIT ME WHILE I WAS PARKING! MY FRONT BUMPER IS COMPLETELY DENTED, AND THE HEADLIGHT IS BROKEN! I'M PRETTY SURE THE WINDSHIELD HAS A CRACK NOW TOO, FROM THE SHOCK! THIS IS UNACCEPTABLE! I WANT THIS FIXED IMMEDIATELY, NO DELAYS. IF NOT, I'M CALLING MY LAWYER AND GOING STRAIGHT TO THE 'LIVRO DE RECLAMAÇÕES'! DON'T WASTE MY TIME!"
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-006",
+        "location": "Mercado do Livramento Parking, Setúbal",
+        "incident_type": "Minor scrape while parking",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "Oh dear, it was such a lovely day, I was just going to the market to buy some fresh fish for dinner, you know, my grandchildren love my bacalhau à brás. And I was backing into a spot, very slowly, maybe 5 km/h, because my eyes aren't what they used to be, and I just heard a little *scrape*. I think I brushed against one of those concrete pillars. It's just a little scratch on the back bumper, but my husband, Carlos, he'll be so cross, he loves this car, it's our only one. Can you help me with this, please? I don't really understand how these things work."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LEI-2026-007",
+        "location": "IC2 Bypass, Leiria",
+        "incident_type": "Phantom vehicle collision",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Lack of a verifiable third-party vehicle or witness",
+            "Vague description of the phantom vehicle and incident circumstances",
+            "Focus on damage and rapid payment rather than detailed accident dynamics"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 308",
+                "text": "I was driving on the IC2 bypass around 20:00. It was dark, and suddenly, this car, I don't know, a dark sedan maybe, just came out of nowhere from the side road. It hit my passenger side. The impact caused a dent and some scratches. It didn't stop, just drove off really fast. I couldn't get the license plate, it was too quick. My car needs repairs, please. Can we get this processed quickly? It's a significant dent and scratch."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-EVO-2026-008",
+        "location": "Near Roman Temple, Évora",
+        "incident_type": "Staged Intersection collision (Wave-in)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "lamp broken"
+        ],
+        "fraud_indicators": [
+            "Third-party claims to have waved the insured driver through despite right-of-way rules (Physics Mismatch)",
+            "Aggressive demands for quick settlement from insured driver",
+            "Damage appears consistent with low-speed impact, but both drivers claim significant suddenness."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "I WAS WAITING TO TURN LEFT AT THE INTERSECTION, AND THE OTHER DRIVER, IN A DACIA, CLEARLY WAVED ME THROUGH! I PROCEEDED CAREFULLY, BUT HE STILL HIT ME! MY FRONT BUMPER IS DENTED, HEADLAMP IS BROKEN, AND THERE ARE DEEP SCRATCHES! THIS IS HIS FAULT! I DEMAND A QUICK RESOLUTION AND FULL COMPENSATION FOR ALL DAMAGES! NO QUESTIONS ASKED! I WILL CONTACT THE 'LIVRO DE RECLAMAÇÕES' IF THIS ISN'T SETTLED FAST!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Dacia Duster",
+                "text": "I observed Vehicle A, a Citroën C3, attempting a left turn. Out of courtesy, and believing there was ample time and space, I executed a hand gesture implying permission for Vehicle A to proceed. However, Vehicle A accelerated with unexpected rapidity, resulting in an unavoidable low-velocity impact with the front right side of my vehicle. My front bumper sustained a minor dent and scratch. I acted in good faith; the collision was the result of Vehicle A's misinterpretation and excessive speed, approximately 10 km/h."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VIS-2026-009",
+        "location": "Forum Viseu Parking, Viseu",
+        "incident_type": "Small parking lot bump",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter, dent, and lamp broken but only scratch detected (Class Mismatch)",
+            "Driver's statement is overly detailed and technical for a simple parking bump, attempting to justify non-existent damage"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i20",
+                "text": "At approximately 16:45, after successfully completing a parking maneuver, an unforeseen structural integrity failure of the adjacent parking barrier resulted in a lateral impact with my passenger side rear. This caused not only a significant scratch, but also a clearly identifiable dent on the panel and a catastrophic rupture of the passenger side tail lamp assembly. Furthermore, the acoustic shockwave generated by the impact resulted in a hairline crack propagating across the rear window glass. I require full reparations for all these damages, which are directly attributable to this incident."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-010",
+        "location": "A25 near Vista Alegre exit, Aveiro",
+        "incident_type": "Phantom vehicle collision",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [
+            "Driver's statement is overly detailed and technical about an unseen phantom vehicle, attempting to establish an alibi for pre-existing damage",
+            "Lack of any physical evidence of a collision with another vehicle",
+            "Damages could be pre-existing or from a fixed object collision, not a phantom vehicle"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Skoda Octavia",
+                "text": "I was maintaining a consistent speed of 100 km/h on the A25, approximately 2 km past the Vista Alegre exit, at 03:15. Due to the complete absence of ambient lighting and a sudden, unidentifiable object in my lane, which I can only describe as a fast-moving, unlit vehicle of indeterminate make, I was forced into an evasive maneuver. This resulted in a glancing impact with said phantom vehicle. My front left fender exhibits a substantial dent, and the left headlamp is definitively broken. I assure you that my vehicle's lighting system was fully operational, and I was neither under the influence nor distracted. The other vehicle departed the scene without stopping, making identification impossible."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-LIS-2026-001",
+        "location": "Rua Augusta, Lisbon",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just trying to find parking near Praça do Comércio, you know? And this dude, he just kinda stopped really suddenly. I think I was going like, 15 km/h, nothing fast, but I just clipped his bumper. There's a dent, like, a proper dent, and a scratch, a long one, on my front bumper. I'm so worried about the costs, pá, my parents are gonna kill me!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "I was stationary, waiting for a pedestrian to cross, when the insured vehicle impacted my rear bumper. The speed of impact was low. Visual inspection indicates a superficial dent and an associated paint scratch on my vehicle's rear bumper. No other damages are noted. Driver of the Renault appeared distressed."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-PRT-2026-002",
+        "location": "Avenida dos Aliados, Porto",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I was making a turn onto Rua de Santa Catarina, and the other car, a Mercedes, was coming out of a parking spot too fast. They just scraped my side, right along the passenger door. There's a really noticeable scratch and a small dent. It was an honest mistake, both of us were probably a bit distracted. Just want to get it fixed efficiently."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes-Benz C-Class",
+                "text": "The incident occurred at approximately 14:30. I was exiting a parallel parking space, exercising due caution. The Opel Corsa, whilst executing a left turn, misjudged the clearance, resulting in a side-swipe contact. My front passenger side panel sustained a linear scratch and a minor dent. No impairment to vehicle operation or safety systems."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-COI-2026-003",
+        "location": "Rua Larga, Coimbra",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat Panda",
+                "text": "Oh dear, it was just after I'd picked up the grandchildren from school, you see. I was reversing out of the car park at the Fórum Coimbra, being ever so careful. The sun was right in my eyes, just like it was yesterday morning when I went to the market, and I just nudged the pillar, a bit too close. Just a little dent on the rear bumper, but it makes me so cross with myself. My husband, bless his soul, would always tell me to take my time."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FAR-2026-004",
+        "location": "Avenida 5 de Outubro, Faro",
+        "incident_type": "Minor rear-end collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter but it is missing from detected_damages",
+            "Claimed lamp broken but it is missing from detected_damages",
+            "Driver's statement is short and vague, focusing on severe damage not physically present."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Peugeot 208",
+                "text": "Someone barely tapped me from behind. Just a small tap, but my rear window completely shattered, and the right tail lamp is broken. It's a disaster. I need the full repair. Didn't get their details properly, they just drove off very fast after it happened. I was just near the market."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AVE-2026-005",
+        "location": "Rossio ao Sul do Tejo, Aveiro",
+        "incident_type": "Swoop and squat staged accident",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed significant lamp damage and front-end collapse, but detected_damages only shows a dent and a scratch",
+            "Driver's statement is overly detailed and defensive, characteristic of a pre-planned narrative.",
+            "Implied excessive damage (e.g., 'front end collapsed') not supported by detected damages."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Citroën C3",
+                "text": "I was maintaining a constant speed of 50 km/h on the right lane, heading towards the university. A dark blue Ford Focus suddenly swerved in front of me from the left lane, braking sharply without any signal. I reacted instantly, applying full braking force, but collision was unavoidable. My front right lamp completely shattered, and the bumper sustained severe structural deformation. My breathalyzer test would confirm zero alcohol, as I always operate my vehicle responsibly."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Focus",
+                "text": "The Citroën just drove into my rear. I had to brake because a dog ran onto the road. There's only a small mark on my bumper. The other driver seemed very agitated and was already talking about a 'shattered lamp' before anyone really looked."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BRA-2026-006",
+        "location": "Largo do Paço, Braga",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter and lamp broken but they are missing from detected_damages",
+            "Driver's statement uses aggressive language and threats, attempting to rush the claims process and avoid scrutiny.",
+            "Physics Mismatch: claimed 'massive impact' and 'shattered' components, but only minor dent and scratch are present."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I HAD THE RIGHT OF WAY! This idiot in the red car CAME OUT OF NOWHERE and hit my side! The impact was MASSIVE! My passenger window is COMPLETELY SHATTERED, and the headlamp on that side is GONE! I'm calling my lawyer and the Livro de Reclamações if this isn't sorted out IMMEDIATELY! This is UNACCEPTABLE!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat Tipo",
+                "text": "I was making a left turn, and the BMW was speeding. I admit I might have misjudged the distance slightly, but he hit my front, not my side. There's only a scratch on his car, I don't see any glass shatter or a broken lamp. He was shouting from the moment he got out of his car."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CAS-2026-007",
+        "location": "Praça Marquês de Pombal, Castelo Branco",
+        "incident_type": "Single vehicle incident (phantom vehicle claim)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter and deep crack but they are missing from detected_damages",
+            "Lack of specific details about the 'phantom' vehicle (make, model, color, direction, plate).",
+            "Driver avoids giving exact times or highly specific locations that might have camera footage.",
+            "The nature of claimed damage (glass shatter) is disproportionate to a minor 'swerve' incident without contact."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "I was driving home, just past the roundabout, when this large black van came out of nowhere, swerving into my lane. I had to violently pull the steering wheel to avoid it, and I clipped the curb hard. My front right passenger window completely shattered, and there's a deep crack in the door itself. The van just sped off, didn't even stop. It happened so fast, I couldn't get any details. It was around dinner time, I think."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-SET-2026-008",
+        "location": "Avenida Luísa Todi, Setúbal",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "Oh God, I'm so shaken, pá. I was approaching the traffic lights, you know, the ones near the Mercado do Livramento. It turned green, I swear! And then this other car, a small grey one, just came straight through the red. I swerved but couldn't avoid it. There's like, a big dent on my front right fender, and my headlamp is definitely broken. I really hope my insurance covers this, I can't afford a huge bill."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "I maintain that the traffic light was amber. I was proceeding through the intersection at a safe speed of approximately 30 km/h. The Seat Ibiza initiated movement prematurely. The impact was to the front left side of the Ibiza. I observed a dent and a fractured headlamp casing. My vehicle sustained minor scuffing."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was waiting at the bus stop, just watching people, when the light for the Dacia definitely went red. The Dacia accelerated instead of stopping. The Seat then hit it. The Seat has a smashed light and a dent. The Dacia only a small mark. It was very clear the Dacia ran the red light."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-VIS-2026-009",
+        "location": "Rua Formosa, Viseu",
+        "incident_type": "Parking lot scraping",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed a significant crack but it is missing from detected_damages",
+            "Driver's statement is brief and overly focused on the claimed, non-existent damage, typical of opportunism."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Hyundai i20",
+                "text": "Someone scraped my car while I was parked at the shopping center. It's just awful. There's a huge scratch on the rear door, and a big crack right through the window. I really need that window replaced. I didn't see who did it, just came back to find it like this."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-EVO-2026-010",
+        "location": "Praça do Giraldo, Évora",
+        "incident_type": "Rear-end collision (exaggerated staged)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter and lamp broken but they are missing from detected_damages",
+            "Driver's statement is overly detailed, defensive about speed, and disproportionately emphasizes severe damage for a 'minor tap'.",
+            "Physics Mismatch: 'minor tap' should not result in glass shatter and lamp broken without other significant impact marks."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Skoda Fabia",
+                "text": "I was slowing down for the pedestrian crossing, well within the 30 km/h limit, when I felt a sudden impact from behind. It was a minor tap, but the force caused my rear windscreen to completely shatter, and both my taillights are now broken. I believe the other driver was not paying attention. I specifically checked my speedometer just moments before, I was not exceeding the limit."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Toyota Yaris",
+                "text": "I was looking for a parking spot when the Skoda in front of me braked hard for no clear reason. I barely touched his bumper, a very light contact. I saw a small dent, but certainly no shattered window or broken lamps. The driver immediately got out claiming extensive damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-001",
+        "location": "Lisbon, Av. da República",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Dude, like, I was just driving, you know? And this guy just braked suddenly in front of me, like, near Campo Pequeno. I couldn't stop, man. My car, it's got a dent and a scratch, I think. Will insurance cover this, like, fully? I'm so stressed about the costs, pá."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 208",
+                "text": "The vehicle behind, a Renault Clio, failed to maintain a safe distance. I was decelerating to halt at the traffic light on Avenida da República. Impact occurred at approximately 15 km/h. Minor dent to my rear bumper."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-002",
+        "location": "Porto, Rua de Santa Catarina",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"lamp broken\" but it is missing from detected_damages."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Fiat 500",
+                "text": "SOMEONE HIT MY CAR IN THE PARKING LOT ON RUA DE SANTA CATARINA! I CAME BACK AND IT WAS SCRATCHED AND DENTED, AND MY LEFT HEADLAMP IS BROKEN! I NEED THIS FIXED IMMEDIATELY! IF NOT, I WILL GO TO THE 'LIVRO DE RECLAMAÇÕES' AND GET MY LAWYER INVOLVED! THIS IS RIDICULOUS!"
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "Oh, coitadinho, I saw a little silver car, I think it was a Fiat, near the Bolhão market, just a tiny scratch and a dent on the side. Nobody else was around, it must have been a hit and run by some inconsiderate person. My grandson, he told me to tell you this, because it's important to be honest, you know. It was just a small mark, like when you open the car door too fast."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-003",
+        "location": "Almada, Ponte 25 de Abril access",
+        "incident_type": "Lane change collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"glass shatter\" and \"lamp broken\" which makes no physical sense for a minor side-swipe with detected damages only being \"dent\" and \"scratch\".",
+            "Statement is overly detailed and defensive for a staged accident."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was proceeding north on the access road to Ponte 25 de Abril, maintaining a speed of 70 km/h. The third-party vehicle, a Mercedes, abruptly cut into my lane without signal, forcing an evasive maneuver. Despite my efforts, contact was made. My front right headlamp is broken, and there's a significant glass shatter on the passenger side window. I was not under the influence, nor was I distracted. My focus was entirely on the road ahead."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Mercedes C-Class",
+                "text": "I just changed lanes. This guy came out of nowhere. I barely touched his car. No big deal. Just a scratch. My car is fine. I need this dealt with quickly, I have important business."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-004",
+        "location": "Funchal, Estrada Monumental",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "While navigating the narrow section of Estrada Monumental near the hotel zone in Funchal, a delivery van, identified as a Ford Transit, encroached into my lane. This resulted in a side-swipe incident, causing a scratch and a dent to the left side of my vehicle. The incident occurred at approximately 30 km/h."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Ford Transit",
+                "text": "Oh man, like, I was just trying to get around that bend, you know? And that Audi, like, it was really close to the curb, so I misjudged it, pá. Just a small scrape, I think. My boss is going to kill me. Is his car, like, really damaged? Mine's okay, just a little scratch."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-005",
+        "location": "Coimbra, Arcos do Jardim",
+        "incident_type": "Single vehicle accident",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"lamp broken\" and \"glass shatter\" which are missing from detected_damages.",
+            "Driver claims a phantom vehicle, which is a common fraud pattern.",
+            "Statement is vague regarding location and incident specifics."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Seat Ibiza",
+                "text": "I was driving, a car came out of nowhere, I had to swerve. It was a dark car, couldn't see the plate. My car hit something. It's got a big dent, and the front lamp is broken, and the windshield is shattered. I need to claim this. It happened somewhere near Arcos do Jardim. Just pay me, please."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-006",
+        "location": "Évora, Praça do Giraldo",
+        "incident_type": "Minor parking collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "Oh my dear, I was just trying to park, you know, near Praça do Giraldo, it's always so busy there. I was going to get some pasteis de nata for my grandchildren, they love them so much. And I just, a little bit, touched the car behind me. It was a small car, I think a Corsa. My husband always told me to be careful, but I'm not as agile as I used to be. It was just a little scratch, nothing serious, but I felt bad, so I left my number. I hope he's not too upset."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Opel Corsa",
+                "text": "Vehicle Dacia Sandero made contact with my rear bumper while attempting a reverse parking maneuver at low speed, approximately 5 km/h. A minor scratch, approximately 10 cm in length, is observed. No structural damage."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-007",
+        "location": "Faro, Avenida 5 de Outubro",
+        "incident_type": "Rear-end at traffic light",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"crack\" and \"lamp broken\" but they are missing from detected_damages.",
+            "Statement is vague regarding time and precise location details."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "VW Golf",
+                "text": "I was stopped at a light, then got hit from behind. This guy just wasn't paying attention. My car has a scratch, a crack on the bumper, and the rear lamp is broken. It happened on Avenida 5 de Outubro, in Faro. I need this fixed ASAP. I'm busy."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Citroën C3",
+                "text": "Man, like, I totally messed up, you know? I was looking at the GPS, and just, like, tapped the car in front of me. It was super slow, maybe 10 km/h. I saw a tiny scratch on his bumper, pá. I hope he's not too mad."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-008",
+        "location": "Braga, Rotunda do Papa",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"glass shatter\" and \"lamp broken\" for a low-speed wave-in collision, which is a physics mismatch given the detected damages.",
+            "Driver is aggressive and tries to rush the process."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Mégane",
+                "text": "I WAS WAVED IN BY THE OTHER DRIVER TO TURN LEFT AT ROTUNDA DO PAPA! THEN HE SUDDENLY ACCELERATED AND HIT ME! MY CAR IS DENTED, SCRATCHED, THE WINDSHIELD IS SHATTERED, AND MY LEFT HEADLAMP IS BROKEN! THIS IS CLEARLY HIS FAULT! I DEMAND IMMEDIATE ACTION AND NO HASSLE! I WILL NOT TOLERATE DELAYS! I'M ALREADY CONTACTING MY LAWYER!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Audi A3",
+                "text": "I approached the intersection at Rotunda do Papa and observed the insured vehicle, a Renault Mégane, attempting a left turn. My vehicle was stationary. The insured vehicle initiated the turn, despite me not providing any signal for him to proceed. He struck my front fender. My vehicle sustained minor superficial damage, primarily a dent and a scratch. I had not consumed any alcoholic beverages and was operating within legal parameters."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-009",
+        "location": "Aveiro, Rua João Mendonça",
+        "incident_type": "Pedestrian collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mini Cooper",
+                "text": "Oh my god, like, I was just driving really slowly, you know? On Rua João Mendonça, near the canals, and this guy, he just stepped out into the road without looking, pá. I braked really hard, but I, like, just barely touched him. He fell, but he seemed okay, just a bit shaken. My car has a small dent on the front bumper. Is he okay? Will I get a fine, dude? I'm so worried."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "Yes, I saw it, poor boy, it was quite sad. I was just heading to the bakery, like I do every morning, for my morning bread. The driver, a young girl, was going very slow, maybe 10 km/h, and the gentleman, he was looking at his phone, you know how these young people are. He just walked right out. The car barely nudged him, he just stumbled and fell. A small dent on the car, yes, I saw that. He seemed fine, just a bit of a shock, like when you drop your keys."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-ACC-2026-010",
+        "location": "Portimão, Avenida V6",
+        "incident_type": "Low-speed rear-end collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Driver claims \"glass shatter\" and \"lamp broken\" which is a physics mismatch for a reported low-speed rear-end collision with minimal detected damage.",
+            "Statement is overly technical and defensive, typical for staged accident."
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Astra",
+                "text": "I was proceeding at a regulated speed of 30 km/h on Avenida V6 in Portimão. The preceding vehicle, a Renault Clio, executed an abrupt and unprovoked emergency stop. Despite immediate brake application, contact was unavoidable. The impact resulted in significant damage to my vehicle's front, including a shattered windshield and a broken right headlamp. I confirm I was operating the vehicle without impairment and maintaining full attention."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Clio",
+                "text": "Yeah, I stopped. He hit me. It was a really small bump, nothing much. Just a dent and a scratch on my bumper. My car is fine. I just need his insurance details. No big deal, right? Let's get this over with."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-AX1-2026-001",
+        "location": "Rua do Ouro, Lisboa",
+        "incident_type": "Rear-end collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Renault Clio",
+                "text": "Oh man, like, I was just driving, you know, near Baixa-Chiado, and this dude just slammed into me from behind. I mean, I stopped at the red light, like, perfectly fine, and then BANG! My rear bumper has a huge dent and a bunch of scratches. I'm so anxious about the cost, pá, this is my first accident. Do I have to pay for all this?"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Volkswagen Golf",
+                "text": "I was momentarily distracted by my GPS and failed to maintain a safe following distance. The vehicle in front of me, a Renault Clio, braked appropriately for the traffic signal. My vehicle made contact with the rear of the Clio. I observed a dent and some paint scratches on the rear bumper of the insured vehicle. My apologies for the inconvenience caused."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-BX2-2026-002",
+        "location": "Avenida dos Aliados, Porto",
+        "incident_type": "Side-swipe",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch",
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed lamp broken but it is missing from detected_damages",
+            "Vague description of the incident details"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Mercedes-Benz C-Class",
+                "text": "Yeah, I was just, uh, driving along. Someone just came out of nowhere, you know? Swerved into my lane. Didn't even see them, honestly. My front left is all messed up. There's a big scratch, a dent, and the headlamp is totally broken. Need this fixed ASAP."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Fiat Tipo",
+                "text": "I was making a lane change on Aliados, with my indicator on. The Mercedes moved simultaneously. There was a minor side-swipe. I saw a scratch and a small dent on its fender. My vehicle has a scratch too. There was no damage to its lamps."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-CX3-2026-003",
+        "location": "Praça da República, Coimbra",
+        "incident_type": "Intersection collision",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter but it is missing from detected_damages",
+            "Statements are overly technical and defensive, suggesting pre-planning",
+            "Contradictory accounts of traffic light status"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "BMW 3 Series",
+                "text": "I was proceeding through the intersection at Praça da República at approximately 40 km/h. The traffic signal was unequivocally green in my direction. Vehicle B, a Citroën, then entered the intersection from the perpendicular street, disregarding the red signal, resulting in a T-bone impact to my front right fender. The force of the impact caused a significant dent and unfortunately, a glass shatter on my headlight assembly. I had not consumed any alcoholic beverages and was operating my vehicle well within the posted speed limits."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Citroën C3",
+                "text": "I entered the intersection as the light for my direction had just turned green. The BMW, from the cross street, accelerated into the intersection, striking my vehicle's front corner. There was a minor dent on the BMW's fender. The impact was not severe enough to cause any glass damage, merely a slight fender dent."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was waiting to cross the road right there. It looked like both cars went into the intersection at the same time, when the light was changing, you know? It was a low-speed impact. I saw a dent on the BMW, but no glass flying or anything like that. Just a bump."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-DX4-2026-004",
+        "location": "Avenida 5 de Outubro, Faro",
+        "incident_type": "Parking lot collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "lamp broken"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "SEAT Ibiza",
+                "text": "I was reversing out of a parking spot at the Forum Algarve shopping center. I checked my mirrors, but unfortunately, a pole was in my blind spot. I heard a crunch, and when I got out, I saw a dent in my rear bumper and my left taillight was completely broken. It was entirely my fault, regrettably."
+            },
+            {
+                "role": "impartial_witness",
+                "vehicle": "none",
+                "text": "I was just putting my groceries in the boot of my car, and I saw a SEAT reversing slowly. It just tapped a concrete pillar. It definitely made a dent on the back and the taillight broke. No one else was involved, it was just the car and the pole."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-EX5-2026-005",
+        "location": "Rua do Souto, Braga",
+        "incident_type": "Lane change collision",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed glass shatter but it is missing from detected_damages",
+            "Aggressive tone and use of ALL CAPS to pressure claim processing"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Audi A4",
+                "text": "THIS OTHER DRIVER SWERVED INTO MY LANE WITHOUT WARNING! MY CAR, A BRAND NEW AUDI, IS COMPLETELY DAMAGED! THERE'S A HUGE SCRATCH ALONG THE SIDE, AND THE WINDSHIELD IS PRACTICALLY SHATTERED! I DEMAND IMMEDIATE RESOLUTION. I WILL CONTACT MY LAWYER AND THE 'LIVRO DE RECLAMAÇÕES' IF THIS ISN'T HANDLED INSTANTLY!"
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Peugeot 308",
+                "text": "I was changing lanes and misjudged the distance. My car scraped the side of the Audi. It was a very minor incident, just a paint scratch. There was no impact to the windshield or any glass on the Audi, just a superficial mark on the door panel."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-FX6-2026-006",
+        "location": "Avenida Lourenço Peixinho, Aveiro",
+        "incident_type": "Hit and run (phantom vehicle)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claim of a phantom vehicle with no witness or third-party details",
+            "Vague description of incident location and time",
+            "Claimed crack but it is missing from detected_damages"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Opel Corsa",
+                "text": "I don't know, it happened so fast. I was just driving, maybe near that shopping center in Aveiro, and some car, I didn't get the make or model, just came up and hit my side mirror and fender, then sped off. There's a dent, a big scratch, and I think there's a small crack near the headlight too from the impact. It was, like, yesterday evening, I think."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-GX7-2026-007",
+        "location": "Largo da Portagem, Évora",
+        "incident_type": "Low-speed collision",
+        "ground_truth_label": "genuine_accident",
+        "detected_damages": [
+            "dent",
+            "scratch",
+            "crack"
+        ],
+        "fraud_indicators": [],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Dacia Sandero",
+                "text": "Oh dear, it was such a fright. I was just coming back from visiting my cousin, Maria, in Reguengos and I was a bit tired, you see. I was at Largo da Portagem, a busy place, and I thought the car in front was moving but it wasn't. Just a little bump, but it made quite a noise. My front bumper has a dent now, and a long scratch, and goodness me, the grille has a crack right in the middle. My spectacles were almost falling off, I tell you. It was a sunny day though, very pleasant otherwise."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Skoda Octavia",
+                "text": "I was stationary in traffic in Évora, waiting to turn onto Rua do Almada. The vehicle behind me, a Dacia, made a very gentle contact with my rear bumper. There was no damage to my vehicle, but I observed a dent, a scratch, and a crack on the Dacia's front grille area. The driver seemed quite shaken."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-HX8-2026-008",
+        "location": "Avenida Luísa Todi, Setúbal",
+        "incident_type": "Rear-end collision (staged)",
+        "ground_truth_label": "hard_fraud_staged",
+        "detected_damages": [
+            "dent",
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed lamp broken but it is missing from detected_damages",
+            "Statements are overly detailed and rehearsed, suggesting pre-planning",
+            "Third-party statement appears to corroborate exaggerated details"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Ford Focus",
+                "text": "I was maintaining a constant speed of 30 km/h on Avenida Luísa Todi. I observed a sudden, aggressive braking maneuver by Vehicle B ahead. Despite my prompt reaction, applying maximum brake pressure and engaging the anti-lock braking system, a rear-end collision was unavoidable. My front bumper sustained a substantial dent, several deep scratches, and the left headlamp housing suffered a critical fracture, rendering it non-functional. I confirm my full attentiveness and adherence to all traffic regulations prior to the incident."
+            },
+            {
+                "role": "third_party_driver",
+                "vehicle": "Renault Captur",
+                "text": "Indeed, I was driving my Renault Captur ahead of the Ford Focus. I had to brake sharply due to an unforeseen obstruction. The Focus, despite the driver's evident best efforts, was unable to stop in time, making contact with my rear. I observed a clear dent, significant scratches, and the driver's left headlamp was unequivocally broken from the impact. It was a regrettable but unavoidable accident."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-IX9-2026-009",
+        "location": "Rua Paio Galvão, Guimarães",
+        "incident_type": "Parking scrape",
+        "ground_truth_label": "soft_fraud_exaggeration",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claimed dent but it is missing from detected_damages",
+            "Exaggerated description of impact severity compared to detected damages"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Nissan Qashqai",
+                "text": "So, like, I was just trying to park, you know, near the castle in Guimarães, and I misjudged the wall, dude. It was totally a tight spot, pá. I just kinda scraped the side. But it's, like, a really bad scratch now, and I think there's a proper dent too, a deep one. It's gonna be super expensive to fix, right? Like, my whole door panel is messed up."
+            }
+        ]
+    },
+    {
+        "claim_id": "PT-JX0-2026-010",
+        "location": "Avenida Marginal, Cascais",
+        "incident_type": "Phantom vehicle (hit and run)",
+        "ground_truth_label": "hard_fraud_phantom_vehicle",
+        "detected_damages": [
+            "scratch"
+        ],
+        "fraud_indicators": [
+            "Claim of a phantom vehicle with no witness or third-party details",
+            "Aggressive tone to rush processing, attempting to avoid scrutiny",
+            "Claimed glass shatter and lamp broken but they are missing from detected_damages"
+        ],
+        "statements": [
+            {
+                "role": "insured_driver",
+                "vehicle": "Tesla Model 3",
+                "text": "SOMEONE HIT MY CAR ON THE MARGINAL AND JUST FLED THE SCENE! MY TESLA MODEL 3 IS DAMAGED! THERE'S A HUGE SCRATCH ON THE PASSENGER DOOR, AND BOTH THE WINDOW IS SHATTERED AND THE HEADLAMP IS BROKEN! THIS IS UNACCEPTABLE. I DEMAND THIS BE PROCESSED IMMEDIATELY. NO WITNESSES, THEY WERE DRIVING TOO FAST. YOU NEED TO SORT THIS OUT NOW OR I'LL TAKE THIS TO THE HIGHEST AUTHORITIES! GET THIS FIXED TODAY!"
+            }
+        ]
+    }
+]
