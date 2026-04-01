@@ -3,7 +3,7 @@ import json
 import os
 import time
 
-genai.configure(api_key="AIzaSyCb2G6vvFRi37wDjgb-fJsdzo4SlGjhm80") #colocar key aqui! ir a google studio buscar uma key
+genai.configure(api_key="") #colocar key aqui! ir a google studio buscar uma key
 
 model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
 
