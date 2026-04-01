@@ -3,15 +3,10 @@ import json
 import os
 import time
 
-genai.configure(api_key="") #ir a google studio buscar uma key
+genai.configure(api_key="") #colocar key aqui! ir a google studio buscar uma key
 
-# 2. Configurar o Modelo
-# Recomendado o uso do gemini-2.5-flash para tarefas rápidas de geração de dados
-# ou gemini-2.5-pro se precisares de raciocínio ainda mais complexo
 model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
 
-# 3. Preparar o Prompt
-# Usamos few-shot prompting com a estrutura do teu dataset para garantir o formato correto.
 PROMPT = """
 You are an expert synthetic data generator for NLP tasks, specializing in the insurance sector and fraud detection. 
 Your task is to generate a dataset of 10 synthetic car accident insurance claims set in Portugal.
@@ -60,7 +55,7 @@ Each object must strictly follow this schema:
   ]
 }
 """
-
+#para depois testar adicionar prompt para ele ter 80% de casos genuínos e 20% de casos fraudulentos
 def gerar_dados(num_pedidos=1):
     novos_casos = []
     print("A iniciar as chamadas ao Google AI Studio (Gemini)...")
@@ -68,21 +63,17 @@ def gerar_dados(num_pedidos=1):
     for i in range(num_pedidos):
         print(f"Pedido {i+1} de {num_pedidos}...")
         try:
-            # Fazer a chamada à API
             response = model.generate_content(PROMPT)
             
-            # Interpretar o JSON (o response_mime_type garante que ele tenta devolver JSON, mas validamos na mesma)
             dados = json.loads(response.text)
             
             if isinstance(dados, list):
                 novos_casos.extend(dados)
                 print(f" -> Sucesso: {len(dados)} novos claims gerados.")
             elif isinstance(dados, dict):
-                # Caso ele devolva um dicionário único por algum motivo
                 novos_casos.append(dados)
                 print(" -> Sucesso: 1 novo claim gerado.")
                 
-            # É boa prática adicionar uma pausa para evitar bater nos rate limits da versão gratuita
             time.sleep(20)
             
         except json.JSONDecodeError as e:

@@ -1,22 +1,27 @@
 import pandas as pd
 import json
 
-input_filepath = '../dataset_insurance.json'
+input_filepath = 'dataset_sintetico_gemini.json'
 output_filepath = 'dataset_preparado.csv'
 
-def process_statements(statements):
-    """Concatena o 'role' e o 'text' num único formato textual."""
-    if not statements or not isinstance(statements, list):
-        return ""
+def process_row(row):
+    """Combina os 'detected_damages' e os statements num único formato textual."""
     
+    damages = row.get('detected_damages', [])
+    damages_text = "detected_damages: " + (", ".join(damages) if isinstance(damages, list) and damages else "none")
+
+    statements = row.get('statements', [])
     formatted_statements = []
-    for stmt in statements:
-        role = stmt.get('role', 'unknown_role')
-        text = stmt.get('text', '').strip()
-        if text: 
-            formatted_statements.append(f"{role}: {text}")
-            
-    return " | ".join(formatted_statements)
+    if isinstance(statements, list):
+        for stmt in statements:
+            role = stmt.get('role', 'unknown_role')
+            text = stmt.get('text', '').strip()
+            if text: 
+                formatted_statements.append(f"{role}: {text}")
+                
+    statements_text = " | ".join(formatted_statements)
+    
+    return f"{damages_text} | {statements_text}"
 
 def create_dataset():
     # Carregar os dados
@@ -36,7 +41,7 @@ def create_dataset():
         return
 
     # Criar features e labels binárias (0 = genuíno, 1 = fraude)
-    df['X_text'] = df['statements'].apply(process_statements)
+    df['X_text'] = df.apply(process_row, axis=1)
     df['Y_label'] = df['ground_truth_label'].apply(
         lambda x: 0 if x == 'genuine_accident' else 1
     )
