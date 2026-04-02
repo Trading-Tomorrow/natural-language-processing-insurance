@@ -2,8 +2,15 @@ import google.generativeai as genai
 import json
 import os
 import time
+from dotenv import load_dotenv
 
-genai.configure(api_key="") #colocar key aqui! ir a google studio buscar uma key
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), '..', '.env'))
+
+api_key = os.getenv("GEMINI_API_KEY")
+if not api_key:
+    raise ValueError("GEMINI_API_KEY não encontrada! Crie um ficheiro .env na raiz do projeto com: GEMINI_API_KEY=sua_chave")
+
+genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
 
@@ -56,7 +63,7 @@ Each object must strictly follow this schema:
 }
 """
 #para depois testar adicionar prompt para ele ter 80% de casos genuínos e 20% de casos fraudulentos
-def gerar_dados(num_pedidos=1):
+def gerar_dados(num_pedidos=1, nome_ficheiro="dataset_sintetico_gemini.json"):
     novos_casos = []
     print("A iniciar as chamadas ao Google AI Studio (Gemini)...")
     
@@ -69,10 +76,12 @@ def gerar_dados(num_pedidos=1):
             
             if isinstance(dados, list):
                 novos_casos.extend(dados)
-                print(f" -> Sucesso: {len(dados)} novos claims gerados.")
+                guardar_json(dados, nome_ficheiro)
+                print(f" -> Sucesso: {len(dados)} novos claims gerados e guardados.")
             elif isinstance(dados, dict):
                 novos_casos.append(dados)
-                print(" -> Sucesso: 1 novo claim gerado.")
+                guardar_json([dados], nome_ficheiro)
+                print(" -> Sucesso: 1 novo claim gerado e guardado.")
                 
             time.sleep(20)
             
@@ -108,5 +117,4 @@ def guardar_json(dados_novos, nome_ficheiro="dataset_sintetico_gemini.json"):
     print(f"\nGravação concluída: O ficheiro tem agora um TOTAL de {len(dados_existentes)} registos.")
 
 if __name__ == "__main__":
-    casos = gerar_dados(num_pedidos=10)
-    guardar_json(casos)
+    gerar_dados(num_pedidos=10)
