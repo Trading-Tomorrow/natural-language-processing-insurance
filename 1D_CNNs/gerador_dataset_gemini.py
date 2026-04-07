@@ -14,7 +14,7 @@ genai.configure(api_key=api_key)
 
 model = genai.GenerativeModel('gemini-2.5-flash', generation_config={"response_mime_type": "application/json"})
 
-PROMPT = """
+PROMPT_MISTO = """
 You are an expert synthetic data generator for NLP tasks, specializing in the insurance sector and fraud detection. 
 Your task is to generate a dataset of 10 synthetic car accident insurance claims set in Portugal.
 
@@ -62,15 +62,56 @@ Each object must strictly follow this schema:
   ]
 }
 """
+
+PROMPT_GENUINO = """
+You are an expert synthetic data generator for NLP tasks, specializing in the insurance sector. 
+Your task is to generate a dataset of 10 synthetic car accident insurance claims set in Portugal. All of these claims MUST BE 100% GENUINE (no fraud).
+
+CONTEXT & RULES:
+1. Language: All output, including the statements, MUST be strictly in English. However, the locations, culture, and context must reflect Portugal (use Portuguese cities, streets, and realistic local names).
+2. Metrics: Use the metric system strictly (km/h, meters). DO NOT use mph.
+3. Exclusions: Do not generate cases involving vehicle theft.
+4. ONLY Genuine Cases: Every single generated case must be a genuine, completely legitimate accident.
+5. Coherence: The "statements" must perfectly align with the "ground_truth_label".
+6. VISUAL DAMAGE CONSTRAINTS (CRITICAL LOGIC): 
+Our Computer Vision model only detects the PRESENCE of these 5 classes: 'crack', 'dent', 'glass shatter', 'lamp broken', and 'scratch'. It DOES NOT detect the severity or size of the damage (e.g., it cannot tell a small scratch from a huge scratch).
+- For 'genuine_accident', the damage classes claimed by the driver must perfectly match the classes listed in the 'detected_damages' array. No internal mechanical failures should be mentioned.
+
+PERSONAS FOR STATEMENTS (Apply these psychological profiles to the English text):
+Group 1: Genuine Claims (Baseline)
+- The Anxious Youth (20-25 y/o): Informal, anxious about the cost and the confusing process. Uses filler words (e.g., "like", "you know", "dude/man" as an equivalent to the Portuguese "pá").
+- The Pragmatic Professional (40-50 y/o): Formal, direct, dry. Uses technical terminology and structures their statement almost like a police report.
+- The Verbose Senior (65+ y/o): Low digital literacy. Writes like they are telling a story, including irrelevant details about their family, where they were going, or the weather. Bad punctuation.
+
+OUTPUT FORMAT:
+Return ONLY a valid JSON array of objects. Do not include markdown formatting like ```json or any introductory text.
+Each object must strictly follow this schema:
+{
+  "claim_id": "PT-XXX-2026-[UNIQUE_NUM]",
+  "location": "[Realistic location in Portugal]",
+  "incident_type": "[e.g., Rear-end collision, Side-swipe, Intersection collision, Pedestrian collision]",
+  "ground_truth_label": "genuine_accident",
+  "detected_damages": ["[Array containing ONLY a selection of these exact strings representing the ground truth physical damage found: 'crack', 'dent', 'glass shatter', 'lamp broken', 'scratch']"],
+  "fraud_indicators": [],
+  "statements": [
+    {
+      "role": "[insured_driver, third_party_driver, or impartial_witness]",
+      "vehicle": "[Vehicle model/brand, or 'none' if witness]",
+      "text": "[The statement in English, reflecting the assigned Persona]"
+    }
+  ]
+}
+"""
+
 #para depois testar adicionar prompt para ele ter 80% de casos genuínos e 20% de casos fraudulentos
-def gerar_dados(num_pedidos=1, nome_ficheiro="dataset_sintetico_gemini.json"):
+def gerar_dados(prompt_usado, num_pedidos=1, nome_ficheiro="dataset_sintetico_gemini.json"):
     novos_casos = []
     print("A iniciar as chamadas ao Google AI Studio (Gemini)...")
     
     for i in range(num_pedidos):
         print(f"Pedido {i+1} de {num_pedidos}...")
         try:
-            response = model.generate_content(PROMPT)
+            response = model.generate_content(prompt_usado)
             
             dados = json.loads(response.text)
             
@@ -117,4 +158,8 @@ def guardar_json(dados_novos, nome_ficheiro="dataset_sintetico_gemini.json"):
     print(f"\nGravação concluída: O ficheiro tem agora um TOTAL de {len(dados_existentes)} registos.")
 
 if __name__ == "__main__":
-    gerar_dados(num_pedidos=10)
+    # OPÇÕES: PROMPT_MISTO (com fraude e normais) ou PROMPT_GENUINO (só acidentes normais)
+    PROMPT_ESCOLHIDO = PROMPT_GENUINO
+    
+    # Número de pedidos x 10 casos = total de casos gerados
+    gerar_dados(prompt_usado=PROMPT_ESCOLHIDO, num_pedidos=10)
