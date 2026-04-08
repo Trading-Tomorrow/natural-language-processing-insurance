@@ -32,17 +32,17 @@ def prever_fraude(texto_sinistro: str):
     if _modelo_carregado is None or _tokenizer_carregado is None:
         inicilizar_sistema()
         
-    # Passagem do texto pela mesma pipeline de tokens e padding usada no treino
     sequencia = _tokenizer_carregado.texts_to_sequences([texto_sinistro])
     sequencia_padded = pad_sequences(sequencia, maxlen=MAX_LEN, padding='post', truncating='post')
     
-    # Previsão pela Sigmoid (Output de 0 a 1)
     probabilidade = _modelo_carregado.predict(sequencia_padded, verbose=0)[0][0]
     
-    if probabilidade > 0.5:
-        return "⚠️ ALERTA DE FRAUDE", probabilidade * 100, probabilidade
+    if probabilidade >= 0.65:
+        return "🚨 ALERTA CRÍTICO: ALTA PROBABILIDADE DE FRAUDE", probabilidade * 100, probabilidade
+    elif probabilidade >= 0.40:
+        return "⚠️ SUSPEITO: ENVIAR PARA ANÁLISE HUMANA", probabilidade * 100, probabilidade
     else:
-        return "✅ ACIDENTE GENUÍNO", (1.0 - probabilidade) * 100, probabilidade
+        return "✅ ACIDENTE GENUÍNO (Via Verde)", (1.0 - probabilidade) * 100, probabilidade
 
 if __name__ == "__main__":
     caso_verdadeiro = (
@@ -66,13 +66,20 @@ if __name__ == "__main__":
 
     caso_fraude_fantasma = "detected_damages: deep dent on the right side panel | insured_driver: I was driving alone at 3 AM on a dark isolated road. Suddenly, a huge black truck with no license plates and no lights crossed into my lane. I swerved into a tree to save my life! The truck vanished into the night. I have no witnesses, but it totally wasn't my fault and you have to pay for the tree and my car!"
 
+    caso_fraude_disfarcada = (
+    "detected_damages: severe frontal crush, deployed airbags, engine block cracked | "
+    "insured_driver: I was driving at approximately 40 km/h on a clear afternoon. Unfortunately, I lost traction on a small patch of oil on the road and collided with the concrete barrier. I have contacted the authorities and towed the vehicle. | "
+    "impartial_witness: I saw the vehicle hit the wall. The driver was alone and seemed physically okay."
+)
+
     # Atualiza o teu ciclo for para testar todos:
     lista_testes = [
         ("Genuíno Simples", caso_verdadeiro), 
         ("Fantasma Básico", caso_falso),
         ("Fraude por Contradição", caso_fraude_contradicao),
         ("Genuíno Grave", caso_genuino_grave),
-        ("Fraude Fantasma Extrema", caso_fraude_fantasma)
+        ("Fraude Fantasma Extrema", caso_fraude_fantasma),
+        ("Fraude Disfarçada", caso_fraude_disfarcada)
     ]
     
     print("\n" + "="*50)

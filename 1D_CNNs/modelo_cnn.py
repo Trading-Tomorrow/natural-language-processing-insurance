@@ -1,6 +1,8 @@
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, Embedding, Conv1D, GlobalMaxPooling1D, Dense, Dropout
+# Adicionar a importação das métricas:
+from tensorflow.keras.metrics import Precision, Recall, AUC
 
 # Parâmetros
 vocab_size = 5000 
@@ -26,7 +28,11 @@ def criar_modelo():
     # Layer de Output (Classificação binária Sigmoid)
     model.add(Dense(1, activation='sigmoid'))
     
-    model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+    model.compile(
+        optimizer='adam',
+        loss='binary_crossentropy',
+        metrics=['accuracy', Precision(name='precision'), Recall(name='recall'), AUC(name='auc')]
+    )
 
     return model
 

@@ -12,9 +12,16 @@ def process_row(row):
 
     statements = row.get('statements', [])
     formatted_statements = []
+    valid_roles = ['insured_driver', 'third_party_driver', 'impartial_witness']
+    # Apenas pessoas no local, para ele não analisar o que os peritos dizem
+    
     if isinstance(statements, list):
         for stmt in statements:
             role = stmt.get('role', 'unknown_role')
+            
+            if role not in valid_roles:
+                continue 
+                
             text = stmt.get('text', '').strip()
             if text: 
                 formatted_statements.append(f"{role}: {text}")
@@ -24,7 +31,6 @@ def process_row(row):
     return f"{damages_text} | {statements_text}"
 
 def create_dataset():
-    # Carregar os dados
     try:
         with open(input_filepath, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -34,19 +40,16 @@ def create_dataset():
         
     df = pd.DataFrame(data)
     
-    # Validar colunas exigidas
     required_cols = ['claim_id', 'ground_truth_label', 'statements']
     if not all(col in df.columns for col in required_cols):
         print("Erro: Colunas em falta no JSON.")
         return
 
-    # Criar features e labels binárias (0 = genuíno, 1 = fraude)
     df['X_text'] = df.apply(process_row, axis=1)
     df['Y_label'] = df['ground_truth_label'].apply(
         lambda x: 0 if x == 'genuine_accident' else 1
     )
     
-    # Exportar DataFrame processado para CSV
     final_df = df[['claim_id', 'X_text', 'Y_label']]
     final_df.to_csv(output_filepath, index=False, encoding='utf-8')
     print(f"Dataset guardado em '{output_filepath}' com {len(final_df)} casos.")

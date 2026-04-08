@@ -3,20 +3,15 @@ import pickle
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns 
 from sklearn.model_selection import train_test_split
+from sklearn.utils.class_weight import compute_class_weight
+from sklearn.metrics import confusion_matrix, classification_report 
 from tensorflow.keras.callbacks import EarlyStopping
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from modelo_cnn import criar_modelo
 
-# Parâmetros
-TEST_SIZE = 0.20       
-RANDOM_STATE = 42      
-BATCH_SIZE = 16        
-EPOCHS = 50            
-PATIENCE = 7           
-
 def main():
-    # 1. Pipeline de Carregamento e Preparação com dados reais
     df = pd.read_csv('dataset_preparado.csv')
     
     with open('tokenizer.pkl', 'rb') as f:
@@ -26,26 +21,33 @@ def main():
     X_pad = pad_sequences(X_seq, maxlen=400, padding='post', truncating='post')
     Y_label = df['Y_label'].values
 
-    # 2. Train-test Split Estratificado
     X_train, X_val, y_train, y_val = train_test_split(
-        X_pad, Y_label, test_size=TEST_SIZE, 
-        random_state=RANDOM_STATE, stratify=Y_label
+        X_pad, Y_label, test_size=0.20, 
+        random_state=42, stratify=Y_label
     )
+
+    classes_unicas = np.unique(y_train)
+    pesos = compute_class_weight(class_weight='balanced', classes=classes_unicas, y=y_train)
+    class_weights_dict = dict(zip(classes_unicas, pesos))
+    print(f"Pesos das Classes calculados: Genuíno (0): {class_weights_dict[0]:.2f} | Fraude (1): {class_weights_dict[1]:.2f}")
     
-    # 3. Treino da Rede com técnica de EarlyStopping
     model = criar_modelo()
-    early_stop = EarlyStopping(monitor='val_loss', patience=PATIENCE, restore_best_weights=True)
+    
+    early_stop = EarlyStopping(monitor='val_loss', patience=7, restore_best_weights=True)
 
     history = model.fit(
-        X_train, y_train, validation_data=(X_val, y_val),
-        epochs=EPOCHS, batch_size=BATCH_SIZE, callbacks=[early_stop]
+        X_train, y_train, 
+        validation_data=(X_val, y_val),
+        epochs=50, 
+        batch_size=16, 
+        class_weight=class_weights_dict, 
+        callbacks=[early_stop]
     )
 
-    # 4. Gravar os Pesos (.keras)
     model.save('modelo_fraude_final.keras')
     print("Modelo guardado como 'modelo_fraude_final.keras'")
 
-    # 5. Visualização Matplotlib
+    # --- Visualização Matplotlib (Curvas de Aprendizagem) ---
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     h = history.history
     
@@ -62,6 +64,35 @@ def main():
     plt.tight_layout()
     plt.savefig('learning_curves.png')
     plt.close()
+
+    # --- AVALIAÇÃO FINAL: MATRIZ DE CONFUSÃO ---
+    # Nota que agora este bloco tem 4 espaços à esquerda, estando dentro do main()
+    print("\n--- AVALIAÇÃO FINAL: MATRIZ DE CONFUSÃO ---")
+    
+    # Fazer as previsões no set de validação
+    y_pred_prob = model.predict(X_val)
+
+    # Aplicar o limiar 
+    limiar = 0.5
+    y_pred = (y_pred_prob > limiar).astype(int)
+
+    # Gerar a matriz
+    cm = confusion_matrix(y_val, y_pred)
+
+    # Visualizar com Seaborn
+    plt.figure(figsize=(6,5))
+    sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', 
+                xticklabels=['Previsto: Genuíno', 'Previsto: Fraude'],
+                yticklabels=['Real: Genuíno', 'Real: Fraude'])
+    plt.title('Matriz de Confusão (Validação)')
+    plt.ylabel('Classe Real')
+    plt.xlabel('Classe Prevista')
+    plt.tight_layout()
+    plt.savefig('matriz_confusao.png')
+    plt.close()
+
+    # Imprimir o relatório detalhado
+    print(classification_report(y_val, y_pred, target_names=['Genuíno', 'Fraude']))
 
 if __name__ == "__main__":
     os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
