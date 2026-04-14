@@ -1,0 +1,14 @@
+{
+  "train": {
+    "num_records": 2853,
+    "output_path": "/Users/fzuin/nlp-dataset/gemma4/data/exports/claim_sft_train_chat.jsonl"
+  },
+  "val": {
+    "num_records": 357,
+    "output_path": "/Users/fzuin/nlp-dataset/gemma4/data/exports/claim_sft_val_chat.jsonl"
+  },
+  "test": {
+    "num_records": 357,
+    "output_path": "/Users/fzuin/nlp-dataset/gemma4/data/exports/claim_sft_test_chat.jsonl"
+  }
+}

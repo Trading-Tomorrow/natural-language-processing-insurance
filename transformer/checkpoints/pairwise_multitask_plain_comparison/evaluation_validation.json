@@ -1,0 +1,151 @@
+{
+  "checkpoint_path": "/Users/fzuin/nlp-dataset/transformer/checkpoints/pairwise_multitask_plain_comparison/best_model.pt",
+  "dataset_path": "/Users/fzuin/nlp-dataset/transformer/data/pairwise_dataset_full.jsonl",
+  "tokenizer_path": "/Users/fzuin/nlp-dataset/transformer/tokenizers/claims_bpe",
+  "device": "cpu",
+  "split": "validation",
+  "label_distribution": {
+    "supports": 301,
+    "neutral": 475,
+    "contradicts": 174
+  },
+  "inconsistency_distribution": {
+    "none": 771,
+    "damage_mismatch": 83,
+    "dynamics_mismatch": 55,
+    "phantom_vehicle": 33,
+    "scripted_narrative": 8
+  },
+  "class_weights": [
+    1.0517289638519287,
+    0.6666666865348816,
+    1.8208812475204468
+  ],
+  "inconsistency_class_weights": [
+    0.24704353511333466,
+    2.8059041500091553,
+    3.2084388732910156,
+    4.345142841339111,
+    18.546340942382812
+  ],
+  "metrics": {
+    "loss": 1.1336090702759591,
+    "relation_loss": 0.4198970485360999,
+    "accuracy": 0.8705263137817383,
+    "macro_precision": 0.8575409007628293,
+    "macro_recall": 0.8804804848260721,
+    "macro_f1": 0.8658901068444856,
+    "per_class": {
+      "supports": {
+        "precision": 0.8063583815028902,
+        "recall": 0.9269102990033222,
+        "f1": 0.8624420401854713,
+        "support": 301.0
+      },
+      "neutral": {
+        "precision": 0.9471153846153846,
+        "recall": 0.8294736842105264,
+        "f1": 0.8843995510662177,
+        "support": 475.0
+      },
+      "contradicts": {
+        "precision": 0.8191489361702128,
+        "recall": 0.8850574712643678,
+        "f1": 0.850828729281768,
+        "support": 174.0
+      }
+    },
+    "confusion_matrix": {
+      "supports": {
+        "supports": 279,
+        "neutral": 10,
+        "contradicts": 12
+      },
+      "neutral": {
+        "supports": 59,
+        "neutral": 394,
+        "contradicts": 22
+      },
+      "contradicts": {
+        "supports": 8,
+        "neutral": 12,
+        "contradicts": 154
+      }
+    },
+    "num_examples": 950,
+    "inconsistency_loss": 1.4274240575338666,
+    "inconsistency_accuracy": 0.8989473581314087,
+    "inconsistency_macro_precision": 0.5882134049701955,
+    "inconsistency_macro_recall": 0.6432989332640076,
+    "inconsistency_macro_f1": 0.6109194583277298,
+    "inconsistency_per_class": {
+      "none": {
+        "precision": 0.982573726541555,
+        "recall": 0.9507133592736705,
+        "f1": 0.9663810151615029,
+        "support": 771.0
+      },
+      "damage_mismatch": {
+        "precision": 0.6336633663366337,
+        "recall": 0.7710843373493976,
+        "f1": 0.6956521739130436,
+        "support": 83.0
+      },
+      "dynamics_mismatch": {
+        "precision": 0.5510204081632653,
+        "recall": 0.4909090909090909,
+        "f1": 0.5192307692307692,
+        "support": 55.0
+      },
+      "phantom_vehicle": {
+        "precision": 0.6904761904761905,
+        "recall": 0.8787878787878788,
+        "f1": 0.7733333333333333,
+        "support": 33.0
+      },
+      "scripted_narrative": {
+        "precision": 0.08333333333333333,
+        "recall": 0.125,
+        "f1": 0.1,
+        "support": 8.0
+      }
+    },
+    "inconsistency_confusion_matrix": {
+      "none": {
+        "none": 733,
+        "damage_mismatch": 21,
+        "dynamics_mismatch": 13,
+        "phantom_vehicle": 2,
+        "scripted_narrative": 2
+      },
+      "damage_mismatch": {
+        "none": 8,
+        "damage_mismatch": 64,
+        "dynamics_mismatch": 3,
+        "phantom_vehicle": 4,
+        "scripted_narrative": 4
+      },
+      "dynamics_mismatch": {
+        "none": 4,
+        "damage_mismatch": 12,
+        "dynamics_mismatch": 27,
+        "phantom_vehicle": 7,
+        "scripted_narrative": 5
+      },
+      "phantom_vehicle": {
+        "none": 1,
+        "damage_mismatch": 1,
+        "dynamics_mismatch": 2,
+        "phantom_vehicle": 29,
+        "scripted_narrative": 0
+      },
+      "scripted_narrative": {
+        "none": 0,
+        "damage_mismatch": 3,
+        "dynamics_mismatch": 4,
+        "phantom_vehicle": 0,
+        "scripted_narrative": 1
+      }
+    }
+  }
+}

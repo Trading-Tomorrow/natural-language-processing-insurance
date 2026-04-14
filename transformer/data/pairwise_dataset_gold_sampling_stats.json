@@ -1,0 +1,35 @@
+{
+  "input_path": "/Users/fzuin/nlp-dataset/transformer/data/pairwise_dataset_full.jsonl",
+  "seed": 42,
+  "target_relation_counts": {
+    "supports": 100,
+    "neutral": 100,
+    "contradicts": 100
+  },
+  "target_contradiction_type_counts": {
+    "damage_mismatch": 35,
+    "dynamics_mismatch": 45,
+    "phantom_vehicle": 20
+  },
+  "sampled_relation_counts": {
+    "neutral": 100,
+    "contradicts": 100,
+    "supports": 100
+  },
+  "sampled_inconsistency_counts": {
+    "none": 198,
+    "damage_mismatch": 35,
+    "phantom_vehicle": 20,
+    "dynamics_mismatch": 46,
+    "scripted_narrative": 1
+  },
+  "supports_pool_size": 1506,
+  "neutral_pool_size": 2376,
+  "contradicts_pool_size": 870,
+  "sampled_total": 300,
+  "contradiction_sampling_counts": {
+    "damage_mismatch": 35,
+    "dynamics_mismatch": 45,
+    "phantom_vehicle": 20
+  }
+}

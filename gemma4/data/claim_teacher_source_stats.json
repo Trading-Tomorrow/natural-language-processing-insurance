@@ -1,0 +1,36 @@
+{
+  "cleaning": {
+    "sources": [
+      {
+        "path": "data/dataset_sintetico_gemini.json",
+        "loaded_claims": 1170
+      },
+      {
+        "path": "data/dataset_sintetico_gemini_mixed_diverse.json",
+        "loaded_claims": 1000
+      },
+      {
+        "path": "data/dataset_sintetico_gemini_good_only.json",
+        "loaded_claims": 2000
+      }
+    ],
+    "input_claims": 4170,
+    "duplicate_ids": 577,
+    "duplicate_fingerprints": 26,
+    "removed_claims": 603,
+    "final_claims": 3567
+  },
+  "num_records": 3567,
+  "binary_label_distribution": {
+    "true": 2469,
+    "not_true": 1098
+  },
+  "original_label_distribution": {
+    "genuine_accident": 2469,
+    "soft_fraud_exaggeration": 373,
+    "hard_fraud_staged": 380,
+    "hard_fraud_phantom_vehicle": 345
+  },
+  "pairwise_diagnostics_attached": 0,
+  "output_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_teacher_source.jsonl"
+}

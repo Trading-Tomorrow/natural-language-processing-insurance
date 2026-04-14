@@ -1,0 +1,29 @@
+{
+  "training_summary": {
+    "base_model": "mlx-community/Qwen3-8B-4bit",
+    "adapter_type": "LoRA",
+    "training_framework": "MLX-LM",
+    "training_file": "mlx_data/train.jsonl",
+    "adapter_path": "adapters/qwen3_claim_sft",
+    "training_config": {
+      "batch_size": 4,
+      "iters": 500,
+      "learning_rate": 1e-05,
+      "lora_layers": 16,
+      "lora_rank": 16
+    }
+  },
+  "benchmark_results": {
+    "finetuned_model": {
+      "valid_json_output_rate": "100%",
+      "accuracy_on_valid_predictions": "100%",
+      "true_claim_detection": "100% recall",
+      "not_true_claim_detection": "100% specificity"
+    },
+    "base_model": {
+      "valid_json_output_rate": "0%",
+      "output_type": "Unstructured Chain-of-Thought text",
+      "usability": "Cannot be used for automated predictions"
+    }
+  }
+}

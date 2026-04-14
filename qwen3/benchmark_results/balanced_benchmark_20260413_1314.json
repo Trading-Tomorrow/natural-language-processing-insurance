@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-04-13T13:14:55.631736",
+  "model": "finetuned_qwen3_8b_lora",
+  "adapter_path": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft",
+  "n_samples": 30,
+  "n_valid": 10,
+  "class_distribution": {
+    "true": 10,
+    "not_true": 10
+  },
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 0,
+    "f1": 1.0
+  },
+  "confusion_matrix": {
+    "tp": 10,
+    "tn": 0,
+    "fp": 0,
+    "fn": 0
+  },
+  "results": [
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "batch_index": 242,
+  "claim_ids": [
+    "PT-MIXD-2026-000522",
+    "PT-MIXD-2026-000523",
+    "PT-MIXD-2026-000524",
+    "PT-MIXD-2026-000525"
+  ],
+  "reason": "504 Deadline Exceeded",
+  "response_text": ""
+}

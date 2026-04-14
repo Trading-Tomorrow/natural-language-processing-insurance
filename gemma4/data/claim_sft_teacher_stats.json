@@ -1,0 +1,20 @@
+{
+  "input_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_teacher_source.jsonl",
+  "output_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_sft_full.jsonl",
+  "model_name": "models/gemini-3.1-flash-lite-preview",
+  "teacher_prompt_version": "claim_sft_teacher_v1",
+  "selected_claims": 3567,
+  "annotated_claims": 3567,
+  "rejected_batches": 0,
+  "error_dir": "/Users/fzuin/nlp-dataset/gemma4/data/teacher_failures",
+  "binary_label_distribution": {
+    "true": 2469,
+    "not_true": 1098
+  },
+  "original_label_distribution": {
+    "genuine_accident": 2469,
+    "hard_fraud_phantom_vehicle": 345,
+    "hard_fraud_staged": 380,
+    "soft_fraud_exaggeration": 373
+  }
+}

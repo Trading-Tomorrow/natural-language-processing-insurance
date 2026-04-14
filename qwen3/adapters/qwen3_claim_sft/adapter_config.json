@@ -1,0 +1,46 @@
+{
+    "adapter_path": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft",
+    "batch_size": 1,
+    "config": "/Users/fzuin/nlp-dataset/qwen3/qwen3_claim_sft.yaml",
+    "data": "/Users/fzuin/nlp-dataset/qwen3/mlx_data",
+    "fine_tune_type": "lora",
+    "grad_accumulation_steps": 4,
+    "grad_checkpoint": true,
+    "iters": 500,
+    "learning_rate": 1e-05,
+    "lora_parameters": {
+        "keys": [
+            "self_attn.q_proj",
+            "self_attn.k_proj",
+            "self_attn.v_proj",
+            "self_attn.o_proj"
+        ],
+        "rank": 16,
+        "scale": 32.0,
+        "dropout": 0.05
+    },
+    "lr_schedule": null,
+    "mask_prompt": true,
+    "max_seq_length": 2048,
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "num_layers": 8,
+    "optimizer": "adamw",
+    "optimizer_config": {
+        "adam": {},
+        "adamw": {},
+        "muon": {},
+        "sgd": {},
+        "adafactor": {}
+    },
+    "project_name": null,
+    "report_to": null,
+    "resume_adapter_file": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft/adapters.safetensors",
+    "save_every": 100,
+    "seed": 42,
+    "steps_per_eval": 100,
+    "steps_per_report": 10,
+    "test": false,
+    "test_batches": 100,
+    "train": true,
+    "val_batches": 25
+}

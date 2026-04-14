@@ -1,0 +1,62 @@
+{
+  "checkpoint_path": "/Users/fzuin/nlp-dataset/transformer/checkpoints/pairwise_full_weighted/best_model.pt",
+  "dataset_path": "/Users/fzuin/nlp-dataset/transformer/data/pairwise_dataset_full.jsonl",
+  "tokenizer_path": "/Users/fzuin/nlp-dataset/transformer/tokenizers/claims_bpe",
+  "device": "cpu",
+  "split": "validation",
+  "label_distribution": {
+    "supports": 244,
+    "neutral": 274,
+    "contradicts": 29
+  },
+  "class_weights": [
+    0.7468440532684326,
+    0.6669713854789734,
+    6.183615684509277
+  ],
+  "metrics": {
+    "loss": 0.493413391562223,
+    "accuracy": 0.866544783115387,
+    "macro_precision": 0.9091446648855298,
+    "macro_recall": 0.8493763917371218,
+    "macro_f1": 0.8667253047099033,
+    "per_class": {
+      "supports": {
+        "precision": 0.7738853503184714,
+        "recall": 0.9959016393442623,
+        "f1": 0.8709677419354838,
+        "support": 244.0
+      },
+      "neutral": {
+        "precision": 0.9952153110047847,
+        "recall": 0.7591240875912408,
+        "f1": 0.8612836438923396,
+        "support": 274.0
+      },
+      "contradicts": {
+        "precision": 0.9583333333333334,
+        "recall": 0.7931034482758621,
+        "f1": 0.8679245283018867,
+        "support": 29.0
+      }
+    },
+    "confusion_matrix": {
+      "supports": {
+        "supports": 243,
+        "neutral": 1,
+        "contradicts": 0
+      },
+      "neutral": {
+        "supports": 65,
+        "neutral": 208,
+        "contradicts": 1
+      },
+      "contradicts": {
+        "supports": 6,
+        "neutral": 0,
+        "contradicts": 23
+      }
+    },
+    "num_examples": 547
+  }
+}

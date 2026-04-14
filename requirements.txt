@@ -2,6 +2,12 @@ pandas
 numpy
 scikit-learn
 matplotlib
-tensorflow
+torch
+transformers
+tokenizers
 google-generativeai
 python-dotenv
+datasets
+peft
+accelerate
+sentencepiece

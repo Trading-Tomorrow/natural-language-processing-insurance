@@ -2,14 +2,14 @@
 # BPE was used in models like GPT-2 and RoBERTa.
 # BERT uses WordPiece, not BPE.
 
-import json
-import os
 import re
 from pathlib import Path
 from typing import Dict, Iterable, List, Any, Tuple
 
 from tokenizers import Tokenizer, models, trainers, normalizers, pre_tokenizers
 from transformers import PreTrainedTokenizerFast
+
+from dataset_cleaning import load_and_clean_default_claims, print_cleaning_report
 
 
 SPECIAL_TOKENS = [
@@ -49,16 +49,6 @@ def normalize_speed(text: str) -> str:
         text,
         flags=re.IGNORECASE,
     )
-
-
-def load_claims(json_path: str) -> List[Dict[str, Any]]:
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    if not isinstance(data, list):
-        raise ValueError("Expected top-level JSON to be a list of claims.")
-
-    return data
 
 
 def normalize_role(role: str) -> str:
@@ -204,14 +194,15 @@ def inspect_tokenizer(
 
 
 def main() -> None:
-    input_json = "dataset_insurance.json"
-    output_dir = "tokenizers/claims_bpe"
+    script_dir = Path(__file__).resolve().parent
+    output_dir = script_dir / "tokenizers" / "claims_bpe"
     vocab_size = 20000
     min_frequency = 1  # Lower threshold to keep more rare domain terms
 
     Path(output_dir).mkdir(parents=True, exist_ok=True)
 
-    claims = load_claims(input_json)
+    claims, cleaning_stats = load_and_clean_default_claims()
+    print_cleaning_report(cleaning_stats)
 
     tokenizer, trainer = build_tokenizer(
         vocab_size=vocab_size,
@@ -221,10 +212,10 @@ def main() -> None:
     tokenizer.train_from_iterator(training_corpus(claims), trainer=trainer)
 
     # Save raw tokenizer JSON too
-    raw_json_path = os.path.join(output_dir, "tokenizer.json")
-    tokenizer.save(raw_json_path)
+    raw_json_path = output_dir / "tokenizer.json"
+    tokenizer.save(str(raw_json_path))
 
-    fast_tokenizer = save_fast_tokenizer(tokenizer, output_dir)
+    fast_tokenizer = save_fast_tokenizer(tokenizer, str(output_dir))
 
     # Build some samples for inspection
     sample_structured = [flatten_claim_for_tokenizer(c) for c in claims[:3]]

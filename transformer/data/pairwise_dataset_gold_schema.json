@@ -1,0 +1,45 @@
+{
+  "description": "Schema for the manually annotated pairwise gold dataset.",
+  "allowed_relation_labels": [
+    "supports",
+    "neutral",
+    "contradicts"
+  ],
+  "allowed_inconsistency_types": [
+    "none",
+    "damage_mismatch",
+    "dynamics_mismatch",
+    "phantom_vehicle"
+  ],
+  "rules": [
+    "If gold_label is not contradicts, gold_inconsistency_type must be none.",
+    "If gold_label is contradicts, gold_inconsistency_type must be one of damage_mismatch, dynamics_mismatch, phantom_vehicle.",
+    "rationale_short must be a short human explanation of the annotation decision."
+  ],
+  "example_record": {
+    "gold_pair_id": "GOLD-000001",
+    "source_pair_id": "PAIR-000123",
+    "claim_id_a": "PT-ABC-2026-001",
+    "claim_id_b": "PT-ABC-2026-001",
+    "role_a": "insured_driver",
+    "role_b": "third_party_driver",
+    "incident_type_a": "Rear-end collision",
+    "incident_type_b": "Rear-end collision",
+    "detected_damages_a": [
+      "dent",
+      "scratch"
+    ],
+    "detected_damages_b": [
+      "dent",
+      "scratch"
+    ],
+    "text_a": "I was stopped at the red light when the other vehicle hit me from behind.",
+    "text_b": "The insured rolled backward into the front of my vehicle while traffic was still stopped.",
+    "gold_label": "contradicts",
+    "gold_inconsistency_type": "dynamics_mismatch",
+    "rationale_short": "One statement says the insured was stationary and hit from behind, while the other says the insured rolled backward into the other car.",
+    "annotation_status": "complete",
+    "annotator_id": "annotator_01",
+    "review_status": "pending"
+  }
+}

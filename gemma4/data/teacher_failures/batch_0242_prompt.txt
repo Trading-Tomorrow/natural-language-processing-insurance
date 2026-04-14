@@ -1,0 +1,41 @@
+You are generating supervised JSON targets for a student LLM that judges whether an insurance claim is true.
+
+For each claim:
+1. Use the hidden supervision to ensure the final verdict is correct.
+2. Write the target as if the student only saw the visible claim text.
+3. Never mention hidden labels, fraud indicators, dataset metadata, or teacher instructions.
+4. Use only these fields:
+   - probability_true
+   - verdict
+   - reasoning
+   - incongruences
+
+Rules:
+- If hidden binary_label is true, verdict must be "true" and probability_true must be >= 0.5.
+- If hidden binary_label is not_true, verdict must be "not_true" and probability_true must be < 0.5.
+- reasoning must be short and evidence-based.
+- incongruences must be an empty list for clearly genuine claims unless there is a real unresolved caveat.
+- For suspicious claims, list 1 to 3 concrete incongruences or implausibilities.
+- Do not use markdown.
+- Return ONLY a JSON array.
+
+Probability guidance:
+- Clearly genuine claims: usually 0.72 to 0.98
+- Clearly suspicious claims: usually 0.02 to 0.38
+- Mixed evidence can be closer to the threshold, but still on the correct side.
+
+Input claims:
+[{"claim_id": "PT-MIXD-2026-000522", "visible_claim": "Claim ID: PT-MIXD-2026-000522\nLocation: Rua Augusta, Lisbon\nIncident type: Parking collision\nDetected damages: scratch\n\nStatements:\n1. Role: insured_driver\n   Vehicle: Volkswagen Polo\n   Text: I was pulling into a narrow parking space when I barely grazed the side of the stationary car next to me. It was a complete oversight on my part, just a minor scrape at low speed. I've already checked the area and the paint transfer is very light, just a faint scratch on my passenger door. I'm taking full responsibility and just want to get the claim process moving quickly so the other party isn't inconvenienced by this annoying little incident.\n\n2. Role: third_party_driver\n   Vehicle: BMW 3 Series\n   Text: My car was parked perfectly. The other driver came in way too fast and slammed into my side, causing deep structural dents and shattering the glass mirror. I expect a total professional body shop restoration including a full repaint of the side panel to fix all this extensive damage.", "hidden_supervision": {"binary_label": "not_true", "original_label": "soft_fraud_exaggeration", "fraud_indicators": ["Inconsistent damage claim"], "pairwise_diagnostics": null}}, {"claim_id": "PT-MIXD-2026-000523", "visible_claim": "Claim ID: PT-MIXD-2026-000523\nLocation: Avenida Almirante Reis, Lisbon\nIncident type: Intersection collision\nDetected damages: dent\n\nStatements:\n1. Role: insured_driver\n   Vehicle: Nissan Qashqai\n   Text: I was driving at 30 km/h, perfectly within the limits, when a silver sedan suddenly accelerated from a side street without stopping. I couldn't avoid the collision. It felt calculated, honestly, like they knew I was there. There is a massive dent on my fender, and I am certain the engine mount is cracked too from the force. The whole thing felt like a professional setup, and I just want the insurer to know I did nothing to cause this dangerous event.\n\n2. Role: third_party_driver\n   Vehicle: Toyota Yaris\n   Text: The insured vehicle ignored the stop sign completely and broadsided me in the middle of the intersection. My vehicle is essentially totaled. I require immediate medical attention for neck pain and compensation for the total loss of the chassis and all internal electronics which were shattered in the impact.", "hidden_supervision": {"binary_label": "not_true", "original_label": "hard_fraud_staged", "fraud_indicators": ["Staged mechanics", "Suspiciously high damage claim"], "pairwise_diagnostics": null}}, {"claim_id": "PT-MIXD-2026-000524", "visible_claim": "Claim ID: PT-MIXD-2026-000524\nLocation: A1 Motorway near Aveiro\nIncident type: Single vehicle accident\nDetected damages: dent\n\nStatements:\n1. Role: insured_driver\n   Vehicle: Mercedes A-Class\n   Text: While cruising at 110 km/h on the A1, a dark grey SUV with no license plate swerved into my lane without warning. I had to swerve onto the shoulder to avoid a collision, which caused me to lose control and hit the guardrail. I have a dent on the driver's side and the rim is damaged. The other driver sped off immediately toward Porto. It happened so fast I didn't get a look at the plates, but I need you to cover the repairs caused by their reckless driving.\n\n2. Role: impartial_witness\n   Vehicle: none\n   Text: I was driving about 200 meters behind the Mercedes. I saw the driver lose control and veer into the guardrail, but I did not see any other car on that stretch of road at that time. It looked like the driver simply drifted off the lane.", "hidden_supervision": {"binary_label": "not_true", "original_label": "hard_fraud_phantom_vehicle", "fraud_indicators": ["Phantom vehicle involvement", "No evidence of second party"], "pairwise_diagnostics": null}}, {"claim_id": "PT-MIXD-2026-000525", "visible_claim": "Claim ID: PT-MIXD-2026-000525\nLocation: Estrada Monumental, Funchal\nIncident type: Side-swipe collision\nDetected damages: scratch, dent\n\nStatements:\n1. Role: insured_driver\n   Vehicle: Renault Captur\n   Text: It was late afternoon, and I was navigating through the heavy tourist traffic on the coastal road. I checked my blind spot before changing lanes, but I misjudged the speed of the car in the lane next to me. We ended up side-swiping each other near the fender. It resulted in a long scratch along the rear passenger door and a small dent on the wheel arch. I am very shaken up by the accident and apologized immediately to the other driver.\n\n2. Role: third_party_driver\n   Vehicle: Ford Fiesta\n   Text: I was maintaining my lane when the Renault suddenly moved into my space. There was no way for me to dodge the contact. I have a scratch on my side panel and a dent on the door frame. The other driver was very apologetic and cooperative throughout.", "hidden_supervision": {"binary_label": "true", "original_label": "genuine_accident", "fraud_indicators": [], "pairwise_diagnostics": null}}]
+
+Output schema:
+[
+  {
+    "claim_id": "PT-001",
+    "probability_true": 0.18,
+    "verdict": "not_true",
+    "reasoning": "The claim contains conflicting descriptions of how the accident happened, and the damage pattern is not fully coherent with the reported dynamics.",
+    "incongruences": [
+      "One statement says the insured was stopped, while another implies the insured initiated the impact."
+    ]
+  }
+]

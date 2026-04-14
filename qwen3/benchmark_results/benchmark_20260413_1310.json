@@ -1,0 +1,109 @@
+{
+  "timestamp": "2026-04-13T13:10:06.675466",
+  "n_samples": 18,
+  "n_valid": 12,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "confusion_matrix": {
+    "tp": 12,
+    "tn": 0,
+    "fp": 0,
+    "fn": 0
+  },
+  "results": [
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98
+    },
+    {
+      "gt": "true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "not_true",
+      "pred": null,
+      "prob": null
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.82
+    },
+    {
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.92
+    }
+  ]
+}

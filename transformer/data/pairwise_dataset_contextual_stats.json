@@ -1,0 +1,66 @@
+{
+  "cleaning": {
+    "sources": [
+      {
+        "path": "data/dataset_sintetico_gemini.json",
+        "loaded_claims": 1170
+      },
+      {
+        "path": "data/dataset_sintetico_gemini_mixed_diverse.json",
+        "loaded_claims": 1000
+      },
+      {
+        "path": "data/dataset_sintetico_gemini_good_only.json",
+        "loaded_claims": 2000
+      }
+    ],
+    "input_claims": 4170,
+    "duplicate_ids": 577,
+    "duplicate_fingerprints": 26,
+    "removed_claims": 603,
+    "final_claims": 3567
+  },
+  "candidate_counts": {
+    "supports": 1506,
+    "contradicts": 870
+  },
+  "full_counts": {
+    "supports": 1506,
+    "neutral": 2376,
+    "contradicts": 870
+  },
+  "balanced_counts": {
+    "supports": 870,
+    "neutral": 870,
+    "contradicts": 870
+  },
+  "full_inconsistency_counts": {
+    "none": 3849,
+    "phantom_vehicle": 208,
+    "dynamics_mismatch": 292,
+    "damage_mismatch": 354,
+    "scripted_narrative": 49
+  },
+  "balanced_inconsistency_counts": {
+    "none": 1717,
+    "scripted_narrative": 45,
+    "phantom_vehicle": 208,
+    "dynamics_mismatch": 286,
+    "damage_mismatch": 354
+  },
+  "full_examples": 4752,
+  "final_examples": 2610,
+  "neutral_examples_generated": 2376,
+  "role_pair_distribution": {
+    "insured_driver | third_party_driver": 1490,
+    "third_party_driver | third_party_driver": 66,
+    "impartial_witness | insured_driver": 636,
+    "insured_driver | insured_driver": 346,
+    "impartial_witness | third_party_driver": 62,
+    "impartial_witness | impartial_witness": 10
+  },
+  "context_mode": "contextual",
+  "random_seed": 42,
+  "output_path": "/Users/fzuin/nlp-dataset/transformer/data/pairwise_dataset_contextual.jsonl",
+  "full_output_path": "/Users/fzuin/nlp-dataset/transformer/data/pairwise_dataset_full_contextual.jsonl"
+}

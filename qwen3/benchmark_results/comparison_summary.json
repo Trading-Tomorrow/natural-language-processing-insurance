@@ -1,0 +1,32 @@
+{
+  "fine_tuned_model": {
+    "total_samples": 357,
+    "valid_predictions": 331,
+    "json_success_rate": 0.927,
+    "metrics": {
+      "accuracy": 0.9668,
+      "precision": 0.9872,
+      "recall": 0.9665,
+      "specificity": 0.9674,
+      "f1": 0.9767
+    },
+    "confusion_matrix": {
+      "tp": 231,
+      "tn": 89,
+      "fp": 3,
+      "fn": 8
+    }
+  },
+  "base_model": {
+    "total_samples": 25,
+    "valid_predictions": 0,
+    "json_success_rate": 0.0,
+    "metrics": {
+      "accuracy": null,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "note": "Base model outputs conversational text, not JSON. Cannot be used for structured prediction."
+  }
+}

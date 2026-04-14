@@ -1,0 +1,56 @@
+{
+  "input_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_sft_full.jsonl",
+  "train_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_sft_train.jsonl",
+  "val_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_sft_val.jsonl",
+  "test_path": "/Users/fzuin/nlp-dataset/gemma4/data/claim_sft_test.jsonl",
+  "seed": 42,
+  "ratios": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "num_records": {
+    "full": 3567,
+    "train": 2853,
+    "val": 357,
+    "test": 357
+  },
+  "splits": {
+    "train": {
+      "binary_label_distribution": {
+        "true": 1975,
+        "not_true": 878
+      },
+      "original_label_distribution": {
+        "genuine_accident": 1975,
+        "hard_fraud_phantom_vehicle": 276,
+        "hard_fraud_staged": 304,
+        "soft_fraud_exaggeration": 298
+      }
+    },
+    "val": {
+      "binary_label_distribution": {
+        "true": 247,
+        "not_true": 110
+      },
+      "original_label_distribution": {
+        "genuine_accident": 247,
+        "soft_fraud_exaggeration": 38,
+        "hard_fraud_phantom_vehicle": 34,
+        "hard_fraud_staged": 38
+      }
+    },
+    "test": {
+      "binary_label_distribution": {
+        "not_true": 110,
+        "true": 247
+      },
+      "original_label_distribution": {
+        "hard_fraud_phantom_vehicle": 35,
+        "genuine_accident": 247,
+        "soft_fraud_exaggeration": 37,
+        "hard_fraud_staged": 38
+      }
+    }
+  }
+}
