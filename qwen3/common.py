@@ -128,8 +128,7 @@ def save_jsonl(records: Sequence[Dict[str, Any]], path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8") as handle:
         for record in records:
-            handle.write(json.dumps(record, ensure_ascii=False) + "
-")
+            handle.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def save_json(payload: Dict[str, Any], path: Path) -> None:
@@ -170,17 +169,20 @@ def serialize_claim_for_student(claim: Dict[str, Any]) -> str:
             ]
         )
 
-    return "
-".join(lines).strip()
+    return "\n".join(lines).strip()
 
 
-def build_chat_messages(input_text: str, assistant_payload: Optional[Dict[str, Any]] = None) -> List[Dict[str, str]]:
+def build_chat_messages(
+    input_text: str, assistant_payload: Optional[Dict[str, Any]] = None
+) -> List[Dict[str, str]]:
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": input_text},
     ]
     if assistant_payload is not None:
-        messages.append({"role": "assistant", "content": target_json_to_text(assistant_payload)})
+        messages.append(
+            {"role": "assistant", "content": target_json_to_text(assistant_payload)}
+        )
     return messages
 
 
@@ -227,7 +229,9 @@ def validate_target_json(
 
     verdict = normalize_space(payload.get("verdict")).lower()
     reasoning = normalize_space(payload.get("reasoning"))
-    incongruences, incongruence_errors = _normalize_incongruences(payload.get("incongruences"))
+    incongruences, incongruence_errors = _normalize_incongruences(
+        payload.get("incongruences")
+    )
     errors.extend(incongruence_errors)
 
     if not 0.0 <= probability_true <= 1.0:
@@ -299,7 +303,9 @@ def subtype_theme_hit(text: str, original_label: str) -> bool:
     return False
 
 
-def build_source_record(claim: Dict[str, Any], pairwise_diagnostics: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+def build_source_record(
+    claim: Dict[str, Any], pairwise_diagnostics: Optional[Dict[str, Any]] = None
+) -> Dict[str, Any]:
     original_label = normalize_space(claim.get("ground_truth_label"))
     return {
         "claim_id": normalize_space(claim.get("claim_id")),
@@ -308,9 +314,13 @@ def build_source_record(claim: Dict[str, Any], pairwise_diagnostics: Optional[Di
         "original_label": original_label,
         "location": normalize_space(claim.get("location")),
         "incident_type": normalize_space(claim.get("incident_type")),
-        "detected_damages": [normalize_space(item) for item in claim.get("detected_damages", [])],
+        "detected_damages": [
+            normalize_space(item) for item in claim.get("detected_damages", [])
+        ],
         "statements": claim.get("statements", []),
-        "fraud_indicators": [normalize_space(item) for item in claim.get("fraud_indicators", [])],
+        "fraud_indicators": [
+            normalize_space(item) for item in claim.get("fraud_indicators", [])
+        ],
         "pairwise_diagnostics": pairwise_diagnostics,
     }
 
