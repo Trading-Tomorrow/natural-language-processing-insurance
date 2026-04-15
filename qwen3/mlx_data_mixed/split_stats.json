@@ -1,0 +1,11 @@
+{
+  "total": 3737,
+  "train": 2989,
+  "val": 373,
+  "test": 375,
+  "by_generator": {
+    "gemini": 3567,
+    "chatgpt": 80,
+    "grok": 90
+  }
+}

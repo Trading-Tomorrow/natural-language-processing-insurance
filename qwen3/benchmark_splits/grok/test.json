@@ -1,0 +1,1681 @@
+[
+  {
+    "claim_id": "PT-MIXD-2026-000092",
+    "location": "Avenida dos Descobrimentos, Viana do Castelo",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Megane",
+        "text": "During a normal lane change on Avenida dos Descobrimentos the other driver cut across sharply contacting my side. Far more than a scratch occurred: a deep dent now marks the door, the window glass shattered fully, cracks snake along the panel and the indicator lamp broke. Complete coverage for every detail is expected."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen T-Roc",
+        "text": "Light contact while changing lanes on Avenida dos Descobrimentos."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000097",
+    "location": "Rotunda do Bom Sucesso, Porto",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Focus",
+        "text": "At precisely 14:55 while circulating the Rotunda do Bom Sucesso at 29 km/h the third-party vehicle entered from the outer lane brushing our right side causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Polo",
+        "text": "At precisely 14:55 while circulating the Rotunda do Bom Sucesso at 29 km/h the insured vehicle entered from the outer lane brushing our right side causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000050",
+    "location": "Rua de São Bento, Lisbon",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Grandland",
+        "text": "During overtaking on Rua de São Bento the other car drifted inward scraping my left rear. The scratch exists but so does a dent, cracks along the panel, a broken lamp and glass shatter on the light cover. This entire incident demands complete coverage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Focus",
+        "text": "Slight scrape while overtaking on Rua de São Bento."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000126",
+    "location": "Rua do Almada, Porto",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Puma",
+        "text": "Attempting to merge on Rua do Almada the third party did not check and struck my rear. The dent is evident along with a broken lamp, cracks across the bumper and glass shatter on the assembly. Approve the full repair cost immediately."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen T-Cross",
+        "text": "Minor merge tap on Rua do Almada."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000120",
+    "location": "Rua de Cedofeita, Porto",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C4",
+        "text": "Being overtaken on Rua de Cedofeita the other car drifted inward scraping my left side. The scratch is minor but there is also a dent, cracks forming along the panel, the lamp broken and glass shatter on the taillight cover. Full compensation for the complete list of damages is essential."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "Light scrape while overtaking on Rua de Cedofeita."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000104",
+    "location": "A2 near Alcácer do Sal",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Corsa",
+        "text": "On the A2 near Alcácer do Sal a grey SUV sideswiped my passenger side at speed and fled without stopping. Scratches and shattered glass resulted."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Travelling right beside on the A2 no grey SUV appeared. The Corsa drifted and scraped the central barrier producing the precise damage observed."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000034",
+    "location": "A22 near Portimão, Algarve",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Mokka",
+        "text": "On the A22 near Portimão a blue SUV sideswiped my driver side at high speed and disappeared into the distance. Scratches and shattered window glass resulted."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was directly behind on the A22 and no blue SUV was ever present. The Opel simply drifted and scraped the shoulder barrier matching the damage perfectly."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000019",
+    "location": "Avenida da República, Faro",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "Stationary at the red light on Avenida da República in Faro when the car behind rolled forward and hit my rear. A clear dent formed on the bumper accompanied by several scratches. Everything was straightforward and the other driver admitted fault immediately."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Focus",
+        "text": "My foot slipped off the brake at the traffic light on Avenida da República causing a gentle rear contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000038",
+    "location": "IP3 near Coimbra",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 308",
+        "text": "Driving the IP3 near Coimbra a white truck sideswiped my passenger door at speed and kept going. The scratches and shattered glass are evident from the impact."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I followed closely on the IP3 and confirm no white truck existed. The Peugeot swerved and hit the rumble strip producing exactly those marks."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000112",
+    "location": "Avenida da Universidade, Coimbra",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen T-Roc",
+        "text": "Signalling to change lanes on Avenida da Universidade the other car suddenly shifted over and clipped me. The damage is far more extensive than a simple scratch: a prominent dent on the rear door, the side window completely shattered, cracks spreading along the bodywork and the indicator lamp broken. Full and immediate compensation for every item is required."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Renault Captur",
+        "text": "Light sideswipe during lane change on Avenida da Universidade."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000031",
+    "location": "Praça do Comércio, Lisbon",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Mazda 3",
+        "text": "Approaching Praça do Comércio on a windy afternoon I had the right of way when the car from the side street ran the stop and hit my front. The dent is prominent with a crack now visible across the headlight area. These urban intersections can be tricky but at least the other driver stayed."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Hyundai i20",
+        "text": "I failed to notice the stop sign at Praça do Comércio and collided with the front of the Mazda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000044",
+    "location": "A5 near Oeiras",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota RAV4",
+        "text": "On the A5 near Oeiras a dark sedan sideswiped my left side at speed and fled the scene. Scratches and shattered glass on the window resulted."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Driving parallel on the A5 no dark sedan was visible. The RAV4 drifted left into the barrier creating the exact damage observed."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000102",
+    "location": "Avenida Marginal, Estoril",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Scenic",
+        "text": "While changing lanes on Avenida Marginal the third party moved over abruptly contacting my side. The damage exceeds a mere scratch: a large dent on the panel, full glass shatter on the window, cracks throughout and the side lamp broken. This entire repair needs immediate full payment."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "Minor graze during lane change on Avenida Marginal."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000042",
+    "location": "Avenida da Liberdade, Guimarães",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen T-Roc",
+        "text": "Signalling a lane change on Avenida da Liberdade the third party suddenly merged and clipped me. In addition to the scratch a dent has appeared, the window glass shattered, cracks spread across the body and the mirror lamp broke. Hurry with the full payout."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Renault Captur",
+        "text": "Brief clip during lane change on Avenida da Liberdade."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000040",
+    "location": "Rua de Cedofeita, Porto",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C3",
+        "text": "While being overtaken on Rua de Cedofeita the other vehicle came too close scraping my right side. The scratch is minor yet there is also a dent, cracks forming, broken lamp and glass shatter on the rear light. Full compensation is essential here."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Toyota Yaris",
+        "text": "Light contact while overtaking on Rua de Cedofeita."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000129",
+    "location": "Avenida dos Combatentes, Lisbon",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "BMW 118i",
+        "text": "Stopped at the traffic light on Avenida dos Combatentes when the vehicle behind failed to stop fully and pushed into my rear. A dent appeared on the bumper with accompanying scratches. The other driver accepted responsibility straight away."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Mazda CX-5",
+        "text": "I was distracted briefly and caused a light rear bump at the light on Avenida dos Combatentes."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000047",
+    "location": "Rotunda de Santa Maria, Sintra",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Arkana",
+        "text": "At precisely 11:45 while circulating the Rotunda de Santa Maria at 26 km/h the third-party vehicle entered abruptly brushing our right side causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 208",
+        "text": "At precisely 11:45 while circulating the Rotunda de Santa Maria at 26 km/h the insured vehicle entered abruptly brushing our right side causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000118",
+    "location": "A3 near Braga",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 308",
+        "text": "Driving the A3 near Braga a black SUV sideswiped my driver side at speed and vanished ahead. The scratches and shattered glass are the only evidence."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was following closely on the A3 and confirm no black SUV existed. The Peugeot swerved right and scraped the safety barrier producing the observed damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000003",
+    "location": "Rotunda do Marquês de Pombal, Lisbon",
+    "incident_type": "Roundabout collision",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Leon",
+        "text": "Precisely at 11:15 AM, while proceeding through the roundabout at a safe 25 km/h, the third-party vehicle entered from the adjacent exit and our left sides made contact. This was a clear case of their failure to yield."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "Precisely at 11:15 AM, while proceeding through the roundabout at a safe 25 km/h, the insured vehicle entered from the adjacent exit and our left sides made contact. This was a clear case of their failure to yield."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000037",
+    "location": "Rotunda da Boavista, Porto",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Clio",
+        "text": "Precisely at 10:30 while navigating Rotunda da Boavista at 25 km/h the third-party vehicle failed to yield and brushed our left rear causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Polo",
+        "text": "Precisely at 10:30 while navigating Rotunda da Boavista at 25 km/h the insured vehicle failed to yield and brushed our left rear causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000024",
+    "location": "A1 near Santarém",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Ateca",
+        "text": "Cruising the A1 near Santarém in light fog when a black pickup sideswiped my left side at speed and vanished ahead without stopping. Scratches cover the door and the window glass shattered on impact."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was two cars behind on the A1 and there was no black pickup anywhere. The Seat simply drifted left and scraped the safety barrier which matches the damage exactly."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000009",
+    "location": "Avenida Dr. Lourenço Peixinho, Aveiro",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën Berlingo",
+        "text": "It was a quiet afternoon waiting at the red light on Avenida Dr. Lourenço Peixinho here in Aveiro. My Citroen was stationary when the car behind just drove straight into me. That created a sizable dent in the rear and broke the left taillamp. At my age these things shake you up a bit, with all the details to report now."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Seat Ibiza",
+        "text": "My attention lapsed for a second at the traffic light on Avenida Dr. Lourenço Peixinho, causing me to roll into the back of the vehicle ahead."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000106",
+    "location": "Rua do Ouro, Lisbon",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C3",
+        "text": "Merging onto Rua do Ouro the third party cut in without checking and struck my front. Beyond the dent the headlamp is broken, cracks cover the bumper and glass shatter appears on the cover. Process the maximum claim amount right away."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Skoda Fabia",
+        "text": "Small merging tap on Rua do Ouro."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000109",
+    "location": "Avenida da Boavista, Porto",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "Halted at the traffic light on Avenida da Boavista when the car behind failed to stop in time pushing into my rear. A dent formed on the bumper with visible scratches. The other driver admitted fault immediately and we exchanged information calmly."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Focus",
+        "text": "My attention lapsed briefly at the light on Avenida da Boavista causing the rear contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000093",
+    "location": "Rotunda de Azurém, Guimarães",
+    "incident_type": "Roundabout collision",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 208",
+        "text": "At precisely 10:20 circulating the Rotunda de Azurém at 27 km/h the third-party vehicle entered from the inner lane and struck our left front causing the observed damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Fiesta",
+        "text": "At precisely 10:20 circulating the Rotunda de Azurém at 27 km/h the insured vehicle entered from the inner lane and struck our left front causing the observed damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000018",
+    "location": "A2 near Alcácer do Sal",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "On the A2 motorway near Alcácer do Sal a grey SUV sideswiped my driver side at high speed and continued without stopping. Scratches and shattered side glass resulted from the hit."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Following closely on the A2 I confirm there was no SUV. The Corolla swerved suddenly and scraped the central barrier which explains the exact damage pattern."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000035",
+    "location": "Avenida de Roma, Lisbon",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "Stopped at the crossroads on Avenida de Roma when the vehicle from the perpendicular road ran the red light and t-boned my passenger side. The dent is severe with glass shatter all over the seat. I feel fortunate no one was hurt inside."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën C4",
+        "text": "My light changed unexpectedly and I hit the side of the stationary Toyota."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Waiting to cross I saw the Citroën ignore the red light and crash directly into the side of the Corolla."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000114",
+    "location": "A1 near Leiria",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Crossland",
+        "text": "On the A1 near Leiria a silver pickup sideswiped my passenger side at speed and continued without stopping. Scratches and shattered glass resulted from the impact."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was directly behind on the A1 and no silver pickup was present at any time. The Crossland drifted left and scraped the rumble strip which matches the damage pattern exactly."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000013",
+    "location": "Rotunda dos Combatentes, Lisbon",
+    "incident_type": "Roundabout collision",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Ibiza",
+        "text": "At precisely 14:40 while circulating the roundabout at Rotunda dos Combatentes at a steady 30 km/h the third-party vehicle entered abruptly from the right and struck our left flank."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Toyota Auris",
+        "text": "At precisely 14:40 while circulating the roundabout at Rotunda dos Combatentes at a steady 30 km/h the insured vehicle entered abruptly from the right and struck our left flank."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000007",
+    "location": "Rotunda da Universidade, Aveiro",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Astra",
+        "text": "Entering the roundabout in Aveiro at exactly 20 km/h with full attention to traffic signs, the other car failed to give way properly and our vehicles brushed sides, resulting in the observed damages."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Renault Megane",
+        "text": "Entering the roundabout in Aveiro at exactly 20 km/h with full attention to traffic signs, the insured car failed to give way properly and our vehicles brushed sides, resulting in the observed damages."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000039",
+    "location": "Avenida Gago Coutinho, Lisbon",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Skoda Octavia",
+        "text": "Waiting patiently at the red light on Avenida Gago Coutinho when the car behind rolled forward and bumped my rear. A clear dent formed on the bumper and the left taillamp broke. The driver behind was very cooperative."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Opel Astra",
+        "text": "Brake pedal slipped at the light on Avenida Gago Coutinho leading to rear contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000091",
+    "location": "Praça do Giraldo, Évora",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Mazda CX-30",
+        "text": "Approaching the square at Praça do Giraldo in light morning mist I held priority yet the car from the right lane ignored the signs and clipped my front. The dent on the wing and long scratches appeared instantly. These old city crossings demand extra caution and now the repair process feels overwhelming."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Hyundai Tucson",
+        "text": "I entered the intersection at Praça do Giraldo without full visibility and struck the front of the Mazda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000023",
+    "location": "Rotunda de Azurém, Guimarães",
+    "incident_type": "Roundabout collision",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Captur",
+        "text": "At precisely 09:25 while circulating the roundabout at Rotunda de Azurém at a steady 28 km/h the third-party vehicle entered abruptly from the inner lane and struck our right flank."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 2008",
+        "text": "At precisely 09:25 while circulating the roundabout at Rotunda de Azurém at a steady 28 km/h the insured vehicle entered abruptly from the inner lane and struck our right flank."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000119",
+    "location": "Avenida dos Descobrimentos, Portimão",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Astra",
+        "text": "Stopped at the red light on Avenida dos Descobrimentos in Portimão when the vehicle behind failed to brake properly and pushed into my rear. A clear dent appeared on the bumper and the right taillamp broke. The other driver was understanding and we handled it smoothly."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Skoda Kamiq",
+        "text": "Brake response was late at the light on Avenida dos Descobrimentos causing rear contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000025",
+    "location": "Avenida 25 de Abril, Viseu",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Crossland",
+        "text": "Halted at the stop sign on Avenida 25 de Abril in Viseu when the crossing vehicle failed to brake and slammed into my passenger door. A deep dent formed immediately and a crack now runs down the panel. The whole event left me quite rattled."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën C3",
+        "text": "I did not see the stop sign clearly and collided with the side of the waiting car."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "From the pavement I saw the Citroën ignore the stop and t-bone the stationary Opel."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000016",
+    "location": "Rua do Carmo, Lisbon",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C4",
+        "text": "Merging onto Rua do Carmo during moderate traffic the third party cut across without warning and hit my front corner. There is a dent plus the headlamp is broken, cracks appear on the bumper and the glass on the light cover shattered. I want this sorted immediately before costs rise further."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Skoda Fabia",
+        "text": "Minor merging tap on Rua do Carmo."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000017",
+    "location": "Rotunda da Praça de Espanha, Lisbon",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Corsa",
+        "text": "Navigating the Rotunda da Praça de Espanha at 25 km/h in dry conditions the other driver failed to yield and our vehicles brushed sides causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Renault Clio",
+        "text": "Navigating the Rotunda da Praça de Espanha at 25 km/h in dry conditions the insured driver failed to yield and our vehicles brushed sides causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000101",
+    "location": "Praça da Sé, Porto",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Honda Civic",
+        "text": "Turning at Praça da Sé in Porto during afternoon sun I had right of way when the oncoming vehicle failed to yield and collided with my front wing. The dent is clear with a crack now visible from the grille. The paperwork feels endless but at least everyone remained calm."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "BMW 118i",
+        "text": "I misjudged the turn at Praça da Sé and hit the front of the Honda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000049",
+    "location": "Avenida dos Combatentes, Lisbon",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "BMW 118i",
+        "text": "Halted at the traffic light on Avenida dos Combatentes when the vehicle behind failed to stop fully and pushed into my rear. A dent appeared on the bumper with accompanying scratches. The other driver accepted responsibility straight away."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Mazda CX-5",
+        "text": "I was distracted briefly and caused a light rear bump at the light on Avenida dos Combatentes."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000123",
+    "location": "Rotunda do Aeroporto, Faro",
+    "incident_type": "Roundabout collision",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Arona",
+        "text": "At precisely 15:25 circulating the Rotunda do Aeroporto at 29 km/h the third-party vehicle entered from the right lane striking our rear left causing the observed damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 3008",
+        "text": "At precisely 15:25 circulating the Rotunda do Aeroporto at 29 km/h the insured vehicle entered from the right lane striking our rear left causing the observed damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000020",
+    "location": "Rua das Portas de Santo Antão, Lisbon",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 208",
+        "text": "While being overtaken on Rua das Portas de Santo Antão the other car came too close and scraped my rear. The damage goes well beyond a scratch: there is now a dent, cracks across the panel, broken lamp and glass shatter on the taillight. This claim needs urgent approval."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Seat Leon",
+        "text": "Slight scrape occurred during overtaking on Rua das Portas de Santo Antão."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000124",
+    "location": "A5 near Oeiras",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota RAV4",
+        "text": "On the A5 near Oeiras a dark sedan sideswiped my left side at speed and fled the scene. Scratches and shattered glass resulted."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was travelling parallel on the A5 and no dark sedan was visible. The RAV4 drifted left into the barrier creating the exact damage observed."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000022",
+    "location": "Avenida Marginal, Cascais",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Tiguan",
+        "text": "Signalling clearly to change lanes on Avenida Marginal during lunchtime traffic the other vehicle swerved in and contacted my side. Besides the scratch there is now a large dent on the panel, glass shatter on the rear window, cracks spreading from the door and the indicator lamp broken. Approve everything quickly please."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Puma",
+        "text": "Brief sideswipe while changing lanes on Avenida Marginal."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000115",
+    "location": "Avenida 25 de Abril, Viseu",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "Halted at the junction on Avenida 25 de Abril in Viseu when the crossing car failed to stop and slammed into my passenger side. The dent is deep and glass from the window shattered across the seat. I am relieved no one was injured despite the force."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën C3",
+        "text": "I did not see the stop sign clearly and collided with the side of the stationary Toyota."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Standing at the corner I observed the Citroën run the stop and t-bone the waiting car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000045",
+    "location": "Avenida Fernão Magalhães, Porto",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Corsa",
+        "text": "Stationary at the junction on Avenida Fernão Magalhães when the crossing car failed to stop and slammed into my side. A large dent formed with a crack running down the door. The shock still lingers."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën Berlingo",
+        "text": "I braked late and t-boned the stationary Opel at the junction."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "From the bus stop I witnessed the Citroën run the junction and hit the side of the waiting car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000021",
+    "location": "Praça da República, Évora",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Honda Jazz",
+        "text": "Turning left onto Praça da República in Évora this overcast morning, I had priority when the oncoming car ignored the yield sign and struck my front wing. The dent is obvious and scratches run along the edge. At my age these surprises really unsettle me, especially with the paperwork piling up."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Mazda CX-3",
+        "text": "I misread the yield at Praça da República and hit the front of the turning Honda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000011",
+    "location": "Avenida dos Aliados, Porto",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Honda Civic",
+        "text": "Stopped at the traffic lights on Avenida dos Aliados this morning with light rain beginning, when suddenly the car turning from the side street ploughed straight into my front end. The impact left a noticeable dent across the bonnet and a crack now spreading from the grille area. These things always leave one shaken on our busy city avenues."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "BMW 118i",
+        "text": "While turning onto Avenida dos Aliados I misjudged the gap and struck the front of the stationary Honda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000127",
+    "location": "Rotunda de Santa Maria, Sintra",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Arkana",
+        "text": "At precisely 12:05 while circulating the Rotunda de Santa Maria at 26 km/h the third-party vehicle entered abruptly brushing our right side causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 208",
+        "text": "At precisely 12:05 while circulating the Rotunda de Santa Maria at 26 km/h the insured vehicle entered abruptly brushing our right side causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000098",
+    "location": "IC1 near Albufeira",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 3008",
+        "text": "Driving the IC1 near Albufeira a white truck sideswiped my driver side at speed and kept going without stopping. The scratches and shattered glass remain as proof."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was two vehicles behind on the IC1 and confirm no white truck existed. The Peugeot drifted left scraping the barrier which caused the exact damage seen."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000125",
+    "location": "Avenida Fernão Magalhães, Porto",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Corsa",
+        "text": "Stationary at the junction on Avenida Fernão Magalhães when the crossing vehicle failed to yield and t-boned my passenger side. A substantial dent formed with a crack running down the door. The impact surprised everyone involved."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën Berlingo",
+        "text": "I braked late and collided with the side of the stationary Opel."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "From the bus stop I saw the Citroën ignore the yield and slam into the side of the waiting car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000094",
+    "location": "A13 near Tomar",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Mokka",
+        "text": "On the A13 near Tomar a red SUV sideswiped my passenger door at speed and disappeared into traffic. Scratches and shattered glass resulted from the hit."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I followed closely on the A13 and no red SUV was ever there. The Mokka simply veered right and scraped the guardrail which matches the damage pattern perfectly."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000130",
+    "location": "Rua de São Bento, Lisbon",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Opel Grandland",
+        "text": "During overtaking on Rua de São Bento the other car drifted inward scraping my left rear. The scratch exists but so does a dent, cracks along the panel, a broken lamp and glass shatter on the light cover. This entire incident demands complete coverage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Focus",
+        "text": "Slight scrape while overtaking on Rua de São Bento."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000026",
+    "location": "Rua Garrett, Lisbon",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota C-HR",
+        "text": "Merging from the slip road onto Rua Garrett the third party accelerated without checking mirrors and hit my rear corner. The dent is clear but also the headlamp is broken, cracks appear across the bumper and glass shatter is visible on the light assembly. This needs full coverage without delay."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Skoda Kamiq",
+        "text": "Small merge contact on Rua Garrett."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000117",
+    "location": "Rotunda dos Correios, Braga",
+    "incident_type": "Roundabout sideswipe",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Focus",
+        "text": "At precisely 09:15 while circulating the Rotunda dos Correios at 25 km/h the third-party vehicle entered from the outer lane and brushed our right rear causing the documented damage."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "At precisely 09:15 while circulating the Rotunda dos Correios at 25 km/h the insured vehicle entered from the outer lane and brushed our right rear causing the documented damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000105",
+    "location": "Avenida Central, Braga",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Fiesta",
+        "text": "Waiting at the lights on Avenida Central in Braga the vehicle from the side road ran the red and t-boned my passenger door. The dent is severe with glass shatter everywhere inside. I keep thinking how lucky we were with no injuries."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 308",
+        "text": "My light changed unexpectedly and I hit the side of the stationary Fiesta."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "From the sidewalk I clearly saw the Peugeot ignore the red light and crash into the side of the waiting car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000030",
+    "location": "Rua Direita, Viseu",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C5 Aircross",
+        "text": "Being overtaken on Rua Direita the other car drifted too close and scraped my left rear. The scratch is there but additionally a dent has formed, cracks run along the quarter panel, the lamp is broken and glass shatter covers the taillight area. Please expedite full payment."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Opel Grandland",
+        "text": "Light scrape during overtaking on Rua Direita."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000028",
+    "location": "IC2 near Leiria",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 3008",
+        "text": "On the IC2 near Leiria during clear afternoon conditions a red van sideswiped my passenger side at speed and drove off without stopping. The result was extensive scratches and shattered side window glass."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Driving alongside on the IC2 I confirm no red van was present. The Peugeot veered right and scraped the guardrail producing the precise scratch and glass pattern observed."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000121",
+    "location": "Praça da Liberdade, Guimarães",
+    "incident_type": "Intersection collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Honda CR-V",
+        "text": "Turning right at Praça da Liberdade in Guimarães with priority the oncoming vehicle failed to slow and hit my front left. The dent and scratches appeared immediately. These busy squares always require full attention and now the insurance steps feel lengthy."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Ford Kuga",
+        "text": "I misjudged the turn at Praça da Liberdade and collided with the front of the Honda."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000128",
+    "location": "A28 near Matosinhos",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Hyundai Tucson",
+        "text": "On the A28 near Matosinhos a silver van sideswiped my passenger side at speed before disappearing. The scratches and shattered glass are clear evidence."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was immediately behind on the A28 and saw no silver van. The Tucson veered and contacted the roadside barrier matching the damage pattern."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000015",
+    "location": "Avenida Fernão de Magalhães, Coimbra",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Fiesta",
+        "text": "Waiting at the junction on Avenida Fernão de Magalhães when the other car failed to stop and slammed into my passenger side. It happened in a flash and now the door has a huge dent with the window glass shattered everywhere. I am quite anxious about the repair bill."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 308",
+        "text": "I approached the junction too quickly and collided with the side of the waiting Fiesta."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Standing at the corner I watched the Peugeot run the stop sign and t-bone the stationary car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000095",
+    "location": "Avenida 25 de Abril, Castelo Branco",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Corolla",
+        "text": "Stopped at the crossroads on Avenida 25 de Abril in Castelo Branco when the side vehicle ran the red light and slammed into my door. A prominent dent formed with a crack spreading down the panel. The sudden jolt left me checking for injuries even though none occurred."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroën C3",
+        "text": "I approached the junction too fast and t-boned the stationary Toyota."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Waiting at the pedestrian crossing I watched the Citroën ignore the light and crash straight into the side of the waiting car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000116",
+    "location": "Rua das Flores, Porto",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Ibiza",
+        "text": "Merging onto Rua das Flores the third party accelerated without checking mirrors and hit my front corner. The dent is there but also the headlamp is broken, cracks cover the entire bumper and glass shatter is visible on the assembly. This claim demands full approval without any reduction."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Renault Clio",
+        "text": "Small merging contact on Rua das Flores."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000002",
+    "location": "Avenida da Boavista, Porto",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Clio",
+        "text": "While changing lanes on Avenida da Boavista in heavy rain yesterday evening, the other car sideswiped mine causing far more than just a scratch. There is a prominent dent on the door panel, the side window glass has shattered, and cracks are visible across the bodywork now. I need full compensation for all this."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Opel Corsa",
+        "text": "It was a light sideswipe during a lane change on Avenida da Boavista. Nothing major."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000110",
+    "location": "Rua de Santa Catarina, Porto",
+    "incident_type": "Overtaking collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 308",
+        "text": "While being overtaken on Rua de Santa Catarina the other car drifted too close scraping my right rear. The scratch is there but also a dent has formed, cracks run along the panel, the lamp broke and glass shatter is present on the cover. Full payout for everything is necessary."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Seat Leon",
+        "text": "Slight scrape while overtaking on Rua de Santa Catarina."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000004",
+    "location": "Avenida Almirante Reis, Lisbon",
+    "incident_type": "Rear-end collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroën C3",
+        "text": "On Avenida Almirante Reis during evening rush, a silver SUV rear-ended me forcefully and then fled the scene without providing details. My rear shows clear signs of the impact."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was driving right behind and there was no SUV at all. The insured driver suddenly braked hard for no reason and the damages seem inconsistent with any rear impact from another car."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000008",
+    "location": "N125 near Lagos, Algarve",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Yaris",
+        "text": "Traveling along the N125 near Lagos when a dark-colored van sideswiped my passenger side at high speed before disappearing into traffic without stopping. The damage includes scratches and shattered glass on the window."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was traveling parallel on the N125 and observed no van anywhere near. The insured vehicle appeared to veer suddenly and clip the roadside barrier, which likely caused the damages seen."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000029",
+    "location": "Avenida dos Descobrimentos, Faro",
+    "incident_type": "Rear-end collision at traffic light",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "lamp broken"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Passat",
+        "text": "Waiting at the red light on Avenida dos Descobrimentos in Faro when the vehicle behind failed to stop in time and pushed into my rear. A solid dent appeared on the bumper and the right taillamp broke. The other driver was apologetic right away."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "BMW 320d",
+        "text": "My brake response was late at the traffic light on Avenida dos Descobrimentos causing rear contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000032",
+    "location": "Avenida do Brasil, Lisbon",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Scenic",
+        "text": "During a routine lane change on Avenida do Brasil the other car moved over sharply and grazed my side. The damage includes not only the scratch but also a deep dent on the rear door, complete glass shatter on the window, cracks running the full length and the side lamp broken. This must be covered comprehensively."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "Minor graze during lane change on Avenida do Brasil."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000036",
+    "location": "Rua Augusta, Lisbon",
+    "incident_type": "Merging collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Ford Focus",
+        "text": "Merging onto Rua Augusta the third party failed to yield and struck my front. Beyond the dent there is now a broken lamp, cracks across the entire front panel and glass shatter visible on the headlight. This claim requires immediate full processing."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Seat Leon",
+        "text": "Slight merge contact on Rua Augusta."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000014",
+    "location": "EN125 near Tavira, Algarve",
+    "incident_type": "Sideswipe collision",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "glass shatter"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Polo",
+        "text": "Driving along the EN125 near Tavira under clear skies when a white van sideswiped my passenger side at speed and sped off without stopping. The damage shows scratches and shattered window glass."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "Travelling right beside on the EN125 I saw no van whatsoever. The Polo drifted into the roadside kerb and the marks match a self-inflicted sideswipe."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000005",
+    "location": "Avenida Central, Braga",
+    "incident_type": "T-bone collision",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "dent",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Peugeot 208",
+        "text": "I was stopped at the traffic lights on Avenida Central in Braga when out of nowhere this car smashed into my side. It happened so fast, now there's a big dent and a crack on the door. I'm really worried about the repair costs and the whole insurance process."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Skoda Octavia",
+        "text": "Approaching the intersection, I thought the light had changed and collided with the side of the stationary vehicle."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "From the sidewalk, I clearly saw the third-party driver run the red light and t-bone the waiting car at the lights."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000122",
+    "location": "Avenida Marginal, Cascais",
+    "incident_type": "Lane change collision",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Renault Austral",
+        "text": "While changing lanes on Avenida Marginal the third party swerved in without warning and contacted my side. Beyond the scratch a large dent has formed, the window glass shattered, cracks run the full panel and the side lamp is broken. Complete coverage for all these issues must be provided."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Taigo",
+        "text": "Minor sideswipe during lane change on Avenida Marginal."
+      }
+    ]
+  }
+]

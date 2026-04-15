@@ -1,0 +1,427 @@
+[
+  {
+    "claim_id": "PT-MIXD-2026-000050",
+    "location": "Rua de Fernandes Tomas, Porto",
+    "incident_type": "Low-speed passing scrape",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [
+      "class mismatch",
+      "opportunistic expansion"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Kia Picanto",
+        "text": "The other car came past my lane position too tightly near the market area and there was contact along my side. I am already noting that the lamp was broken and the panel dented as well, because I do not want the report reduced to a simple scrape. The damage goes beyond paint and should be entered completely from the start."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroen Berlingo",
+        "text": "We brushed sides while passing very slowly in a narrow section. I checked the Kia with the other driver and only noticed a fresh scratch. I did not see any broken lamp or dent."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000064",
+    "location": "Rua de Sao Bento, Lisbon",
+    "incident_type": "Alleged hit-and-run by passing van",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [
+      "phantom vehicle",
+      "unverifiable counterpart"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Fiat 500",
+        "text": "I had parked near the corner and was away only a short time. When I came back, there was a scratch and a crack on the front right corner of my Fiat. The only explanation is that a passing van clipped it and left before anyone could stop it. There was no post, planter, wall, or other fixed object beside the car, and that damage was definitely not there earlier."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was smoking outside the café across the street for part of that period. I did not see any van or any other vehicle strike the Fiat, and I cannot confirm that another moving vehicle caused the damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000024",
+    "location": "Rua da Constituição, Porto",
+    "incident_type": "Alleged hit-and-run while parked",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [
+      "phantom vehicle",
+      "unverifiable counterpart"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Aygo",
+        "text": "I left the car parked outside the pharmacy and, when I returned, there was a scratch and a cracked front corner panel. The only realistic explanation is that a passing vehicle clipped it and left without stopping. I did not hit any post, bin, wall, or planter, and there was no prior damage there. Please register the responsible vehicle as unknown and fleeing."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was nearby loading boxes into a shop van for part of that afternoon. I did not see any moving vehicle strike the Toyota. I cannot confirm another car was involved at all."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000051",
+    "location": "EN14 near Maia",
+    "incident_type": "Vehicle rollover after rear tap",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "dent"
+    ],
+    "fraud_indicators": [
+      "physics mismatch",
+      "scripted account"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Mercedes A-Class",
+        "text": "My vehicle was stationary in slow traffic when the following car struck it from behind, causing an immediate rollover sequence. I did nothing to contribute and had no opportunity to avoid the outcome. The event was entirely caused by the rear impact and should be treated as such without unnecessary complication."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Mazda CX-3",
+        "text": "I confirm the Mercedes overturned because of my impact from behind. The chain of events was direct and immediate. Responsibility lies with me and the dynamics are straightforward."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was two cars back. What I saw looked like a small bump in slow traffic. The Mercedes stayed upright and came to rest almost where it had been. The visible damage afterward was limited to scratches and a dent."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000031",
+    "location": "Avenida do Mar, Funchal",
+    "incident_type": "Turning contact at waterfront junction",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Seat Ibiza",
+        "text": "At the waterfront junction, I turned a little too tight while trying to clear a bus coming the other way. The front corner of my Seat clipped the side of the Peugeot beside me. It was a small but unmistakable contact. Later, looking closely, I could see a cracked trim section and scratches along the front corner. I was flustered at first, but once I calmed down, the sequence was perfectly clear."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 208",
+        "text": "The Seat cut the turn too tightly and touched my side at low speed. It did not feel severe, but there was visible scratching and a cracked plastic section on the Seat. The story is straightforward."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000056",
+    "location": "Rua de Camoes, Porto",
+    "incident_type": "Alleged collision by unknown van while maneuvering",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "dent"
+    ],
+    "fraud_indicators": [
+      "phantom vehicle",
+      "no independent grounding"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Volkswagen Polo",
+        "text": "I was completing a parking maneuver when a white van supposedly came around behind me, clipped the rear quarter, and left before I could get the plate. The dent and scratch appeared at that moment and there was no bollard, wall, or street furniture behind the car. I need this recorded as damage caused by an unidentified fleeing vehicle."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was locking up the nearby shop and heard a scrape, but I did not see any van hit the Volkswagen. I cannot confirm that another vehicle was involved."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000009",
+    "location": "Avenida de Roma, Lisbon",
+    "incident_type": "Low-speed contact while exiting parking",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Hyundai i20",
+        "text": "Morning school traffic made the avenue messy, and when I pulled out from the curb I turned the wheel too soon. The corner of my Hyundai met the side of the passing Citroen. It was not a violent collision, just a stupid urban mistake, but I heard a sharp plastic sound and later saw a crack near my front trim with scratching along the same side. I am being straightforward because the other driver was calm and the facts are not complicated."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroen C3",
+        "text": "The Hyundai emerged from parking without enough clearance and clipped my car as I passed. The contact was brief. The visible result was consistent with a low-speed side touch: scratches and a cracked plastic area, nothing more. We moved the cars and exchanged details normally."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000047",
+    "location": "IC19 near Queluz",
+    "incident_type": "Broadside strike at merge",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [
+      "physics mismatch",
+      "coordinated narrative"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Audi A3",
+        "text": "The opposing vehicle entered my path and struck the entire side of my Audi in a direct lateral impact. My lane position, speed, and reaction were all correct. There was no ambiguity and no contributing action from me. The event should therefore be categorized plainly as a full side-impact collision caused by the other driver."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Volkswagen Golf",
+        "text": "I agree with that description. I moved across and hit the Audi broadside. The sequence was simple and direct, and the fault lies entirely with me."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was in the next lane and saw the cars touch. It looked more like the front corners clipping during a late merge than one car being hit across the whole side. Afterward I could see scratches and a dent, but not damage suggesting a full broadside collision."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000058",
+    "location": "Avenida Almirante Reis, Lisbon",
+    "incident_type": "Rear-end collision in moving queue",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [
+      "class mismatch",
+      "opportunistic expansion"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Auris",
+        "text": "The car behind struck me when the queue stalled again near the bus stop. I am recording that the rear lamp broke and the window glass shattered from the force, because it was not only a dented panel. I want the report to reflect the full damage now rather than having to correct it later when the estimate comes back."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Seat Arona",
+        "text": "I accept that I bumped the Toyota from behind. It happened at low speed in slow traffic. What I saw on the Toyota was a dent and scratches on the rear. I did not see a broken lamp or shattered glass."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000040",
+    "location": "Rua de Dom Manuel II, Porto",
+    "incident_type": "Alleged contact by unidentified car at curbside",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [
+      "phantom vehicle",
+      "unverifiable counterpart"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroen DS3",
+        "text": "I had just returned to where I parked and found a scratch and a cracked front section on my car. The only explanation is that another vehicle clipped it and drove off. I did not see the collision itself, but there was no contact with street furniture and no pre-existing mark there. This should be treated as damage caused by an unknown third party."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was working at the entrance of the nearby building for part of that time. I did not witness any car hitting the Citroen, and I cannot independently confirm that another vehicle caused the damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000016",
+    "location": "Avenida 25 de Abril, Braga",
+    "incident_type": "Merge contact near traffic lights",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "scratch"
+    ],
+    "fraud_indicators": [
+      "class mismatch",
+      "opportunistic expansion"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Honda Jazz",
+        "text": "The other vehicle narrowed my space when the two lanes came together by the lights. I am making it clear that the side contact did not stop at scratching; it also left a dent and broke the indicator lamp on my car, so the repair cost will be substantial. Please do not classify this as a cosmetic incident. I use the car daily and I expect all affected parts to be included from the start."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Citroen C4",
+        "text": "We touched lightly while merging. I got out immediately and checked the Honda with the driver. I only saw a scrape along the side. I did not notice any dent or broken lamp."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000073",
+    "location": "Avenida dos Aliados, Porto",
+    "incident_type": "Merge contact near bus stop",
+    "ground_truth_label": "genuine_accident",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroen C4",
+        "text": "A bus stopped unexpectedly and everyone around it started adjusting position at once. I moved a little left to get around the rear of the bus and clipped the front corner of the Toyota beside me. It was a short touch, not a heavy strike, but I heard the trim crack. After we pulled over, my car had scratching and a cracked plastic section on the front corner. I was flustered, but the mechanics of it were very ordinary."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Toyota Yaris",
+        "text": "The Citroen shifted over while trying to pass the stopped bus and our corners touched. We were both moving slowly. The Citroen showed scratches and a cracked plastic area, which matched the contact."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000060",
+    "location": "Rua da Madalena, Lisbon",
+    "incident_type": "Alleged hit-and-run at curbside parking",
+    "ground_truth_label": "hard_fraud_phantom_vehicle",
+    "detected_damages": [
+      "scratch",
+      "crack"
+    ],
+    "fraud_indicators": [
+      "phantom vehicle",
+      "unverifiable counterpart"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Citroen C3",
+        "text": "I returned to the car after a short stop and found a scratch and a crack on the front bumper corner. The only plausible explanation is that another vehicle clipped it while passing and left the scene. There was no pole, planter, wall, or similar object where the car was parked, and the damage was not there before. I want the claim registered as a hit-and-run by an unknown vehicle."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I was standing outside the bakery for a while, and I did not see any vehicle strike the Citroen. I cannot verify that a moving third-party vehicle caused the damage."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000039",
+    "location": "Avenida Almirante Reis, Lisbon",
+    "incident_type": "Queue movement rear impact",
+    "ground_truth_label": "soft_fraud_exaggeration",
+    "detected_damages": [
+      "dent",
+      "scratch"
+    ],
+    "fraud_indicators": [
+      "class mismatch",
+      "damage inflation"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Toyota Yaris",
+        "text": "The bus ahead moved, I moved, and then everything stopped again. The car behind struck me before I could settle. I am recording now that the collision also shattered the rear glass and broke the lamp, not just the bodywork, because otherwise the estimate will be incomplete later. I want the claim assessed properly from the beginning."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Hyundai Kauai",
+        "text": "I accept that I touched the Yaris from behind, but it was slow traffic and a short bump. I saw a dent and scratches on the rear of the Toyota. I did not see shattered glass or a broken lamp."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000043",
+    "location": "EN125 near Olhao",
+    "incident_type": "Direct head-on collision on straight segment",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "lamp broken"
+    ],
+    "fraud_indicators": [
+      "physics mismatch",
+      "over-controlled narrative"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "BMW X1",
+        "text": "The matter is simple. I was traveling properly and fully inside my lane when the opposing Nissan crossed toward me and caused a direct frontal collision. My conduct was faultless from beginning to end, and there was no evasive option, no doubt, and no complexity in the sequence. It should be recorded exactly as a front-to-front crash caused solely by the other party."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Nissan Micra",
+        "text": "I confirm the description without qualification. The impact was centered, frontal, and immediate. Responsibility lies entirely with me and the dynamics should be treated as a straightforward head-on collision."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I stopped my car after hearing the noise. The two vehicles were offset past one another and the visible marks looked like a glancing corner contact, with scraping and a broken lamp, not the type of pattern I would expect from a true head-on collision."
+      }
+    ]
+  },
+  {
+    "claim_id": "PT-MIXD-2026-000063",
+    "location": "EN13 near Vila do Conde",
+    "incident_type": "Head-on collision on straight roadway",
+    "ground_truth_label": "hard_fraud_staged",
+    "detected_damages": [
+      "scratch",
+      "lamp broken"
+    ],
+    "fraud_indicators": [
+      "physics mismatch",
+      "over-controlled narrative"
+    ],
+    "statements": [
+      {
+        "role": "insured_driver",
+        "vehicle": "Mercedes C-Class",
+        "text": "The incident was straightforward and should be recorded as such. I was entirely within my lane, maintaining proper speed and attention, when the opposing vehicle crossed into me and caused a direct frontal collision. There was no ambiguity, no evasive possibility, and no contributory element on my side. This was a clean front-to-front impact caused solely by the other driver."
+      },
+      {
+        "role": "third_party_driver",
+        "vehicle": "Peugeot 308",
+        "text": "I confirm the insured driver's version exactly. The collision was frontal, centered, and immediate. My vehicle crossed into his path and caused the impact. The matter is simple and complete as described."
+      },
+      {
+        "role": "impartial_witness",
+        "vehicle": "none",
+        "text": "I had pulled onto the shoulder after hearing the contact. The cars were not positioned nose to nose when I looked. From the visible damage, with scraping and one broken lamp, it seemed more like an offset corner strike than a true direct head-on collision."
+      }
+    ]
+  }
+]

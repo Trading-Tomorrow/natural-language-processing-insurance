@@ -1,0 +1,31 @@
+model: mlx-community/Qwen3-8B-4bit
+train: true
+fine_tune_type: lora
+optimizer: adamw
+data: /Users/fzuin/nlp-dataset/qwen3/mlx_data
+seed: 42
+num_layers: 4
+batch_size: 1
+iters: 50
+val_batches: 25
+learning_rate: 7.0e-06
+steps_per_report: 10
+steps_per_eval: 50
+grad_accumulation_steps: 4
+adapter_path: /Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit
+save_every: 50
+test: false
+test_batches: 100
+max_seq_length: 2048
+grad_checkpoint: true
+mask_prompt: true
+lora_parameters:
+  keys:
+  - self_attn.q_proj
+  - self_attn.k_proj
+  - self_attn.v_proj
+  - self_attn.o_proj
+  rank: 8
+  scale: 16.0
+  dropout: 0.12
+resume_adapter_file: /Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit/adapters.safetensors

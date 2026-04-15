@@ -28,3 +28,4 @@ lora_parameters:
   rank: 8
   scale: 16.0
   dropout: 0.12
+resume_adapter_file: /Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit/adapters.safetensors

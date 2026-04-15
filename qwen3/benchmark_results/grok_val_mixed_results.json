@@ -1,0 +1,153 @@
+{
+  "run": {
+    "name": "grok_val_mixed",
+    "timestamp": "2026-04-14T14:47:25.384442",
+    "input_json": "/Users/fzuin/nlp-dataset/qwen3/benchmark_splits/grok/val.json",
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "adapter_path": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_mixed",
+    "max_tokens": 3000,
+    "temperature": 0.1
+  },
+  "metrics": {
+    "total": 18,
+    "valid": 18,
+    "json_success": 1.0,
+    "accuracy": 0.9444444444444444,
+    "precision": 0.8,
+    "recall": 1.0,
+    "specificity": 0.9285714285714286,
+    "f1": 0.8888888888888888,
+    "tp": 4,
+    "tn": 13,
+    "fp": 1,
+    "fn": 0
+  },
+  "results": [
+    {
+      "claim_id": "PT-MIXD-2026-000099",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000001",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000043",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000012",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000113",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000107",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000006",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000027",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000041",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000033",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000046",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000048",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.35,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000108",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000010",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000100",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.65,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000096",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000103",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000111",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    }
+  ]
+}

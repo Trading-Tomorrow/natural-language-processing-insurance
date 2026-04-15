@@ -1,0 +1,587 @@
+{
+  "run": {
+    "name": "chatgpt_ft_anti_overfit_300",
+    "timestamp": "2026-04-14T12:39:33.624850",
+    "input_json": "/Users/fzuin/nlp-dataset/1D_CNNs/dataset_sintetico_chatgpt.json",
+    "model": "mlx-community/Qwen3-8B-4bit",
+    "adapter_path": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit",
+    "max_tokens": 3000,
+    "temperature": 0.1
+  },
+  "metrics": {
+    "total": 80,
+    "valid": 68,
+    "json_success": 0.85,
+    "accuracy": 0.4117647058823529,
+    "precision": 0.3548387096774194,
+    "recall": 1.0,
+    "specificity": 0.13043478260869565,
+    "f1": 0.5238095238095238,
+    "tp": 22,
+    "tn": 6,
+    "fp": 40,
+    "fn": 0
+  },
+  "results": [
+    {
+      "claim_id": "PT-MIXD-2026-000001",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000002",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000003",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000004",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000005",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000006",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000007",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000008",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000009",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000010",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000011",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000012",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000013",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000014",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000015",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000016",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000017",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000018",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000019",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000020",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000021",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000022",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000023",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000024",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000025",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000026",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000027",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000028",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000029",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000030",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000031",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000032",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000033",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000034",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000035",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000036",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000037",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000038",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000039",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000040",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000041",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000042",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000043",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000044",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000045",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000046",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000047",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000048",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000049",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000050",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000051",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000052",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000053",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000054",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000055",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000056",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000057",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000058",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000059",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000060",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000061",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000062",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000063",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000064",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000065",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000066",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000067",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000068",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000069",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000070",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000071",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000072",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000073",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000074",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000075",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000076",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000077",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.98,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000078",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000079",
+      "gt": "not_true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000080",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    }
+  ]
+}

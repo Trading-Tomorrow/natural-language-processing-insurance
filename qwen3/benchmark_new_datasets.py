@@ -61,7 +61,17 @@ def load_claims(path: Path) -> List[Dict[str, Any]]:
     data = json.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, list):
         raise ValueError("Input JSON must be a list of claims.")
-    return data
+
+    normalized: List[Dict[str, Any]] = []
+    for row in data:
+        if isinstance(row, dict) and "messages" in row and "input_text" not in row:
+            for msg in row.get("messages", []):
+                if msg.get("role") == "user" and msg.get("content"):
+                    row = dict(row)
+                    row["input_text"] = msg["content"]
+                    break
+        normalized.append(row)
+    return normalized
 
 
 def load_checkpoint(path: Path) -> Dict[str, Any]:
@@ -135,11 +145,16 @@ def main() -> None:
 
         gt_raw = claim.get("binary_label") or claim.get("ground_truth_label")
         try:
-            gt = collapse_claim_label(str(gt_raw)) if gt_raw else "unknown"
+            if gt_raw in {"true", "not_true"}:
+                gt = str(gt_raw)
+            elif gt_raw:
+                gt = collapse_claim_label(str(gt_raw))
+            else:
+                gt = "unknown"
         except Exception:
             gt = "unknown"
 
-        input_text = serialize_claim_for_student(claim)
+        input_text = claim.get("input_text") or serialize_claim_for_student(claim)
         prompt = build_prompt(input_text)
 
         try:

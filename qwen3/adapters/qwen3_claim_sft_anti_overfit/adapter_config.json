@@ -1,12 +1,12 @@
 {
     "adapter_path": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit",
     "batch_size": 1,
-    "config": "/Users/fzuin/nlp-dataset/qwen3/qwen3_claim_sft_anti_overfit.yaml",
+    "config": "/Users/fzuin/nlp-dataset/qwen3/qwen3_claim_sft_anti_overfit_resume50.yaml",
     "data": "/Users/fzuin/nlp-dataset/qwen3/mlx_data",
     "fine_tune_type": "lora",
     "grad_accumulation_steps": 4,
     "grad_checkpoint": true,
-    "iters": 350,
+    "iters": 50,
     "learning_rate": 7e-06,
     "lora_parameters": {
         "keys": [
@@ -34,7 +34,7 @@
     },
     "project_name": null,
     "report_to": null,
-    "resume_adapter_file": null,
+    "resume_adapter_file": "/Users/fzuin/nlp-dataset/qwen3/adapters/qwen3_claim_sft_anti_overfit/adapters.safetensors",
     "save_every": 50,
     "seed": 42,
     "steps_per_eval": 50,
