@@ -1,0 +1,48 @@
+
+--- Velho Modelo vs 20 Novos Exemplos ---
+Accuracy: 0.75
+              precision    recall  f1-score   support
+
+ Genuíno (0)       0.57      0.67      0.62         6
+  Fraude (1)       0.85      0.79      0.81        14
+
+    accuracy                           0.75        20
+   macro avg       0.71      0.73      0.72        20
+weighted avg       0.76      0.75      0.75        20
+
+
+--- Novo Modelo (Combinado) vs 20 Novos Exemplos ---
+Accuracy: 0.80
+              precision    recall  f1-score   support
+
+ Genuíno (0)       0.67      0.67      0.67         6
+  Fraude (1)       0.86      0.86      0.86        14
+
+    accuracy                           0.80        20
+   macro avg       0.76      0.76      0.76        20
+weighted avg       0.80      0.80      0.80        20
+
+
+--- Velho Modelo vs Grok Dataset (Baseline de Antes) ---
+Accuracy: 0.99
+              precision    recall  f1-score   support
+
+ Genuíno (0)       1.00      0.96      0.98        27
+  Fraude (1)       0.98      1.00      0.99        63
+
+    accuracy                           0.99        90
+   macro avg       0.99      0.98      0.99        90
+weighted avg       0.99      0.99      0.99        90
+
+
+--- Novo Modelo (Combinado) vs Grok Dataset ---
+Accuracy: 0.99
+              precision    recall  f1-score   support
+
+ Genuíno (0)       1.00      0.96      0.98        27
+  Fraude (1)       0.98      1.00      0.99        63
+
+    accuracy                           0.99        90
+   macro avg       0.99      0.98      0.99        90
+weighted avg       0.99      0.99      0.99        90
+
