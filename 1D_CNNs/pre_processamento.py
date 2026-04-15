@@ -1,7 +1,7 @@
 import pandas as pd
 import json
 
-input_filepath = 'dataset_sintetico_variado.json'
+input_filepath = 'dataset_sintetico_combinado.json'
 output_filepath = 'dataset_preparado.csv'
 
 def process_row(row):
