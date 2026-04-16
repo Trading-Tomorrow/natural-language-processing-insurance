@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #app { height: 100%; }
+  body {
+    background: #08080a;
+    color: #f4f4f5;
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #28282d transparent;
+  }
+  *::-webkit-scrollbar { width: 3px; }
+  *::-webkit-scrollbar-thumb { background: #28282d; border-radius: 2px; }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-base-900 border border-base-700;
+  }
+
+  .btn {
+    @apply inline-flex items-center gap-2 px-3.5 py-2 rounded-md text-sm font-medium
+           transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-dim-100 text-base-950 hover:bg-white;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent text-dim-300 border border-base-600
+           hover:bg-base-800 hover:text-dim-100;
+  }
+
+  .field-label {
+    @apply block text-xs text-dim-500 mb-1.5;
+  }
+
+  .inp {
+    @apply w-full bg-base-800 text-dim-100 text-sm px-3 py-2.5 rounded-md
+           border border-base-600 focus:border-base-500 focus:outline-none
+           placeholder-dim-700 transition-colors;
+  }
+
+  .section-title {
+    @apply text-xs font-medium text-dim-500 mb-3;
+  }
+}
