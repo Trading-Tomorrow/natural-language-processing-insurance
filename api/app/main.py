@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import List, Optional
 
 from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .config import settings
 from .db import get_session
@@ -24,6 +26,16 @@ app = FastAPI(
     redoc_url="/redoc",
     openapi_url="/openapi.json",
 )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.mount("/uploads", StaticFiles(directory=settings.uploads_dir), name="uploads")
 
 
 @app.on_event("startup")
@@ -77,25 +89,35 @@ def upload_images(
         if statement is None or statement.case_id != case_id:
             raise HTTPException(status_code=400, detail="Invalid statement_id")
 
-    yolo_runner = YoloRunner(settings.yolo_weights_path, settings.yolo_confidence)
+    yolo_runner = YoloRunner(settings.yolo_weights_path, settings.yolo_tag_threshold)
     stored_images: List[ImageRead] = []
 
+    new_damages: List[str] = []
     for file in files:
         filename = f"case_{case_id}_{file.filename}"
         file_path = settings.uploads_dir / filename
         with file_path.open("wb") as handle:
             shutil.copyfileobj(file.file, handle)
+        public_path = f"uploads/{filename}"
         damage_types, raw_output = yolo_runner.predict(file_path)
+        new_damages.extend(damage_types)
         image = Image(
             case_id=case_id,
             statement_id=statement_id,
-            file_path=str(file_path),
+            file_path=public_path,
             damage_types=damage_types,
             yolo_raw_output=raw_output,
         )
         session.add(image)
         session.flush()
         stored_images.append(ImageRead.model_validate(image))
+
+    if new_damages:
+        existing = case.detected_damages or []
+        merged = list(dict.fromkeys([*existing, *new_damages]))
+        case.detected_damages = merged
+        session.add(case)
+        session.flush()
 
     return stored_images
 

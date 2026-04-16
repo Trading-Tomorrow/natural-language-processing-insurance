@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch } from 'vue'
+import { nextTick, onMounted, ref, watch } from 'vue'
 import { casesApi } from '@/api/cases'
 import { useCases } from '@/composables/useCases'
 import type { CaseRead } from '@/types'
@@ -8,6 +8,7 @@ import ImageGallery from '@/components/ImageGallery.vue'
 import AnalysisResult from '@/components/AnalysisResult.vue'
 import AppSpinner from '@/components/AppSpinner.vue'
 import AppAlert from '@/components/AppAlert.vue'
+import LocationMap from '@/components/LocationMap.vue'
 
 const props = defineProps<{ id: string }>()
 const { upsertCase } = useCases()
@@ -32,6 +33,8 @@ async function loadCase() {
   error.value = null
   try {
     caseData.value = await casesApi.get(Number(props.id))
+    await nextTick()
+    window.dispatchEvent(new Event('resize'))
   } catch (e) {
     error.value = e instanceof Error ? e.message : 'Failed to load case'
   } finally {
@@ -117,6 +120,12 @@ watch(() => props.id, loadCase)
             {{ d }}
           </span>
         </div>
+      </div>
+
+      <!-- Location -->
+      <div class="card p-5 min-w-0">
+        <p class="section-title mb-3">Approximate location</p>
+        <LocationMap :location="caseData.location" />
       </div>
 
       <!-- Statements -->

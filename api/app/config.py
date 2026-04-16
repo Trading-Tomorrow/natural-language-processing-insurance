@@ -32,6 +32,7 @@ class Settings(BaseModel):
     qwen_top_p: float
     yolo_weights_path: Path
     yolo_confidence: float
+    yolo_tag_threshold: float
 
 
 settings = Settings(
@@ -48,8 +49,9 @@ settings = Settings(
     yolo_weights_path=Path(
         _get_env(
             "YOLO_WEIGHTS_PATH",
-            "runs/detect/runs/detect/models/modelo_large_v3/weights/best.pt",
+            "yolo/best.pt",
         )
     ),
     yolo_confidence=_get_env_float("YOLO_CONFIDENCE", 0.25),
+    yolo_tag_threshold=_get_env_float("YOLO_TAG_THRESHOLD", 0.5),
 )

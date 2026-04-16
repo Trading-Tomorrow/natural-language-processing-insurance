@@ -1,149 +1,280 @@
 {
   "completed_ids": [
-    "PT-GOOD-2026-001880",
     "PT-AVE-2026-005",
-    "PT-GOOD-2026-000663",
-    "PT-GOOD-2026-002829",
-    "PT-GOOD-2026-000278",
-    "PT-GOOD-2026-000938",
-    "PT-GOOD-2026-001446",
-    "PT-GOOD-2026-002481",
-    "PT-GOOD-2026-000921",
-    "PT-MIXD-2026-000146",
-    "PT-GOOD-2026-001146",
-    "PT-MIXD-2026-000969",
-    "PT-VNO-2026-003",
-    "PT-MIXD-2026-000941",
-    "PT-MIXD-2026-000551",
-    "PT-GOOD-2026-000619",
-    "PT-GOOD-2026-002125",
-    "PT-GOOD-2026-000509",
-    "PT-GOOD-2026-003067",
-    "PT-GOOD-2026-002986",
-    "PT-GOOD-2026-002640",
-    "PT-GOOD-2026-000051",
-    "PT-ZUR-2026-003",
-    "PT-MIXD-2026-000744",
-    "PT-MIXD-2026-000666",
-    "PT-MIXD-2026-000115",
-    "PT-GOOD-2026-001994",
-    "PT-MIXD-2026-000274",
-    "PT-GOOD-2026-001973",
-    "PT-GOOD-2026-000459",
-    "PT-GOOD-2026-000392",
-    "PT-GOOD-2026-001178",
-    "PT-GOOD-2026-000835",
-    "PT-MIXD-2026-000982",
-    "PT-GOOD-2026-002213",
-    "PT-GOOD-2026-001270",
-    "PT-GOOD-2026-002018",
-    "PT-GOOD-2026-001981",
-    "PT-GOOD-2026-002188",
-    "PT-MIXD-2026-000402",
-    "PT-GOOD-2026-002673",
-    "PT-HP8-2026-008",
-    "PT-MIXD-2026-000176",
-    "PT-GOOD-2026-002309",
-    "PT-GOOD-2026-000015",
-    "PT-MIXD-2026-000001",
-    "PT-GOOD-2026-003089",
-    "PT-AEC-2026-002",
-    "PT-MIXD-2026-000897",
-    "PT-GOOD-2026-001730",
-    "PT-MIXD-2026-000827",
-    "PT-GOOD-2026-001946",
-    "PT-VND-2026-008",
-    "PT-007-2026-137",
-    "PT-MIXD-2026-000966",
-    "PT-GOOD-2026-002506",
-    "PT-GOOD-2026-000885",
-    "PT-MIXD-2026-000082",
-    "PT-GOOD-2026-000255",
-    "PT-GOOD-2026-000668",
-    "PT-GOOD-2026-001724",
-    "PT-MIXD-2026-001081",
-    "PT-GOOD-2026-000816",
-    "PT-001-2026-009",
-    "PT-GOOD-2026-001136",
-    "PT-GOOD-2026-000188",
-    "PT-GOOD-2026-000176",
-    "PT-MIXD-2026-001168",
-    "PT-NEW-2026-077",
-    "PT-COI-2026-10",
-    "PT-GOOD-2026-003049",
-    "PT-006-2026-106",
-    "PT-GOOD-2026-001380",
-    "PT-MIXD-2026-000954",
-    "PT-MIXD-2026-000342",
-    "PT-XXX-2026-109",
-    "PT-MIXD-2026-000764",
-    "PT-GOOD-2026-001181",
-    "PT-MIXD-2026-000073",
-    "PT-GOOD-2026-002706",
-    "PT-GOOD-2026-001933",
-    "PT-GOOD-2026-002053",
     "PT-MIXD-2026-000062",
-    "PT-GOOD-2026-001011",
-    "PT-MIXD-2026-000824",
-    "PT-MIXD-2026-001026",
-    "PT-MIXD-2026-000036",
-    "PT-GOOD-2026-000312",
-    "PT-GOOD-2026-000638",
-    "PT-FGS-2026-003",
-    "PT-JC0-2026-010",
-    "PT-MIXD-2026-000994",
-    "PT-MIXD-2026-000830",
-    "PT-GOOD-2026-001120",
-    "PT-MIXD-2026-001173",
-    "PT-GOOD-2026-000204",
-    "PT-GOOD-2026-000017",
-    "PT-FAO-2026-008",
-    "PT-MIXD-2026-000588",
-    "PT-MIXD-2026-000612",
-    "PT-GOOD-2026-002267",
-    "PT-BY2-2026-002",
-    "PT-GOOD-2026-001129",
-    "PT-GOOD-2026-000630",
-    "PT-GOOD-2026-003068",
-    "PT-GOOD-2026-002445",
-    "PT-AXF-2026-001",
-    "PT-GOOD-2026-002078",
-    "PT-MIXD-2026-000165",
-    "PT-MILLENNIUM-2026-007",
-    "PT-MIXD-2026-000045",
-    "PT-MIXD-2026-000932",
-    "PT-MIXD-2026-000939",
-    "PT-MIXD-2026-000270",
-    "PT-CZ3-2026-003",
+    "PT-GOOD-2026-000193",
+    "PT-GOOD-2026-002079",
+    "PT-MIXD-2026-000744",
     "PT-MIXD-2026-000387",
-    "PT-GOOD-2026-000989",
-    "PT-MIXD-2026-000344",
-    "PT-MIXD-2026-000121",
-    "PT-MIXD-2026-000372",
-    "PT-GOOD-2026-000044",
-    "PT-LIS-2026-06",
-    "PT-GOOD-2026-002418",
-    "PT-GOOD-2026-001948",
-    "PT-GOOD-2026-001604",
-    "PT-GOOD-2026-001267",
-    "PT-MIXD-2026-001140",
-    "PT-MIXD-2026-000284",
-    "PT-FUV-2026-006",
-    "PT-GOOD-2026-001276",
-    "PT-GOOD-2026-000203",
-    "PT-GOOD-2026-001872",
-    "PT-POR-2026-002",
     "PT-GOOD-2026-001280",
-    "PT-XYZ-2026-106",
-    "PT-GOOD-2026-001065",
-    "PT-GOOD-2026-001867",
-    "PT-MIXD-2026-000456",
-    "PT-MIXD-2026-000032",
-    "PT-GOOD-2026-002905",
-    "PT-VI-2026-007",
-    "PT-MIXD-2026-000230",
+    "PT-GOOD-2026-001262",
+    "PT-GOOD-2026-002078",
+    "PT-GOOD-2026-002214",
+    "PT-GOOD-2026-003089",
+    "PT-MIXD-2026-000954",
+    "PT-FAO-2026-008",
+    "PT-GOOD-2026-000388",
+    "PT-MIXD-2026-000176",
+    "PT-MIXD-2026-000994",
+    "PT-GOOD-2026-000650",
+    "PT-GOOD-2026-000505",
+    "PT-001-2026-003",
+    "PT-JC0-2026-010",
+    "PT-MIXD-2026-001172",
+    "PT-GOOD-2026-001730",
+    "PT-GOOD-2026-002212",
+    "PT-VGS-2026-007",
     "PT-GOOD-2026-000208",
-    "PT-GOOD-2026-001478"
+    "PT-GOOD-2026-001946",
+    "PT-MIXD-2026-000270",
+    "PT-MILLENNIUM-2026-007",
+    "PT-GOOD-2026-000301",
+    "PT-GOOD-2026-002537",
+    "PT-GOOD-2026-000704",
+    "PT-GOOD-2026-001347",
+    "PT-GOOD-2026-000459",
+    "PT-MIXD-2026-001173",
+    "PT-GOOD-2026-002445",
+    "PT-GOOD-2026-000668",
+    "PT-GOOD-2026-000312",
+    "PT-GOOD-2026-001446",
+    "PT-CAIXAGERAL-2026-009",
+    "PT-GOOD-2026-000636",
+    "PT-GOOD-2026-002815",
+    "PT-GOOD-2026-002293",
+    "PT-MIXD-2026-000397",
+    "PT-MIXD-2026-000875",
+    "PT-MIXD-2026-000081",
+    "PT-MIXD-2026-000941",
+    "PT-GOOD-2026-002467",
+    "PT-POR-2026-002",
+    "PT-GOOD-2026-003068",
+    "PT-GOOD-2026-002640",
+    "PT-MIXD-2026-000835",
+    "PT-GOOD-2026-002405",
+    "PT-DL4-2026-004",
+    "PT-GOOD-2026-000060",
+    "PT-GOOD-2026-001933",
+    "PT-GOOD-2026-001334",
+    "PT-GOOD-2026-000017",
+    "PT-MIXD-2026-000445",
+    "PT-GOOD-2026-000176",
+    "PT-GOOD-2026-003086",
+    "PT-GOOD-2026-002482",
+    "PT-GOOD-2026-001872",
+    "PT-GOOD-2026-002753",
+    "PT-MIXD-2026-000939",
+    "PT-MIXD-2026-000764",
+    "PT-GOOD-2026-001269",
+    "PT-GOOD-2026-000044",
+    "PT-VND-2026-008",
+    "PT-GOOD-2026-000188",
+    "PT-MIXD-2026-000932",
+    "PT-GOOD-2026-001866",
+    "PT-GOOD-2026-002673",
+    "PT-GOOD-2026-002506",
+    "PT-MIXD-2026-000105",
+    "PT-MIXD-2026-000854",
+    "PT-GOOD-2026-002071",
+    "PT-GOOD-2026-000663",
+    "PT-GOOD-2026-002619",
+    "PT-GOOD-2026-001724",
+    "PT-GOOD-2026-001948",
+    "PT-MIXD-2026-001014",
+    "PT-NEW-2026-077",
+    "PT-MIXD-2026-000973",
+    "PT-GOOD-2026-000203",
+    "PT-GOOD-2026-001994",
+    "PT-GOOD-2026-000816",
+    "PT-MIXD-2026-000982",
+    "PT-GOOD-2026-002267",
+    "PT-MIXD-2026-000889",
+    "PT-GOOD-2026-000204",
+    "PT-GOOD-2026-001448",
+    "PT-GOOD-2026-001260",
+    "PT-GOOD-2026-002618",
+    "PT-MIXD-2026-000165",
+    "PT-GOOD-2026-000981",
+    "PT-GOOD-2026-002053",
+    "PT-HP8-2026-008",
+    "PT-MIXD-2026-000073",
+    "PT-GOOD-2026-003049",
+    "PT-GOOD-2026-001270",
+    "PT-GOOD-2026-000885",
+    "PT-GOOD-2026-002960",
+    "PT-BY2-2026-002",
+    "PT-MIXD-2026-000826",
+    "PT-GX7-2026-007",
+    "PT-MIXD-2026-000588",
+    "PT-LIS-2026-06",
+    "PT-002-2026-102",
+    "PT-GOOD-2026-000835",
+    "PT-MIXD-2026-001066",
+    "PT-GOOD-2026-001051",
+    "PT-GOOD-2026-001178",
+    "PT-GOOD-2026-002952",
+    "PT-MIXD-2026-000086",
+    "PT-FRO-2026-004",
+    "PT-GOOD-2026-000561",
+    "PT-MIXD-2026-000022",
+    "PT-MIXD-2026-000612",
+    "PT-MIXD-2026-000668",
+    "PT-GOOD-2026-000236",
+    "PT-GOOD-2026-001113",
+    "PT-MIXD-2026-000123",
+    "PT-GOOD-2026-000619",
+    "PT-MIXD-2026-000230",
+    "PT-GOOD-2026-001576",
+    "PT-MIXD-2026-000109",
+    "PT-GOOD-2026-001867",
+    "PT-GOOD-2026-001835",
+    "PT-MIXD-2026-001037",
+    "PT-MIXD-2026-000344",
+    "PT-GOOD-2026-001181",
+    "PT-GOOD-2026-002706",
+    "PT-MIXD-2026-001083",
+    "PT-GOOD-2026-000015",
+    "PT-MIXD-2026-000572",
+    "PT-GOOD-2026-002018",
+    "PT-GOOD-2026-001478",
+    "PT-GOOD-2026-001276",
+    "PT-GOOD-2026-002213",
+    "PT-GOOD-2026-001971",
+    "PT-GOOD-2026-001019",
+    "PT-GOOD-2026-001173",
+    "PT-GOOD-2026-001011",
+    "PT-MIXD-2026-001140",
+    "PT-GOOD-2026-000638",
+    "PT-MIXD-2026-000001",
+    "PT-XYZ-2026-106",
+    "PT-MIXD-2026-001069",
+    "PT-GOOD-2026-001065",
+    "PT-GOOD-2026-001055",
+    "PT-GOOD-2026-000954",
+    "PT-OPQ-2026-010",
+    "PT-GOOD-2026-001969",
+    "PT-MIXD-2026-000036",
+    "PT-GOOD-2026-002095",
+    "PT-GOOD-2026-000183",
+    "PT-MIXD-2026-000082",
+    "PT-GOOD-2026-000989",
+    "PT-GOOD-2026-000107",
+    "PT-GOOD-2026-002712",
+    "PT-GOOD-2026-002418",
+    "PT-MIXD-2026-000032",
+    "PT-GOOD-2026-001348",
+    "PT-GOOD-2026-002999",
+    "PT-MIXD-2026-000969",
+    "PT-GOOD-2026-001559",
+    "PT-GOOD-2026-001155",
+    "PT-GOOD-2026-002070",
+    "PT-MIXD-2026-000776",
+    "PT-MIXD-2026-000372",
+    "PT-MIXD-2026-000261",
+    "PT-GOOD-2026-000230",
+    "PT-MIXD-2026-001026",
+    "PT-MIXD-2026-000359",
+    "PT-101-2026-009",
+    "PT-GOOD-2026-002199",
+    "PT-006-2026-106",
+    "PT-MIXD-2026-000448",
+    "PT-GOOD-2026-002599",
+    "PT-MIXD-2026-000566",
+    "PT-GOOD-2026-000051",
+    "PT-MIXD-2026-000567",
+    "PT-GOOD-2026-002481",
+    "PT-GEN-2026-004",
+    "PT-MIXD-2026-000410",
+    "PT-NEW-2026-030",
+    "PT-XXX-2026-109",
+    "PT-MIXD-2026-000284",
+    "PT-GOOD-2026-000278",
+    "PT-GOOD-2026-002188",
+    "PT-AEC-2026-002",
+    "PT-MIXD-2026-000666",
+    "PT-CZ3-2026-003",
+    "PT-ZUR-2026-003",
+    "PT-GOOD-2026-001050",
+    "PT-AXF-2026-001",
+    "PT-MIXD-2026-000342",
+    "PT-GOOD-2026-001277",
+    "PT-GOOD-2026-001129",
+    "PT-MIXD-2026-000009",
+    "PT-GOOD-2026-002125",
+    "PT-MIXD-2026-000824",
+    "PT-GOOD-2026-002309",
+    "PT-GOOD-2026-003067",
+    "PT-GOOD-2026-002905",
+    "PT-GOOD-2026-001349",
+    "PT-MIXD-2026-000830",
+    "PT-MIXD-2026-000515",
+    "PT-GOOD-2026-000289",
+    "PT-GOOD-2026-003042",
+    "PT-ALLIANZ-2026-003",
+    "PT-MIXD-2026-000961",
+    "PT-MIXD-2026-000966",
+    "PT-MIXD-2026-000756",
+    "PT-MIXD-2026-000313",
+    "PT-MIXD-2026-000274",
+    "PT-MIXD-2026-000897",
+    "PT-GOOD-2026-002122",
+    "PT-007-2026-137",
+    "PT-GOOD-2026-001604",
+    "PT-MIXD-2026-001081",
+    "PT-MIXD-2026-000113",
+    "PT-INC-2026-002",
+    "PT-JBE-2026-010",
+    "PT-001-2026-009",
+    "PT-MIXD-2026-000121",
+    "PT-VI-2026-007",
+    "PT-GOOD-2026-001067",
+    "PT-MIXD-2026-000115",
+    "PT-GOOD-2026-002986",
+    "PT-MIXD-2026-000827",
+    "PT-MIXD-2026-000066",
+    "PT-VNO-2026-003",
+    "PT-GOOD-2026-000930",
+    "PT-GOOD-2026-000630",
+    "PT-NEW-2026-026",
+    "PT-GOOD-2026-001267",
+    "PT-MIXD-2026-000092",
+    "PT-FGS-2026-003",
+    "PT-MIXD-2026-000122",
+    "PT-MIXD-2026-000456",
+    "PT-MIXD-2026-000310",
+    "PT-MIXD-2026-000146",
+    "PT-GOOD-2026-000079",
+    "PT-GOOD-2026-000052",
+    "PT-GOOD-2026-002141",
+    "PT-MIXD-2026-000402",
+    "PT-GOOD-2026-002970",
+    "PT-SET-2026-008",
+    "PT-MIXD-2026-000094",
+    "PT-GOOD-2026-000509",
+    "PT-GOOD-2026-001981",
+    "PT-GOOD-2026-000831",
+    "PT-GOOD-2026-000921",
+    "PT-GOOD-2026-001973",
+    "PT-GOOD-2026-000255",
+    "PT-MIXD-2026-000551",
+    "PT-MIXD-2026-000132",
+    "PT-GOOD-2026-000644",
+    "PT-GOOD-2026-000685",
+    "PT-GOOD-2026-000940",
+    "PT-FUV-2026-006",
+    "PT-GOOD-2026-002829",
+    "PT-MIXD-2026-000045",
+    "PT-COI-2026-10",
+    "PT-GOOD-2026-001120",
+    "PT-GOOD-2026-001380",
+    "PT-GOOD-2026-000938",
+    "PT-MIXD-2026-001168",
+    "PT-GOOD-2026-001880",
+    "PT-GOOD-2026-000392",
+    "PT-EVO-2026-010",
+    "PT-GOOD-2026-001136",
+    "PT-MIXD-2026-000095",
+    "PT-GOOD-2026-001146"
   ],
   "results": [
     {
@@ -1153,7 +1284,924 @@
       "pred": "true",
       "prob": 0.9,
       "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001835",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.7,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001349",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000313",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.8,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000831",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000940",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GX7-2026-007",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000060",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002070",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001050",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-001-2026-003",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-SET-2026-008",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000835",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001260",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000009",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-NEW-2026-026",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.65,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-FRO-2026-004",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.65,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000875",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001969",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001448",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002815",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000650",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001559",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001067",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002618",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002753",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000515",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000193",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001113",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-NEW-2026-030",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-VGS-2026-007",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000092",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000095",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001269",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000505",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-OPQ-2026-010",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.35,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002079",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002122",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001014",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001866",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001037",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-EVO-2026-010",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000081",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000572",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.35,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000448",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000132",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001069",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001083",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000122",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.35,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000310",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001172",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000183",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002537",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000961",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000776",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000445",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002952",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002970",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002960",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-INC-2026-002",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001173",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000066",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002095",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000109",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000973",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001971",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000930",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002071",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000301",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000889",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002619",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001277",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002999",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000261",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000704",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000123",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001155",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000668",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.2,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002214",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001348",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000289",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000230",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002712",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000826",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000685",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001051",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000388",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-002-2026-102",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002199",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000410",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-101-2026-009",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-CAIXAGERAL-2026-009",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000107",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.45,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001262",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002599",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-001066",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002482",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000079",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002293",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000359",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000105",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002212",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002405",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001347",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.8,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001055",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000981",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-003042",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001019",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-ALLIANZ-2026-003",
+      "gt": "true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GEN-2026-004",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000086",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-003086",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.8,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-JBE-2026-010",
+      "gt": "not_true",
+      "pred": "true",
+      "prob": 0.8,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001576",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000756",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000236",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000954",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000567",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000052",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-DL4-2026-004",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000561",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000636",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000022",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.4,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-001334",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002141",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000566",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.35,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000094",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.3,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000397",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.9,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000113",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.95,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-GOOD-2026-002467",
+      "gt": "true",
+      "pred": null,
+      "prob": null,
+      "valid": false
+    },
+    {
+      "claim_id": "PT-GOOD-2026-000644",
+      "gt": "true",
+      "pred": "true",
+      "prob": 0.85,
+      "valid": true
+    },
+    {
+      "claim_id": "PT-MIXD-2026-000854",
+      "gt": "not_true",
+      "pred": "not_true",
+      "prob": 0.25,
+      "valid": true
     }
   ],
-  "last_updated": "2026-04-15T18:47:38.581322"
+  "last_updated": "2026-04-16T15:00:02.122167"
 }

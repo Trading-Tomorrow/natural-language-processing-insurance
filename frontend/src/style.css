@@ -1,3 +1,5 @@
+@import 'leaflet/dist/leaflet.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +18,11 @@
   }
   *::-webkit-scrollbar { width: 3px; }
   *::-webkit-scrollbar-thumb { background: #28282d; border-radius: 2px; }
+
+  .leaflet-container {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @layer components {

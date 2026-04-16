@@ -34,7 +34,11 @@ class YoloRunner:
                     if cls_index is not None
                     else None
                 )
-                if cls_name is not None:
+                if (
+                    cls_name is not None
+                    and conf is not None
+                    and conf >= self.confidence
+                ):
                     damage_types.append(cls_name)
                 detections.append(
                     {
