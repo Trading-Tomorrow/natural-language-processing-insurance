@@ -19,6 +19,13 @@ export default defineConfig(({ mode }) => {
         '/cases': {
           target: apiBase,
           changeOrigin: true,
+          bypass(req) {
+            // Browser navigation (F5, direct URL) → serve the SPA
+            // API calls from fetch() → proxy to backend
+            if (req.headers.accept?.includes('text/html')) {
+              return '/index.html'
+            }
+          },
         },
         '/static': {
           target: apiBase,
