@@ -1,0 +1,11 @@
+python gerador_dataset_gemini.py
+
+python pre_processamento.py
+
+python tokenizacao_padding.py
+
+python treino.py
+
+
+python prever_sinistro.py
+

@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.models import load_model
 
-LABEL_ORDER = ["Genuíno", "Fraude"]
+LABEL_ORDER = ["Genuine", "Fraud"]
 
 def main():
     df = pd.read_csv('dataset_preparado.csv', engine='python', encoding='utf-8')
@@ -49,22 +49,22 @@ def main():
     label_positions = np.arange(len(LABEL_ORDER))
 
     axes[0, 0].bar(
-        ["Correto", "Incorreto"],
+        ["Correct", "Incorrect"],
         [total_correct, total_incorrect],
         color=["#2ca02c", "#d62728"],
         width=0.6,
     )
-    axes[0, 0].set_title("Resultados Gerais (Correto vs Incorreto)")
-    axes[0, 0].set_ylabel("Casos")
+    axes[0, 0].set_title("Overall Correct vs Incorrect")
+    axes[0, 0].set_ylabel("Examples")
     axes[0, 0].set_ylim(0, max(total_examples, total_correct) * 1.1)
     axes[0, 0].text(0, total_correct + total_examples * 0.02, f"{total_correct} ({total_correct / total_examples:.1%})", ha="center")
     axes[0, 0].text(1, total_incorrect + total_examples * 0.02, f"{total_incorrect} ({total_incorrect / total_examples:.1%})", ha="center")
 
-    axes[0, 1].bar(label_positions, correct_per_class, color="#2ca02c", label="Correto")
-    axes[0, 1].bar(label_positions, incorrect_per_class, bottom=correct_per_class, color="#d62728", label="Incorreto")
+    axes[0, 1].bar(label_positions, correct_per_class, color="#2ca02c", label="Correct")
+    axes[0, 1].bar(label_positions, incorrect_per_class, bottom=correct_per_class, color="#d62728", label="Incorrect")
     axes[0, 1].set_xticks(label_positions, LABEL_ORDER)
-    axes[0, 1].set_title("Desfecho Por Classe")
-    axes[0, 1].set_ylabel("Casos")
+    axes[0, 1].set_title("Per-Class Outcomes")
+    axes[0, 1].set_ylabel("Examples")
     axes[0, 1].legend()
     for index, (correct_value, incorrect_value) in enumerate(zip(correct_per_class, incorrect_per_class)):
         axes[0, 1].text(index, correct_value / 2, str(int(correct_value)), ha="center", va="center", color="white", fontsize=9)
@@ -77,16 +77,16 @@ def main():
     axes[1, 0].bar(label_positions + width, f1_values, width=width, color="#2ca02c", label="F1")
     axes[1, 0].set_xticks(label_positions, LABEL_ORDER)
     axes[1, 0].set_ylim(0.0, 1.05)
-    axes[1, 0].set_title("Métricas Por Classe")
+    axes[1, 0].set_title("Per-Class Metrics")
     axes[1, 0].set_ylabel("Score")
     axes[1, 0].legend()
 
     image = axes[1, 1].imshow(cm, cmap="Blues")
     axes[1, 1].set_xticks(label_positions, LABEL_ORDER)
     axes[1, 1].set_yticks(label_positions, LABEL_ORDER)
-    axes[1, 1].set_title("Matriz de Confusão")
-    axes[1, 1].set_xlabel("Teste Previsto")
-    axes[1, 1].set_ylabel("Valor Real")
+    axes[1, 1].set_title("Confusion Matrix")
+    axes[1, 1].set_xlabel("Predicted label")
+    axes[1, 1].set_ylabel("True label")
     figure.colorbar(image, ax=axes[1, 1], fraction=0.046, pad=0.04)
     threshold = cm.max() / 2 if cm.size else 0
     for row_index in range(cm.shape[0]):
@@ -97,12 +97,12 @@ def main():
 
     acc = report['accuracy']
     macro_f1 = report['macro avg']['f1-score']
-    figure.suptitle(f"Dashboard de Validação (1D CNN) | Accuracy={acc:.4f} | Macro F1={macro_f1:.4f}", fontsize=14)
+    figure.suptitle(f"1D CNN Validation Dashboard | Accuracy={acc:.4f} | Macro F1={macro_f1:.4f}", fontsize=14)
     figure.tight_layout()
     output_path = "cnn_validation_dashboard.png"
     figure.savefig(output_path, dpi=200, bbox_inches="tight")
     plt.close(figure)
-    print(f"Salvou dashboard para {output_path}")
+    print(f"Saved dashboard to: {output_path}")
 
 if __name__ == "__main__":
     main()
